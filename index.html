@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="fonts/ComingSoon-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  
+  <body>
+   
+  <nav class="navbar">
+      <div class="navbar-section navbar-left">
+        <a href="index.html" class="nav-btn nav-home" style="text-decoration: none;" data-i18n="home"><span></span> Home</a>
+        <a href="About.html" class="nav-btn" style="text-decoration: none;" data-i18n="about">About me</a>
+      </div>
+      <!-- Language Switcher -->
+      
+      <div class="navbar-section navbar-center">
+        <a href="index.html" class="nav-btn nav-copyright" style="text-decoration: none;" data-i18n="copyright">© Code by Ishan</a>
+      </div>
+      <!-- Mobile copyright, visible only below 1280px -->
+      <div class="navbar-mobile-copyright">
+        <a href="index.html" class="nav-btn nav-copyright-mobile" style="text-decoration: none;" data-i18n="copyright">© Code by Ishan</a>
+      </div>
+      </div>
+      <div class="navbar-section navbar-right">
+        <div class="nav-dropdown-wrapper">
+          <button class="nav-btn nav-work" id="navWorkBtn" data-i18n="work">
+            <span data-i18n="work">Work</span>
+            
+          </button>
+          <div class="nav-dropdown" id="navWorkDropdown">
+            <a href="EV multiplatform.html" class="nav-dropdown-item" data-i18n="ev">EV Multiplatform</a>
+          </div>
+        </div>
+        <a href="contact.html" class="nav-btn" style="text-decoration: none;" data-i18n="contact">Contact me</a>
+      </div>
+      <!-- Hamburger for mobile -->
+      <button class="navbar-hamburger" id="navbarHamburger" aria-label="Open menu">
+        <!-- Hamburger SVG icon -->
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect y="6" width="28" height="2.5" rx="1.25" fill="#191919"/>
+          <rect y="13" width="28" height="2.5" rx="1.25" fill="#191919"/>
+          <rect y="20" width="28" height="2.5" rx="1.25" fill="#191919"/>
+        </svg>
+      </button>
+      <!-- Mobile menu -->
+      <div class="navbar-mobile-menu" id="navbarMobileMenu">
+        <div class="navbar-mobile-menu-content">
+          <a href="index.html" class="nav-mobile-item" data-i18n="home">Home</a>
+          <a href="About.html" class="nav-mobile-item" data-i18n="about">About me</a>
+          <a href="#" class="nav-mobile-item nav-mobile-work" data-i18n="ev">EV Multiplatform</a>
+          <a href="contact.html" class="nav-mobile-item" data-i18n="contact">Contact me</a>
+        </div>
+      </div>
+    </nav>
+    <div class="navbar-country">
+        <select id="langSwitcher" aria-label="Select language">
+          <option value="en">Eng</option>
+          <option value="de">Deu</option>
+          <option value="fr">Fra</option>
+          <option value="nl">Neds</option>
+          <option value="ar">الع</option>
+          <option value="zh">中文</option>
+          <option value="es">Esp</option>
+        </select>
+      </div>
+    <!-- Developer Credit Block -->
+    <!-- Developer Credit Block: Circular Text Style -->
+  
+    <section class="hero-desk" style="margin-top:32px;">
+      <div class="hero-desk-grid">
+        <div class="hero-desk-col hero-desk-col-1">
+          <h1 class="Title" data-i18n="hero_title">Turning <span class="custom-highlight coming-soon-font" aria-label="Meh in playful font" role="text" style="font-family: 'Coming Soon', cursive !important; font-size: 3.25rem; text-decoration: underline; text-decoration-thickness: 4px; line-height: 3.75rem; font-weight: 500;">"meh"</span> products into Market Leaders</h1>
+          <p class="Title para" data-i18n="hero_para">Users abandon confusing products in seconds. Make yours impossible to ignore — hire an accessibility-focused UI UX designer (WCAG).</p>
+          <button class="hero-btn" style="margin-bottom:20px;">
+            <span class="hero-btn-icon">
+              <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_600_4865)">
+                  <path d="M14.8942 3.60513C14.8939 3.60481 14.8936 3.60456 14.8933 3.60424C14.8929 3.60392 14.8927 3.60362 14.8924 3.6033C11.6433 0.35424 6.35505 0.355886 3.10398 3.60696C2.96068 3.75026 2.82601 3.89882 2.69535 4.04967C2.66191 4.08814 2.62854 4.12654 2.59592 4.16547C2.47881 4.3058 2.36596 4.44844 2.25948 4.5944C2.2164 4.6532 2.17645 4.71344 2.13504 4.77308C2.07469 4.86062 2.01604 4.94888 1.9594 5.03815C0.557871 7.23156 0.262233 9.94942 1.18771 12.4133C1.22104 12.5031 1.25463 12.5928 1.29115 12.6817C1.32272 12.7578 1.35564 12.8334 1.38961 12.9089C1.46102 13.0689 1.53588 13.2276 1.61787 13.3837C1.62282 13.3931 1.62662 13.4029 1.63161 13.4123C1.63334 13.4155 1.63634 13.4173 1.63827 13.4203C2.01595 14.1306 2.50265 14.7977 3.10032 15.3954C3.10064 15.3957 3.1011 15.3958 3.10142 15.3961C3.10174 15.3964 3.10183 15.3969 3.10215 15.3972C3.6998 15.9948 4.36683 16.4815 5.0771 16.8592C5.08012 16.8612 5.08197 16.8641 5.08522 16.8659C5.09462 16.8709 5.10439 16.8747 5.11379 16.8796C5.26988 16.9616 5.42862 17.0365 5.58858 17.1079C5.6641 17.1419 5.73971 17.1748 5.8158 17.2063C5.90467 17.2429 5.99437 17.2765 6.0842 17.3098C8.54808 18.2353 11.2659 17.9396 13.4593 16.5381C13.5486 16.4815 13.6369 16.4228 13.7244 16.3625C13.7841 16.321 13.8443 16.2811 13.9031 16.238C14.0491 16.1315 14.1917 16.0187 14.332 15.9016C14.371 15.869 14.4094 15.8356 14.4478 15.8021C14.5987 15.6715 14.7472 15.5368 14.8905 15.3935C18.1416 12.1424 18.1433 6.8542 14.8942 3.60513ZM13.9264 4.37899C13.977 4.32846 14.0631 4.32845 14.1136 4.37899C14.166 4.43138 14.1641 4.51564 14.1136 4.56617L13.6719 5.00791C13.6438 4.97608 13.612 4.94427 13.582 4.9143C13.5502 4.88249 13.5184 4.85069 13.4847 4.82073L13.9264 4.37899ZM4.32245 5.01351L3.877 4.56805C3.82459 4.51564 3.82647 4.43141 3.877 4.38088C3.92941 4.32846 4.01176 4.32846 4.06418 4.38088L4.50963 4.82633C4.47781 4.8544 4.44599 4.88623 4.41417 4.91805C4.38235 4.94986 4.3524 4.97982 4.32245 5.01351ZM4.06417 14.6156C4.01176 14.668 3.92939 14.668 3.877 14.6156C3.82646 14.5651 3.82458 14.4808 3.877 14.4284L4.31686 13.9886C4.34681 14.0223 4.37862 14.0541 4.41042 14.0859L4.41229 14.0878C4.44227 14.1177 4.4722 14.1477 4.50403 14.1758L4.06417 14.6156ZM13.1614 14.1164C10.7227 16.3193 6.94724 16.2475 4.59955 13.8998C4.59923 13.8995 4.59898 13.8992 4.59866 13.8988C4.59834 13.8985 4.59804 13.8983 4.59772 13.8979C2.25003 11.5503 2.17822 7.77483 4.38111 5.3361C4.45215 5.25743 4.52559 5.18015 4.60138 5.10436C4.7051 5.00064 4.81255 4.90302 4.9216 4.80818C4.9398 4.7924 4.95796 4.77666 4.97637 4.76113C6.55819 3.41699 8.65732 2.99151 10.5668 3.48521C10.5966 3.49285 10.6262 3.5011 10.656 3.50923C10.776 3.54215 10.8953 3.57797 11.0135 3.61819C11.0406 3.62739 11.0676 3.63671 11.0946 3.64629C11.2069 3.68626 11.3179 3.73026 11.4281 3.77684C11.4509 3.78648 11.4744 3.79391 11.4971 3.80382C11.5013 3.80567 11.5039 3.80919 11.5078 3.81139C12.1927 4.11227 12.8345 4.54087 13.3946 5.10049L13.395 5.10071C13.3953 5.10103 13.3955 5.10132 13.3959 5.10164C13.3962 5.10196 13.3965 5.10221 13.3968 5.10253L13.397 5.10287C13.9566 5.66301 14.3852 6.30477 14.6861 6.98966C14.6883 6.99355 14.6918 6.99625 14.6937 7.00043C14.7036 7.02314 14.711 7.04656 14.7207 7.06936C14.7672 7.17957 14.8112 7.29061 14.8512 7.40287C14.8608 7.42989 14.8701 7.4569 14.8793 7.48403C14.9195 7.60223 14.9553 7.72152 14.9883 7.84149C14.9964 7.87125 15.0046 7.90089 15.0123 7.93072C15.506 9.84018 15.0805 11.9393 13.7364 13.5211C13.7208 13.5395 13.7051 13.5577 13.6893 13.5759C13.5945 13.685 13.4969 13.7924 13.3931 13.8961C13.3173 13.9719 13.2401 14.0453 13.1614 14.1164ZM13.9264 14.6175L13.4847 14.1758C13.5184 14.1458 13.5483 14.1159 13.5802 14.084C13.612 14.0522 13.6438 14.0204 13.6719 13.9886L14.1136 14.4303C14.1641 14.4808 14.166 14.5651 14.1136 14.6175C14.0631 14.668 13.977 14.668 13.9264 14.6175Z" fill="white"/>
+                  <path d="M9.94309 8.56109C9.96182 8.57983 9.98054 8.60229 9.9955 8.62475L10.4036 9.2574L11.1036 8.16429L12.1499 6.53026C12.1836 6.47784 12.1742 6.4086 12.1312 6.36553C12.0862 6.32061 12.0189 6.31313 11.9665 6.34681L9.24308 8.10067L9.87758 8.50683C9.90191 8.52367 9.9244 8.5424 9.94309 8.56109Z" fill="white"/>
+                  <path d="M8.05808 10.4461C8.03751 10.4255 8.01878 10.4031 8.0038 10.3769L7.59766 9.74609L5.84566 12.4751C5.81198 12.5275 5.81946 12.5949 5.86438 12.6398C5.9093 12.6847 5.9767 12.6922 6.02909 12.6585L8.75626 10.9047L8.12547 10.4985C8.10115 10.4854 8.07869 10.4667 8.05808 10.4461Z" fill="white"/>
+                  <path d="M12.1529 12.4706L9.77024 8.77045C9.75982 8.75455 9.74611 8.74084 9.73021 8.73042L6.02619 6.35161C5.97391 6.31798 5.90518 6.32529 5.86113 6.36934C5.81708 6.41339 5.80977 6.48212 5.8434 6.5344L8.22458 10.2368C8.22952 10.2446 8.23555 10.2521 8.24213 10.2587C8.24871 10.2653 8.25621 10.2713 8.26425 10.2764L11.9705 12.6538C12.0227 12.6874 12.0915 12.6797 12.1355 12.6357C12.1796 12.5916 12.1869 12.5229 12.1529 12.4706ZM9.28921 10.0651C9.2688 10.0756 9.24549 10.0784 9.22405 10.0865C9.18684 10.1005 9.15057 10.1173 9.11092 10.1236C9.11025 10.1238 9.10974 10.1236 9.10906 10.1238C9.10883 10.1238 9.10859 10.124 9.10836 10.124C9.10799 10.1241 9.10768 10.1239 9.10728 10.1239C9.06523 10.1316 9.02771 10.1347 8.99083 10.1326C8.95976 10.1355 8.91479 10.1319 8.8733 10.1218C8.75778 10.1043 8.64189 10.0447 8.54903 9.95181C8.41377 9.81655 8.34742 9.63211 8.36698 9.44585C8.36771 9.43891 8.36899 9.43214 8.37063 9.42574C8.37685 9.37091 8.39055 9.31918 8.41249 9.26763C8.44155 9.19251 8.48871 9.12122 8.55086 9.05907C8.79653 8.8134 9.1961 8.8134 9.44177 9.05907C9.50319 9.12049 9.54852 9.18922 9.57996 9.26855C9.61053 9.34102 9.62465 9.41825 9.62389 9.49592C9.62394 9.49696 9.62452 9.4978 9.62456 9.49886C9.62458 9.49984 9.62433 9.50078 9.62435 9.50176C9.62431 9.50341 9.62478 9.50504 9.62474 9.50672C9.62968 9.66958 9.56534 9.83044 9.44378 9.95199C9.39748 9.99829 9.34542 10.0362 9.28921 10.0651Z" fill="white"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_600_4865">
+                    <rect width="18" height="18" fill="white" transform="translate(0 0.5)"/>
+                  </clipPath>
+                </defs>
+              </svg>
+            </span>
+            <span class="hero-btn-content" data-i18n="explore_btn">Explore my work</span>
+          </button>
+        </div>
+        <div class="hero-desk-col hero-desk-col-2">
+          <div class="hero-desk-col-2-abs-text" data-i18n="hero_sub">Crafting intuitive, human-first experiences inside complex systems.</div>
+          <div class="badge-product-design">
+            <span class="badge-dot"></span>
+            <span class="badge-text" data-i18n="badge_product">Product Design</span>
+          </div>
+          <div class="badge-ux-strategy">
+            <span class="badge-dot"></span>
+            <span class="badge-text" data-i18n="badge_ux">UI Engineering</span>
+          </div>
+          <div class="badge-ui-engineering">
+            <span class="badge-dot"></span>
+            <span class="badge-text" data-i18n="badge_ui">UX Strategy</span>
+          </div>
+          <div class="badge-design-systems">
+            <span class="badge-dot"></span>
+            <span class="badge-text" data-i18n="badge_design">Design Systems</span>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+
+    <section class="problem-section">
+      <div class="problem-grid">
+        <!-- Column 1 -->
+        <div class="problem-col">
+          <h2 class="problem-title"><span class="custom-highlight coming-soon-font"  style="font-family: 'Coming Soon', cursive !important; font-size: 3.25rem; text-decoration: underline; text-decoration-thickness: 4px; line-height: 3.75rem; font-weight: 500;">Meh</span> <span data-i18n="costs">costs you more than you think</span></h2>
+        </div>
+        <!-- Column 2 -->
+        <div class="problem-col">
+          <p class="problem-stat" data-i18n="problem_stat">88% of users abandon products due to poor user experience — poor UI UX turns potential market leaders into forgettable failures.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="solution-section">
+      <div class="solution-header-row" style="display:flex; align-items:end; justify-content:space-between;">
+        <h2 class="solution-title" style="margin-bottom:0;" data-i18n="solution_title">Here’s How I make<br> Products Win</h2>
+        <div class="carousel-arrows-group">
+          <button class="carousel-arrow carousel-arrow-left" aria-label="Previous slide" data-i18n="carousel_prev">&#8592;</button>
+          <button class="carousel-arrow carousel-arrow-right" aria-label="Next slide" data-i18n="carousel_next">&#8594;</button>
+        </div>
+      </div>
+      <div class="carousel">
+        <div class="carousel-track">
+          <div class="carousel-slide active" style="background:#191919; color:#fff;">
+            <div class="carousel-slide-grid" style="display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 32px;">
+              <div>
+                <h3 class="carousel-slide-title" data-i18n="story_title">STORYTELLING<br> FIRST</h3>
+                <p class="carousel-slide-desc" data-i18n="story_desc">I design story-first interactions that guide people effortlessly across product, web, and mobile—building emotional resonance that lasts beyond the session. From journey mapping and microcopy to motion and component systems, your brand voice becomes tangible. Make your product memorable and conversion-ready — hire a brand experience designer for cross-platform products.
+
+                </p>
+              </div>
+              <div style="text-align:center;">
+                <img src="Image/Story-telling.svg" alt="Storytelling Illustration" style="max-width:100%; height:auto;">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-slide" style="background:#DEFE94; color:#191919;">
+            <div class="carousel-slide-grid" style="display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 32px;">
+              <div>
+                <h3 class="carousel-slide-title" data-i18n="conversion_title">CONVERSION<br> FOCUSED</h3>
+                <p class="carousel-slide-desc" data-i18n="conversion_desc">I design for outcomes, not aesthetics—choose a conversion-first UI UX design service to lift signups, activation, and revenue, with every decision measured against clear funnel metrics.
+           </p>
+              </div>
+              <div style="text-align:center;">
+                <img src="Image/Conversion.svg" alt="Conversion Focused Illustration" style="max-width:100%; height:auto;">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-slide" style="background:#191919; color:white;">
+            <div class="carousel-slide-grid" style="display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 32px;">
+              <div>
+                <h3 class="carousel-slide-title" data-i18n="endtoend_title">END TO END<br> EXECUTION</h3>
+                <p class="carousel-slide-desc" data-i18n="endtoend_desc">From research and strategy through design, development, and testing, I run the full product cycle to drive growth—an end-to-end UI UX design and development service focused on conversion, retention, and measurable impact.
+                </p>
+              </div>
+              <div style="text-align:center;">
+                <img src="Image/End to end.svg" alt="End to End Execution Illustration" style="max-width:100%; height:auto;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="solution-link" data-i18n="know_about"><u>Know about me</u> <span style="font-size:0.9em;">&#8594;</span></a>
+    </section>
+   <section class="testimonial-section">
+      <div class="testimonial-header">
+        <div class="testimonial-label" data-i18n="testimonial_label">Client Testimonial</div>
+        <h2 class="testimonial-title" data-i18n="testimonial_title">What They Say?</h2>
+      </div>
+      <div class="testimonial-cards-row">
+        <div class="testimonial-card testimonial-card-green">
+          <div class="testimonial-stars">★★★★★</div>
+          <div class="testimonial-quote" data-i18n="testimonial_1">BNP didn't just help me write a book—they helped me find my voice. I've never felt more seen or more confident in my story."</div>
+          <div class="testimonial-user-row">
+            <div class="testimonial-avatar" style="background-image:url('Image/neha-avatar.png');"></div>
+            <div>
+              <div class="testimonial-user-name" data-i18n="testimonial_1_name">Neha D.</div>
+              <div class="testimonial-user-role" data-i18n="testimonial_1_role">Wellness Coach</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card testimonial-card-pink">
+          <div class="testimonial-stars">★★★★★</div>
+          <div class="testimonial-quote" data-i18n="testimonial_2">From scattered notes to a professionally written book in 30 days. The team made the entire process smooth, sharp, and stress-free</div>
+          <div class="testimonial-user-row">
+            <div class="testimonial-avatar" style="background-image:url('Image/jay-avatar.png');"></div>
+            <div>
+              <div class="testimonial-user-name" data-i18n="testimonial_2_name">Jay K.</div>
+              <div class="testimonial-user-role" data-i18n="testimonial_2_role">Startup Founder</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card testimonial-card-white">
+          <div class="testimonial-stars">★★★★★</div>
+          <div class="testimonial-quote" data-i18n="testimonial_3">I never imagined I'd see my story in a book—let alone feel proud of it. I was overwhelmed, unsure, and had no idea where to begin. But British Noble Press listened to me, really listened, and turned my messy voice notes into something powerful and personal.</div>
+          <div class="testimonial-user-row">
+            <div class="testimonial-avatar" style="background-image:url('Image/fatima-avatar.png');"></div>
+            <div>
+              <div class="testimonial-user-name" data-i18n="testimonial_3_name">Fatima S.</div>
+              <div class="testimonial-user-role" data-i18n="testimonial_3_role">Business Consultant, UAE</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="faq-section">
+      <div class="faq-container">
+        <div class="faq-header">
+          <h2 class="faq-main-title" data-i18n="faq_title">Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-grid">
+        
+          <div class="faq-answers">
+            <div class="faq-item">
+              <h3 class="faq-question" data-i18n="faq_q1">What exactly do you deliver, start to finish?</h3>
+              <p class="faq-answer" data-i18n="faq_a1">I deliver an end-to-end UI UX research, design, front-end development, and testing service from discovery to launch. Hire a remote UI UX designer and front-end developer for a conversion-focused, measurable release.</p>
+            </div>
+            <div class="faq-item">
+              <h3 class="faq-question" data-i18n="faq_q2">Can you help us launch fast from Figma?</h3>
+              <p class="faq-answer" data-i18n="faq_a2">Yes—launch-ready Figma to Webflow or Framer implementation with pixel accuracy, CMS, and analytics. Book a conversion-first build that ships fast for teams in Europe, USA, Canada, Singapore, and Hong Kong.</p>
+            </div>
+            <div class="faq-item">
+              <h3 class="faq-question" data-i18n="faq_q3">How do you improve conversion, activation, and retention?</h3>
+              <p class="faq-answer" data-i18n="faq_a3">I run experiment-driven UI UX for conversion optimization across signup, onboarding, and paywall/checkout. Expect prioritized A/B tests and onboarding optimization to lift activation and reduce churn.</p>
+            </div>
+            <div class="faq-item">
+              <h3 class="faq-question" data-i18n="faq_q4">Do you cover accessibility and performance?</h3>
+              <p class="faq-answer" data-i18n="faq_a4">Yes—accessibility-first UI UX to meet WCAG AA with semantic structure, ARIA, and keyboard flows. I pair this with Core Web Vitals optimization for speed, SEO, and better mobile conversion.</p>
+            </div>
+            <div class="faq-item">
+              <h3 class="faq-question" data-i18n="faq_q5">How do pricing and engagement models work?</h3>
+              <p class="faq-answer" data-i18n="faq_a5">Choose fixed-scope productized design packages, a monthly design subscription, or a fractional product designer model. All options keep velocity high, costs predictable, and roadmaps outcome-driven.</p>
+            </div>
+            <div class="faq-item">
+              <h3 class="faq-question" data-i18n="faq_q6">Which industries and regions do you work with?</h3>
+              <p class="faq-answer" data-i18n="faq_a6">I partner with SaaS, e-commerce, fintech, healthcare, education, and internal tools. Hire a remote UI UX designer for global teams with time-zone friendly collaboration across Europe, USA, Canada, Singapore, and Hong Kong.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <section class="pricing-section">
+ 
+        <div class="pricing-header">
+          <div class="pricing-label" data-i18n="pricing_label">Pricing</div>
+          <h2 class="pricing-title" data-i18n="pricing_title">Membership <span class="pricing-title-italic" data-i18n="pricing_italic">pricing</span></h2>
+          <p class="pricing-desc" data-i18n="pricing_desc">Invest in design that drives your business.<br>Clear, straightforward plans tailored to your needs.</p>
+        </div>
+        <div class="pricing-cards">
+          <!-- Standard Plan -->
+          <div class="pricing-card">
+            <div class="pricing-card-header">
+              <div class="pricing-card-title" data-i18n="pricing_standard">Standard</div>
+              <div class="pricing-card-subtitle" data-i18n="pricing_standard_sub">Transform your existing design into a conversion machine.</div>
+              <div class="pricing-card-price" data-i18n="pricing_standard_price">$849</div>
+              <div class="pricing-card-note" data-i18n="pricing_standard_note">One Time. 50% advance, 50% on delivery</div>
+              <button class="pricing-card-btn" data-i18n="pricing_standard_btn">Subscribe today</button>
+              <a href="#" class="pricing-card-link" data-i18n="pricing_standard_link">Book a call</a>
+            </div>
+            <ul class="pricing-card-features">
+                <li data-i18n="pricing_standard_f1">Complete UX audit with actionable insights</li>
+                <li data-i18n="pricing_standard_f2">Strategic redesign of your existing interface</li>
+                <li data-i18n="pricing_standard_f3">Figma files with developer-ready specifications</li>
+                <li data-i18n="pricing_standard_f4">2-3 day delivery per request</li>
+                <li data-i18n="pricing_standard_f5">Up to 2 revisions per project</li>
+                <li data-i18n="pricing_standard_f6">Slack/Trello project management</li>
+                <li data-i18n="pricing_standard_f7">Pause or cancel anytime</li>
+              </ul>
+              <div class="pricing-card-services">
+                <span data-i18n="pricing_standard_s1">SaaS</span>
+                <span data-i18n="pricing_standard_s2">Redesign</span>
+                <span data-i18n="pricing_standard_s3">Optimization</span>
+              </div>
+          </div>
+          <!-- Pro Plan -->
+          <div class="pricing-card pricing-card-pro">
+            <div class="pricing-card-header">
+              <div class="pricing-card-title" data-i18n="pricing_pro">Pro <span class="pricing-card-popular" data-i18n="pricing_popular">Popular</span></div>
+              <div class="pricing-card-subtitle" data-i18n="pricing_pro_sub">Build your brand from the ground up with cohesive, scalable design.</div>
+              <div class="pricing-card-price" data-i18n="pricing_pro_price">$1,449</div>
+              <div class="pricing-card-note" data-i18n="pricing_pro_note">One Time. 50% advance, 50% on delivery</div>
+              <button class="pricing-card-btn" data-i18n="pricing_pro_btn">Subscribe today</button>
+              <a href="#" class="pricing-card-link" data-i18n="pricing_pro_link">Book a call</a>
+            </div>
+            <ul class="pricing-card-features">
+              <li data-i18n="pricing_pro_f1">Complete brand identity development</li>
+              <li data-i18n="pricing_pro_f2">Comprehensive design system creation</li>
+              <li data-i18n="pricing_pro_f3">UI/UX design for web and mobile</li>
+              <li data-i18n="pricing_pro_f4">Up to 4 revisions per project</li>
+              <li data-i18n="pricing_pro_f5">Priority 2-3 day turnaround</li>
+              <li data-i18n="pricing_pro_f6">Advanced prototyping and user flows</li>
+              <li data-i18n="pricing_pro_f7">Brand guidelines documentation</li>
+            </ul>
+            <div class="pricing-card-services">
+              <span data-i18n="pricing_pro_s1">Scaling</span>
+              <span data-i18n="pricing_pro_s2">Stand Out</span>
+              <span data-i18n="pricing_pro_s3">Branding</span>
+            </div>
+          </div>
+          <!-- Project-Based Plan -->
+          <div class="pricing-card pricing-card-project">
+            <div class="pricing-card-header">
+              <div class="pricing-card-title" data-i18n="pricing_project">Project-Based</div>
+              <div class="pricing-card-subtitle" data-i18n="pricing_project_sub">Custom design and development for your unique vision.</div>
+              <div class="pricing-card-price" data-i18n="pricing_project_price">from $2,499</div>
+              <div class="pricing-card-note" data-i18n="pricing_project_note">One Time. 50% advance, 50% on delivery</div>
+              <button class="pricing-card-btn" data-i18n="pricing_project_btn">Request quote</button>
+              <a href="#" class="pricing-card-link" data-i18n="pricing_project_link">Book a call</a>
+            </div>
+            <ul class="pricing-card-features">
+              <li data-i18n="pricing_project_f1">Custom project scope and timeline</li>
+              <li data-i18n="pricing_project_f2">Complete brand and UI/UX design</li>
+              <li data-i18n="pricing_project_f3">Frontend development and implementation</li>
+              <li data-i18n="pricing_project_f4">Responsive, performance-optimized code</li>
+              <li data-i18n="pricing_project_f5">Unlimited revisions during development</li>
+              <li data-i18n="pricing_project_f6">Quality assurance and testing</li>
+              <li data-i18n="pricing_project_f7">3 months post-launch support</li>
+            </ul>
+            <div class="pricing-card-services">
+              <span data-i18n="pricing_project_s1">Designing</span>
+              <span data-i18n="pricing_project_s2">Development</span>
+              <span data-i18n="pricing_project_s3">Launch</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      </section>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        if (document.fonts) {
+          document.fonts.load('1em "Coming Soon"').then(function(fonts) {
+            var mehSpan = document.querySelector('.custom-highlight.coming-soon-font');
+            if (!fonts.length && mehSpan) {
+              mehSpan.style.background = '#fff700';
+              mehSpan.style.color = '#191919';
+              mehSpan.title = 'Coming Soon font failed to load';
+              mehSpan.setAttribute('aria-label', 'Meh (font failed to load)');
+            }
+          });
+        }
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Draggable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/MotionPathPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/SplitText.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Flip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/EaselPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/PixiPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/CSSRulePlugin.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/EaselPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/PixiPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/CSSRulePlugin.min.js"></script>
+  <script src="navbar-responsive.js"></script>
+  <script src="script.js"></script>
+  <script src="navbar.js"></script>
+  <script src="carousel.js"></script>
+  <script src="localization.js"></script>
+      <footer class="site-footer">
+        <div class="footer-main">
+          <div class="footer-lead">Leading the next era of work.</div>
+          <div class="footer-links-row">
+            <div class="footer-links-col">
+              <div class="footer-link-icon-group">
+                <span class="footer-icon footer-icon-article"></span>
+                <span class="footer-link-label">Articles</span>
+                <span class="footer-link-arrow">&rarr;</span>
+              </div>
+              <div class="footer-link-icon-group">
+                <span class="footer-icon footer-icon-whitepaper"></span>
+                <span class="footer-link-label">Whitepaper</span>
+                <span class="footer-link-arrow">&rarr;</span>
+              </div>
+            </div>
+            <div class="footer-links-col">
+              <div class="footer-link-icon-group">
+                <span class="footer-icon footer-icon-twitter"></span>
+                <span class="footer-link-label">Twitter</span>
+                <span class="footer-link-ext">&#8599;</span>
+              </div>
+              <div class="footer-link-icon-group">
+                <span class="footer-icon footer-icon-linkedin"></span>
+                <span class="footer-link-label">LinkedIn</span>
+                <span class="footer-link-ext">&#8599;</span>
+              </div>
+            </div>
+            <div class="footer-links-col">
+              <div class="footer-link-icon-group">
+                <span class="footer-icon footer-icon-discord"></span>
+                <span class="footer-link-label">Discord</span>
+                <span class="footer-link-ext">&#8599;</span>
+              </div>
+              <div class="footer-link-icon-group">
+                <span class="footer-icon footer-icon-youtube"></span>
+                <span class="footer-link-label">YouTube</span>
+                <span class="footer-link-ext">&#8599;</span>
+              </div>
+            </div>
+          </div>
+          <hr class="footer-divider">
+          <div class="footer-nav-row">
+            <div class="footer-nav-col">
+              <div class="footer-nav-title">Companies</div>
+              <ul class="footer-nav-list">
+                <li>Why Teamway?</li>
+                <li>Professions</li>
+                <li>How we compare</li>
+                <li>The process</li>
+              </ul>
+            </div>
+            <div class="footer-nav-col">
+              <div class="footer-nav-title">Talent</div>
+              <ul class="footer-nav-list">
+                <li>Why Teamway?</li>
+                <li>How we compare</li>
+                <li>Application process</li>
+                <li>Frequently asked</li>
+              </ul>
+            </div>
+            <div class="footer-nav-col">
+              <div class="footer-nav-title">Society</div>
+              <ul class="footer-nav-list">
+                <li>The new work era</li>
+                <li>TMW Token</li>
+                <li>Roles</li>
+                <li>Whitepaper</li>
+              </ul>
+            </div>
+            <div class="footer-nav-col">
+              <div class="footer-nav-title">General</div>
+              <ul class="footer-nav-list">
+                <li>About</li>
+                <li>Articles</li>
+                <li>F.A.Q.</li>
+                <li>Contact</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-bottom-row">
+            <div class="footer-logo">Teamway</div>
+            <div class="footer-bottom-links">
+              <span>Code of Conduct</span>
+              <span>Privacy Policy</span>
+              <span>Cookie Declaration</span>
+            </div>
+          </div>
+        </div>
+      </footer>
+  </body>
+
+</html>
