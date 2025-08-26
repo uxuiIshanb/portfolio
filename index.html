@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="icon" href="Image/Favicon-1.png" type="image/png">
     <link rel="stylesheet" href="style.css">
     <link rel="preload" href="fonts/ComingSoon-Regular.ttf" as="font" type="font/ttf" crossorigin>
   
@@ -14,7 +15,9 @@
       <!-- Language Switcher -->
       
       <div class="navbar-section navbar-center">
-        <a href="index.html" class="nav-btn nav-copyright" style="text-decoration: none;" data-i18n="copyright">© Code by Ishan</a>
+        <a href="index.html" class="nav-btn nav-copyright" style="text-decoration: none;" data-i18n="copyright">
+          <img src="Image/lumos.svg" alt="LUMOS Logo" style="height:14px; padding:4px; vertical-align:middle;">
+        </a>
       </div>
       <!-- Mobile copyright, visible only below 1280px -->
       <div class="navbar-mobile-copyright">
@@ -69,6 +72,7 @@
     <section class="hero-desk" style="margin-top:32px;">
       <div class="hero-desk-grid">
         <div class="hero-desk-col hero-desk-col-1">
+         
           <h1 class="Title" data-i18n="hero_title">Turning <span class="custom-highlight coming-soon-font" aria-label="Meh in playful font" role="text" style="font-family: 'Coming Soon', cursive !important; font-size: 3.25rem; text-decoration: underline; text-decoration-thickness: 4px; line-height: 3.75rem; font-weight: 500;">"meh"</span> products into Market Leaders</h1>
           <p class="Title para" data-i18n="hero_para">Users abandon confusing products in seconds. Make yours impossible to ignore — hire an accessibility-focused UI UX designer (WCAG).</p>
           <button class="hero-btn" style="margin-bottom:20px;">
@@ -89,6 +93,22 @@
             </span>
             <span class="hero-btn-content" data-i18n="explore_btn">Explore my work</span>
           </button>
+           <div class="hero-promo-banner" style="display:flex;align-items:center;gap:0em;margin-bottom:1.2em;">
+            <span class="hero-promo-icon" style="display:inline-flex;align-items:center;">
+              <svg width="22" height="22" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Gift box icon">
+                <rect x="8" y="24" width="48" height="28" rx="4" fill="#DEFE94" stroke="#191919" stroke-width="2"/>
+                <rect x="24" y="24" width="16" height="28" fill="#fff" stroke="#191919" stroke-width="2"/>
+                <rect x="8" y="24" width="48" height="8" fill="#fff" stroke="#191919" stroke-width="2"/>
+                <path d="M32 24V52" stroke="#191919" stroke-width="2"/>
+                <path d="M16 24C12 18 20 10 32 18C44 10 52 18 48 24" stroke="#191919" stroke-width="2" fill="none"/>
+                <ellipse cx="20" cy="16" rx="4" ry="6" fill="#DEFE94" stroke="#191919" stroke-width="2"/>
+                <ellipse cx="44" cy="16" rx="4" ry="6" fill="#DEFE94" stroke="#191919" stroke-width="2"/>
+              </svg>
+            </span>
+            <span class="hero-promo-text" style="font-size:15px;font-weight:600;color:#191919;padding:0.25em 0.85em;border-radius:1.2em; padding-left: 8px;">
+              <span style="color:#191919;">$400 OFF</span> for first 50 customers <span style="color:#6b6b6b;font-weight:500;">(13 left)</span>
+            </span>
+          </div>
         </div>
         <div class="hero-desk-col hero-desk-col-2">
           <div class="hero-desk-col-2-abs-text" data-i18n="hero_sub">Crafting intuitive, human-first experiences inside complex systems.</div>
@@ -257,7 +277,7 @@
     </section>
 
       <section class="pricing-section">
- 
+        <div class="pricing-header"></div>
         <div class="pricing-header">
           <div class="pricing-label" data-i18n="pricing_label">Pricing</div>
           <h2 class="pricing-title" data-i18n="pricing_title">Membership <span class="pricing-title-italic" data-i18n="pricing_italic">pricing</span></h2>
@@ -269,7 +289,7 @@
             <div class="pricing-card-header">
               <div class="pricing-card-title" data-i18n="pricing_standard">Standard</div>
               <div class="pricing-card-subtitle" data-i18n="pricing_standard_sub">Transform your existing design into a conversion machine.</div>
-              <div class="pricing-card-price" data-i18n="pricing_standard_price">$849</div>
+              <div class="pricing-card-price" data-i18n="pricing_standard_price">$1249</div>
               <div class="pricing-card-note" data-i18n="pricing_standard_note">One Time. 50% advance, 50% on delivery</div>
               <button class="pricing-card-btn" data-i18n="pricing_standard_btn">Subscribe today</button>
               <a href="#" class="pricing-card-link" data-i18n="pricing_standard_link">Book a call</a>
@@ -294,7 +314,7 @@
             <div class="pricing-card-header">
               <div class="pricing-card-title" data-i18n="pricing_pro">Pro <span class="pricing-card-popular" data-i18n="pricing_popular">Popular</span></div>
               <div class="pricing-card-subtitle" data-i18n="pricing_pro_sub">Build your brand from the ground up with cohesive, scalable design.</div>
-              <div class="pricing-card-price" data-i18n="pricing_pro_price">$1,449</div>
+              <div class="pricing-card-price" data-i18n="pricing_pro_price">$1,849</div>
               <div class="pricing-card-note" data-i18n="pricing_pro_note">One Time. 50% advance, 50% on delivery</div>
               <button class="pricing-card-btn" data-i18n="pricing_pro_btn">Subscribe today</button>
               <a href="#" class="pricing-card-link" data-i18n="pricing_pro_link">Book a call</a>
@@ -319,7 +339,7 @@
             <div class="pricing-card-header">
               <div class="pricing-card-title" data-i18n="pricing_project">Project-Based</div>
               <div class="pricing-card-subtitle" data-i18n="pricing_project_sub">Custom design and development for your unique vision.</div>
-              <div class="pricing-card-price" data-i18n="pricing_project_price">from $2,499</div>
+              <div class="pricing-card-price" data-i18n="pricing_project_price">from $2,899</div>
               <div class="pricing-card-note" data-i18n="pricing_project_note">One Time. 50% advance, 50% on delivery</div>
               <button class="pricing-card-btn" data-i18n="pricing_project_btn">Request quote</button>
               <a href="#" class="pricing-card-link" data-i18n="pricing_project_link">Book a call</a>
@@ -380,24 +400,28 @@
   <script src="localization.js"></script>
       <footer class="site-footer">
         <div class="footer-main">
-          <div class="footer-lead">Leading the next era of work.</div>
+          <div class="footer-lead">Crafting User Centric Experiences For Businesses.</div>
           <div class="footer-links-row">
             <div class="footer-links-col">
               <div class="footer-link-icon-group">
                 <span class="footer-icon footer-icon-article"></span>
-                <span class="footer-link-label">Articles</span>
+                <i class="fa-brands fa-linkedin" aria-hidden="true" style="font-size:20px;vertical-align:middle;"></i>
+                <span class="footer-link-label">LinkedIn</span>
                 <span class="footer-link-arrow">&rarr;</span>
               </div>
               <div class="footer-link-icon-group">
                 <span class="footer-icon footer-icon-whitepaper"></span>
-                <span class="footer-link-label">Whitepaper</span>
+                <i class="fa-brands fa-x-twitter" aria-hidden="true" style="font-size:20px;vertical-align:middle;"></i>
+                <span class="footer-link-label">X</span>
                 <span class="footer-link-arrow">&rarr;</span>
               </div>
             </div>
             <div class="footer-links-col">
               <div class="footer-link-icon-group">
-                <span class="footer-icon footer-icon-twitter"></span>
-                <span class="footer-link-label">Twitter</span>
+                <span class="footer-icon"></span>
+                  <i class="fa fa-envelope" aria-hidden="true" style="font-size:20px;vertical-align:middle;"></i>
+                </span>
+                <span class="footer-link-label">Mail</span>
                 <span class="footer-link-ext">&#8599;</span>
               </div>
               <div class="footer-link-icon-group">
@@ -423,43 +447,47 @@
           <div class="footer-nav-row">
             <div class="footer-nav-col">
               <div class="footer-nav-title">Companies</div>
-              <ul class="footer-nav-list">
-                <li>Why Teamway?</li>
-                <li>Professions</li>
-                <li>How we compare</li>
-                <li>The process</li>
+              <ul class="footer-nav-list" style="list-style:none; padding:0;">
+                <li><a href="#" class="footer-link" style="color:#fff; text-decoration:none;">Why Teamway?</a></li>
+                <li><a href="#" class="footer-link" style="color:#fff; text-decoration:none;">Professions</a></li>
+                <li><a href="#" class="footer-link" style="color:#fff; text-decoration:none;">How we compare</a></li>
+                <li><a href="#" class="footer-link" style="color:#fff; text-decoration:none;">The process</a></li>
               </ul>
-            </div>
-            <div class="footer-nav-col">
-              <div class="footer-nav-title">Talent</div>
-              <ul class="footer-nav-list">
-                <li>Why Teamway?</li>
-                <li>How we compare</li>
-                <li>Application process</li>
-                <li>Frequently asked</li>
-              </ul>
-            </div>
-            <div class="footer-nav-col">
-              <div class="footer-nav-title">Society</div>
-              <ul class="footer-nav-list">
-                <li>The new work era</li>
-                <li>TMW Token</li>
-                <li>Roles</li>
-                <li>Whitepaper</li>
-              </ul>
-            </div>
-            <div class="footer-nav-col">
-              <div class="footer-nav-title">General</div>
-              <ul class="footer-nav-list">
-                <li>About</li>
-                <li>Articles</li>
-                <li>F.A.Q.</li>
-                <li>Contact</li>
+              </div>
+              <div class="footer-nav-col">
+                <div class="footer-nav-title">Talent</div>
+                <ul class="footer-nav-list" style="list-style:none; padding:0;">
+                  <li><a href="#" class="footer-link" style="color:#fff; text-decoration:none;">Why Teamway?</a></li>
+                  <li><a href="#" class="footer-link" style="color:#fff; text-decoration:none;">How we compare</a></li>
+                  <li><a href="#" class="footer-link" style="color:#fff; text-decoration:none;">Application process</a></li>
+                  <li><a href="#" class="footer-link" style="color:#fff; text-decoration:none;">Frequently asked</a></li>
+                </ul>
+              </div>
+              <div class="footer-nav-col">
+                <div class="footer-nav-title">Society</div>
+                <ul class="footer-nav-list" style="list-style:none; padding:0;">
+                  <li><a href="#" class="footer-link" style="color:#fff; text-decoration:none;">The new work era</a></li>
+                  <li><a href="#" class="footer-link" style="color:#fff; text-decoration:none;">TMW Token</a></li>
+                  <li><a href="#" class="footer-link" style="color:#fff; text-decoration:none;">Roles</a></li>
+                  <li><a href="#" class="footer-link" style="color:#fff; text-decoration:none;">Whitepaper</a></li>
+                </ul>
+              </div>
+              <div class="footer-nav-col">
+                <div class="footer-nav-title">General</div>
+                <ul class="footer-nav-list" style="list-style:none; padding:0;">
+                  <li><a href="About.html" class="footer-link" style="color:#fff; text-decoration:none;">About me</a></li>
+                  <li><a href="#" class="footer-link" style="color:#fff; text-decoration:none;">Why me?</a></li>
+                  <li><a href="#" class="footer-link" style="color:#fff; text-decoration:none;">F.A.Q.</a></li>
+                  <li><a href="contact.html" class="footer-link" style="color:#fff; text-decoration:none;">Contact</a></li>
+                </ul>
+              </div>
               </ul>
             </div>
           </div>
           <div class="footer-bottom-row">
-            <div class="footer-logo">Teamway</div>
+            <div class="footer-logo">
+              <img src="Image/lumos.svg" alt="LUMOS Logo" style="height:32px; filter:invert(1);">
+            </div></div>
             <div class="footer-bottom-links">
               <span>Code of Conduct</span>
               <span>Privacy Policy</span>
