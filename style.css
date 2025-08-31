@@ -1,3 +1,10 @@
+@media (max-width: 767px) {
+  .footer-logo-nav-row{
+    flex-direction: column !important;
+    
+  }
+}
+
 .dev-credit-block {
   position: fixed;
   bottom: 30px;
@@ -483,11 +490,12 @@
   display: flex;
   gap:120px;
  }
-  /* Added: Footer logo + nav grid row */
+  
   .footer-logo-nav-row {
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
+    flex-direction:row;
   }
   .footer-logo-nav-row .footer-logo { grid-column: auto; }
   .footer-logo-nav-row .footer-logo img { max-width: 140px; height: 40px; object-fit: contain; }
@@ -499,12 +507,6 @@
   align-items: center;
   gap: 60px;
 
-
-  }
-
-  @media (max-width: 900px) {
-    .footer-logo-nav-row { grid-template-columns: 1fr; }
-    .footer-logo-nav-row .footer-logo { grid-column: auto; margin-bottom: 1.5rem; }
 
   }
 
@@ -3929,3 +3931,5 @@ body {
     gap: 1.5rem;
   }
 }
+
+
