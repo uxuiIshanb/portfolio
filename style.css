@@ -636,12 +636,7 @@
   z-index: 1001;
   overflow-y: auto;
 }
-.navbar-mobile-menu-content {
-  display: flex;
-  flex-direction: column;
-  padding: 7rem 2rem;
-  gap: 4rem;
-}
+
 @media (max-width: 1280px) {
   .footer-menu {
     flex-direction: column !important;
@@ -698,12 +693,6 @@
   transition: all 0.3s;
 }
 
-.navbar-mobile-menu-content {
-  display: flex;
-  flex-direction: column;
-  padding: 7rem 2rem;
-  gap: 5rem;
-}
 @media (max-width: 1280px) {
   .calendly-badge-widget {
     bottom:60px; 
@@ -2002,12 +1991,7 @@ body {
   transition: all 0.3s;
 }
 
-.navbar-mobile-menu-content {
-  display: flex;
-  flex-direction: column;
-  padding: 7rem 2rem;
-  gap: 4rem;
-}
+
 
 @media (max-width: 1279px) {
   .navbar-section {
@@ -2073,7 +2057,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 7rem 2rem;
-  gap: 5rem;
+  gap: 3rem;
 }
 
 
@@ -3337,12 +3321,7 @@ body {
   transition: all 0.3s;
 }
 
-.navbar-mobile-menu-content {
-  display: flex;
-  flex-direction: column;
-  padding: 7rem 2rem;
-  gap: 4rem;
-}
+
 
 @media (max-width: 1279px) {
   .navbar-section {
@@ -3398,12 +3377,7 @@ body {
   transition: all 0.3s;
 }
 
-.navbar-mobile-menu-content {
-  display: flex;
-  flex-direction: column;
-  padding: 7rem 2rem;
-  gap: 5rem;
-}
+
 .nav-mobile-item {
   font-size: 2rem;
   font-weight: 500;
@@ -3482,12 +3456,7 @@ body {
   border-radius: 2px;
   transition: all 0.3s;
 }
-.navbar-mobile-menu-content {
-  display: flex;
-  flex-direction: column;
-  padding: 7rem 2rem;
-  gap: 5rem;
-}
+
 
 .footer-link {
   color: #fff;
