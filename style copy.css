@@ -1032,7 +1032,14 @@ body {
   border-radius: 28px;
 }
 
-
+.Title {
+  font-family: 'Aeonik', sans-serif;
+  font-size: 3.5rem; /* 56px */
+  line-height: 3.75rem;
+  font-weight: 500;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
 .Title.para {
   font-size: 1.125rem; /* 18px */
   font-weight: 500;
@@ -2422,7 +2429,12 @@ body {
   margin-bottom: 0px;
   margin-top: 0px;
 }
-
+.Title.para {
+  font-size: 1.125rem; /* 18px */
+  font-weight: 500;
+  line-height: 26px;
+  margin-top: 12px;
+}
 
 .hero-btn {
 	background: #191919;
@@ -2534,7 +2546,6 @@ body {
   font-weight: inherit;
   color: inherit;
 }
-
 
 .navbar-section {
   display: flex;
@@ -3772,160 +3783,193 @@ body {
   color: #111;
   line-height: 22px; /* font-size: 12px (default), so 12+10=22px */
 }
-/* === Accessibility & Readability Enhancements (ADDED ONLY; no removals) ===
-   Goal: Improve legibility & tap targets below 1280px (fonts too small on mobile/tablet).
-   Strategy: Larger base font, balanced heading scale, remove constrained hero height,
-             ensure sufficient line-height & spacing, preserve hierarchy.
-   Breakpoints refined: 1279px, 979px, 767px, 480px.
-========================================================================== */
+/* === Responsive overrides (APPENDED ONLY; no removals above) ===
+   Breakpoints: 1280px, 979px, 767px, 480px
+   Converted critical vw-based spacing & positioned elements to rem/px for better tablet/mobile rendering.
+   NOTE: Specificity kept low; later rules win.
+=============================================================== */
 
-/* Shared utility (can be reused) */
-.accessible-max-width {
-  max-width: 72ch;
-}
-
-/* <=1279px: Large tablets / small laptops */
-@media (max-width:1279px){
-  body{
-    font-size:17px;
-    line-height:1.55;
+/* <=1280px (large tablets / small laptops) */
+@media (max-width:1280px){
+  .hero-desk{
+    padding-left:2.5rem;
+    padding-right:2.5rem;
   }
   .hero-desk-col.hero-desk-col-1{
-    height:auto !important;
-    padding-top:3.5rem;
-    padding-bottom:3.75rem;
+    min-height:560px;
+    padding-left:2.5rem;
+    padding-right:2.5rem;
   }
-  .Title{
-    line-height:1.12 !important;
-  }
-  .custom-highlight{
-    font-size:3.35rem !important;
-    line-height:1.15 !important;
-  }
-  .Title.para{
-    font-size:1.2rem;
-    line-height:1.6;
-    max-width:64ch;
-  }
-  .hero-btn{
-    font-size:1.15rem;
-    padding:18px 40px;
-    min-height:56px;
-  }
-  .hero-btn span{ font-size:1.15rem; }
-  .problem-title{ font-size:3rem !important; line-height:1.15 !important; }
-  .problem-stat{ font-size:2.15rem !important; line-height:1.25; }
+  .Title{font-size:3rem; line-height:3.25rem;}
+  .problem-title,
   .solution-title,
-  .case-study-title{ font-size:3rem !important; line-height:1.15; }
-  .carousel-slide{ padding:2.75rem 2.5rem; }
-  .carousel-slide-desc{ font-size:1.25rem; line-height:1.55; }
-  .pricing-title{ font-size:3rem !important; }
-  .faq-main-title{ font-size:2.75rem; }
-  .case-failed-title{ font-size:3.1rem !important; }
-  .footer-lead{ font-size:2.25rem; line-height:1.25; max-width:38ch; }
+  .case-study-title{font-size:2.85rem; line-height:1.15;}
+  .carousel-slide{padding:2.5rem;}
+  /* Replace vw badge positioning with fixed offsets */
+  .badge-product-design{top:90px; right:160px;}
+  .badge-ux-strategy{top:150px; left:110px;}
+  .badge-ui-engineering{top:300px; left:100px;}
+  .badge-design-systems{top:250px; right:130px;}
+  .hero-desk-col.hero-desk-col-2{background-position:center;}
+  .pricing-title{font-size:2.75rem;}
+  .case-failed-title{font-size:3rem;}
 }
 
-/* <=979px: Portrait tablets */
+/* <=979px (portrait tablets) */
 @media (max-width:979px){
-  body{ font-size:17px; }
-  .hero-desk{ margin-bottom:3.5rem; }
-  .Title{ font-size:3rem !important; }
-  .custom-highlight{ font-size:3.1rem !important; }
-  .Title.para{ font-size:1.15rem; }
-  .hero-btn{ font-size:1.1rem; padding:18px 38px; }
-  .problem-section{ padding:4.5rem 2rem; }
-  .problem-title{ font-size:2.75rem !important; }
-  .problem-stat{ font-size:1.95rem !important; }
-  .solution-section{ padding:4.25rem 2rem; }
-  .solution-title{ font-size:2.75rem !important; }
-  .carousel-slide{ padding:2.25rem 2rem; }
-  .carousel-slide-title{ font-size:2.15rem; }
-  .carousel-slide-desc{ font-size:1.18rem; }
-  .pricing-section{ padding:3rem 2rem; }
-  .pricing-title{ font-size:2.75rem !important; }
-  .faq-main-title{ font-size:2.5rem; }
-  .case-failed-title{ font-size:2.6rem !important; }
-  .case-barrier-title{ font-size:1.6rem !important; }
+  .hero-desk{
+    padding-left:2rem;
+    padding-right:2rem;
+    margin-bottom:4rem;
+  }
+  .hero-desk-grid{
+    grid-template-columns:1fr;
+    gap:2rem;
+  }
+  .hero-desk-col.hero-desk-col-1{
+    height:auto;
+    min-height:520px;
+    padding:2.25rem 2rem 3rem;
+  }
+  .hero-desk-col.hero-desk-col-2{
+    min-height:380px;
+    border-radius:24px;
+  }
+  .Title{font-size:2.65rem; line-height:3rem;}
+  .custom-highlight{font-size:2.75rem; line-height:3rem;}
+  .problem-grid{gap:2.5rem;}
+  .problem-title{font-size:2.6rem; line-height:3rem;}
+  .problem-stat{font-size:1.75rem;}
+  .solution-section{padding:4rem 2rem;}
+  .solution-title{font-size:2.6rem;}
+  .carousel-slide{padding:2rem;}
+  .badge-product-design,
+  .badge-ux-strategy,
+  .badge-ui-engineering,
+  .badge-design-systems{
+    position:static;
+    margin:0.5rem 0.5rem 0 0;
+    display:inline-flex;
+  }
+  .hero-desk-col.hero-desk-col-2{
+    display:flex;
+    flex-wrap:wrap;
+    align-content:flex-start;
+    padding:1.25rem 1.25rem 2rem;
+  }
+  .hero-desk-col-2-abs-text{
+    position:static;
+    padding:1rem 0 0;
+    max-width:100%;
+  }
+  .pricing-section{padding:2.5rem 2rem; border-radius:24px;}
+  .pricing-title{font-size:2.5rem;}
+  .pricing-card{padding:2rem 1.5rem 1.75rem;}
+  .faq-section{padding:4rem 2rem;}
+  .case-study-section,
+  .case-block,
+  .problem-section{padding-left:2rem; padding-right:2rem;}
+  .case-block{grid-template-columns:1fr; gap:2rem;}
+  .case-failed-grid{grid-template-columns:1fr; gap:1.5rem;}
+  .case-failed-title{font-size:2.5rem;}
+  .case-barrier-title{font-size:1.75rem;}
+  .site-footer{padding-left:2rem; padding-right:2rem;}
+  .footer-logo-nav-row{
+    flex-direction:column;
+    gap:2rem;
+    align-items:flex-start;
+  }
+  .footer-menu{gap:3rem;}
+  .compare-plans{padding:32px 28px;}
+  .compare-title{font-size:24px; line-height:32px;}
 }
 
-/* <=767px: Large phones / small tablets */
+/* <=767px (large phones / small tablets) */
 @media (max-width:767px){
-  body{ font-size:16.5px; }
-  .hero-desk{ margin-bottom:3.25rem; }
+  .hero-desk{padding-left:1.5rem; padding-right:1.5rem;}
   .hero-desk-col.hero-desk-col-1{
-    padding-top:2.5rem;
-    padding-bottom:3rem;
+    padding:2rem 1.5rem 2.75rem;
+    border-radius:24px;
   }
-  .Title{ font-size:2.55rem !important; line-height:1.18 !important; }
-  .custom-highlight{ font-size:2.65rem !important; }
-  .Title.para{ font-size:1.1rem; }
-  .hero-btn{ width:auto; font-size:1.05rem; padding:16px 32px; }
-  .problem-section{ padding:4rem 1.5rem; }
-  .problem-title{ font-size:2.4rem !important; }
-  .problem-stat{ font-size:1.7rem !important; }
-  .solution-section{ padding:3.75rem 1.5rem; }
-  .solution-title{ font-size:2.4rem !important; }
-  .carousel-slide{ padding:1.9rem 1.6rem; }
-  .carousel-slide-title{ font-size:2rem; }
-  .carousel-slide-desc{ font-size:1.12rem; }
-  .pricing-section{ padding:2.75rem 1.5rem; }
-  .pricing-title{ font-size:2.4rem !important; }
-  .pricing-card{ padding:2rem 1.6rem 1.75rem; }
-  .faq-section{ padding:3.75rem 1.5rem; }
-  .faq-main-title{ font-size:2.2rem; }
-  .case-study-title{ font-size:2.55rem !important; }
-  .case-failed-title{ font-size:2.25rem !important; }
-  .footer-lead{ font-size:1.85rem; }
+  .hero-desk-col.hero-desk-col-2{
+    min-height:300px;
+    border-radius:24px;
+  }
+  .Title{font-size:2.35rem; line-height:2.7rem;}
+  .custom-highlight{font-size:2.4rem; line-height:2.7rem;}
+  .hero-btn{margin-top:2.5rem; padding:14px 26px; font-size:1rem;}
+  .problem-section{padding:4rem 1.5rem;}
+  .problem-title{font-size:2.25rem; line-height:2.6rem;}
+  .problem-stat{font-size:1.55rem;}
+  .solution-section{padding:3.5rem 1.5rem;}
+  .solution-title{font-size:2.25rem;}
+  .carousel-slide{padding:1.75rem 1.5rem; margin-bottom:24px;}
+  .carousel-arrows-group{padding-right:0;}
+  .pricing-section{padding:2.25rem 1.5rem;}
+  .pricing-title{font-size:2.25rem;}
+  .pricing-card{flex:1 1 100%; max-width:100%; padding:1.75rem 1.5rem;}
+  .faq-section{padding:3.5rem 1.5rem;}
+  .faq-main-title{font-size:2.1rem; margin-bottom:2.5rem;}
+  .case-study-title{font-size:2.4rem;}
+  .case-failed-title{font-size:2.1rem;}
+  .case-barrier-title{font-size:1.45rem;}
+  .case-barrier-desc{font-size:1rem; line-height:1.55rem;}
+  .site-footer{padding:4rem 1.5rem 2.5rem;}
+  .footer-lead{font-size:1.65rem;}
+  .footer-nav-row{flex-wrap:wrap; gap:2rem;}
+  .footer-nav-col{min-width:45%;}
+  .footer-bottom-row{flex-direction:column; gap:1.25rem; align-items:flex-start;}
+  .compare-plans{padding:28px 22px;}
+  .compare-title{font-size:22px; line-height:30px;}
+  .compare-th{font-size:14px; padding:14px;}
+  .compare-td{padding:14px;}
+  .compare-row-title{padding:14px;}
 }
 
-/* <=480px: Small phones */
+/* <=480px (small phones) */
 @media (max-width:480px){
-  body{ font-size:16px; line-height:1.55; }
-  .hero-desk{ margin-bottom:3rem; }
+  .hero-desk{padding-left:1.125rem; padding-right:1.125rem; margin-bottom:4rem;}
   .hero-desk-col.hero-desk-col-1{
-    padding:2rem 1.125rem 2.25rem;
+    padding:1.75rem 1.125rem 2.25rem;
+    min-height:auto;
   }
-  .Title{ font-size:2.3rem !important; line-height:1.18 !important; }
-  .custom-highlight{ font-size:2.4rem !important; }
-  .Title.para{ font-size:1.05rem; }
-  .hero-btn{ font-size:1.02rem; padding:15px 28px; }
-  .problem-section{ padding:3.75rem 1.125rem; }
-  .problem-title{ font-size:2.15rem !important; }
-  .problem-stat{ font-size:1.55rem !important; }
-  .solution-section{ padding:3.5rem 1.125rem; }
-  .solution-title{ font-size:2.15rem !important; }
-  .carousel-slide{ padding:1.6rem 1.2rem; }
-  .carousel-slide-title{ font-size:1.85rem; }
-  .carousel-slide-desc{ font-size:1.08rem; }
-  .pricing-section{ padding:2.5rem 1.125rem; }
-  .pricing-title{ font-size:2.15rem !important; }
-  .faq-section{ padding:3.5rem 1.125rem; }
-  .faq-main-title{ font-size:2rem; }
-  .case-study-title{ font-size:2.3rem !important; }
-  .case-failed-title{ font-size:2rem !important; }
-  .footer-lead{ font-size:1.65rem; }
+  .Title{font-size:2rem; line-height:2.3rem;}
+  .custom-highlight{font-size:2.15rem; line-height:2.35rem; text-decoration-thickness:3px;}
+  .hero-btn{width:100%; justify-content:center; gap:8px; font-size:0.95rem; padding:14px 20px;}
+  .problem-section{padding:3.5rem 1.125rem;}
+  .problem-title{font-size:2rem; line-height:2.3rem;}
+  .problem-stat{font-size:1.4rem;}
+  .solution-section{padding:3.25rem 1.125rem;}
+  .solution-title{font-size:2rem;}
+  .carousel-slide{padding:1.5rem 1.125rem;}
+  .pricing-section{padding:2rem 1.125rem;}
+  .pricing-title{font-size:2rem;}
+  .pricing-card-title{font-size:1.35rem;}
+  .pricing-card-price{font-size:1.75rem;}
+  .faq-section{padding:3.25rem 1.125rem;}
+  .faq-main-title{font-size:1.9rem;}
+  .case-study-title{font-size:2.1rem;}
+  .case-failed-title{font-size:1.9rem;}
+  .case-barrier-title{font-size:1.25rem;}
+  .site-footer{padding:3.5rem 1.125rem 2.25rem; border-radius:28px 28px 0 0;}
+  .footer-nav-col{min-width:100%;}
+  .footer-lead{font-size:1.5rem; margin-bottom:2rem;}
+  .footer-bottom-links, .footer-bottom-row{gap:1rem;}
+  .compare-plans{padding:24px 18px;}
+  .compare-title{font-size:20px; line-height:28px;}
+  .compare-th{font-size:13px; padding:12px;}
+  .compare-td{font-size:13px; padding:12px;}
+  .price-highlight{font-size:13px; padding:5px 8px;}
 }
 
-/* Reduced motion refinement for new larger paddings */
+/* Prefer-reduced-motion: remove big transforms if animation utilities exist */
 @media (prefers-reduced-motion:reduce){
   .hero-btn,
   .carousel-track,
+  .nav-mobile-item,
   .reveal-on-scroll{
-    scroll-behavior:auto;
+    transition:none !important;
+    animation:none
   }
-}
-.carousel-slide-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 2rem;
 }
 
-/* Responsive: 2 rows, 1 column below 1280px */
-@media (max-width: 1280px) {
-  .carousel-slide-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1.5rem;
-  }
-}
