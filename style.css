@@ -774,6 +774,7 @@
   font-size: 1rem;
   color: #6b6b6b;
 }
+
 @media (max-width: 900px) {
   .site-footer {
     padding-left: 1.25rem;
@@ -2135,6 +2136,7 @@ body {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
     padding-top: 3rem;
+    padding-bottom: 10rem;
   }
   .footer-links-row, .footer-nav-row, .footer-bottom-row {
     flex-direction: column;
