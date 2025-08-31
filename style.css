@@ -704,7 +704,16 @@
   padding: 7rem 2rem;
   gap: 5rem;
 }
-
+@media (max-width: 1280px) {
+  .calendly-badge-widget {
+    bottom:60px; 
+  }
+  .footer-links-row, .footer-nav-row, .footer-bottom-row {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+}
 
 .footer-icon-article { background: url('icons/article.svg') center/20px no-repeat #eaeaea; }
 .footer-icon-whitepaper { background: url('icons/whitepaper.svg') center/20px no-repeat #eaeaea; }
