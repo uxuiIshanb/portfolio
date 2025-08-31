@@ -704,14 +704,7 @@
   padding: 7rem 2rem;
   gap: 5rem;
 }
-.nav-mobile-item {
-  font-size: 4rem;
-  font-weight: 500;
-  color: #222;
-  text-decoration: none;
-  opacity: 0;
-  transform: translateY(40px);
-}
+
 
 .footer-icon-article { background: url('icons/article.svg') center/20px no-repeat #eaeaea; }
 .footer-icon-whitepaper { background: url('icons/whitepaper.svg') center/20px no-repeat #eaeaea; }
@@ -3401,7 +3394,7 @@ body {
   gap: 5rem;
 }
 .nav-mobile-item {
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: 500;
   color: #222;
   text-decoration: none;
