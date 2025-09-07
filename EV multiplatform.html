@@ -14,94 +14,85 @@
   <script src="navbar-responsive.js"></script>
 </head>
 <body>
-  <nav class="navbar" data-i18n-section="navbar">
-      <div class="navbar-section navbar-left">
-  <a href="index.html" class="nav-btn nav-home" style="text-decoration: none;" data-i18n="home"><span></span> Home</a>
-  <a href="About.html" class="nav-btn" style="text-decoration: none;" data-i18n="about">About me</a>
-      </div>
-      <!-- Language Switcher -->
-      
-      <div class="navbar-section navbar-center">
-  <a href="index.html" class="nav-btn nav-copyright" style="text-decoration: none;" data-i18n="copyright">© Code by Ishan</a>
-      </div>
-      <!-- Mobile copyright, visible only below 1280px -->
-      <div class="navbar-mobile-copyright">
-  <a href="index.html" class="nav-btn nav-copyright-mobile" style="text-decoration: none;" data-i18n="copyright">© Code by Ishan</a>
-      </div>
-      </div>
-      <div class="navbar-section navbar-right">
-        <div class="nav-dropdown-wrapper">
-          <button class="nav-btn nav-work" id="navWorkBtn" data-i18n="work">
-            <span data-i18n="work">Work</span>
-          </button>
-          <div class="nav-dropdown" id="navWorkDropdown">
-            <a href="EV multiplatform.html" class="nav-dropdown-item" data-i18n="ev">EV Multiplatform</a>
-          </div>
-        </div>
-  <a href="contact.html" class="nav-btn" style="text-decoration: none;" data-i18n="contact">Contact me</a>
-      </div>
-      <!-- Hamburger for mobile -->
-      <button class="navbar-hamburger" id="navbarHamburger" aria-label="Open menu">
-        <!-- Hamburger SVG icon -->
-        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <rect y="6" width="28" height="2.5" rx="1.25" fill="#191919"/>
-          <rect y="13" width="28" height="2.5" rx="1.25" fill="#191919"/>
-          <rect y="20" width="28" height="2.5" rx="1.25" fill="#191919"/>
-        </svg>
+  <nav class="navbar" role="navigation" aria-label="Main Navigation">
+  <div class="navbar-section navbar-left" aria-label="Primary Navigation">
+    <a href="index.html" class="nav-btn nav-home" style="text-decoration: none;" data-i18n="home" aria-label="Go to Testimonials"><span></span>Testimonials</a>
+    <a href="About.html" class="nav-btn" style="text-decoration: none;" data-i18n="about" aria-label="Go to About">About</a>
+  </div>
+  <!-- Language Switcher -->
+  <div class="navbar-section navbar-center" aria-label="Logo Navigation">
+    <a href="index.html" class="nav-btn nav-copyright" style="text-decoration: none;" data-i18n="copyright" aria-label="Go to Home">
+      <img src="Image/Lumos.svg" alt="LUMOS Logo" style="height:14px; padding:4px; vertical-align:middle;">
+    </a>
+  </div>
+  <!-- Mobile copyright, visible only below 1280px -->
+  <div class="navbar-mobile-copyright" aria-label="Mobile Logo Navigation">
+    <a href="index.html" class="nav-btn nav-copyright-mobile" style="text-decoration: none;" data-i18n="copyright" aria-label="Go to Home"> <img src="Image/Lumos.svg" alt="LUMOS Logo" style="height:14px; padding:4px; vertical-align:middle;"></a>
+  </div>
+  <div class="navbar-section navbar-right" aria-label="Secondary Navigation">
+    <div class="nav-dropdown-wrapper" aria-label="Case Studies Dropdown">
+      <button class="nav-btn nav-work" id="navWorkBtn" data-i18n="work" aria-haspopup="true" aria-expanded="false" aria-controls="navWorkDropdown" aria-label="Open Case Studies Dropdown">
+        <span data-i18n="work">Case Studies</span>
       </button>
-      <!-- Mobile menu -->
-      <div class="navbar-mobile-menu" id="navbarMobileMenu">
-        <div class="navbar-mobile-menu-content">
-          <a href="index.html" class="nav-mobile-item" data-i18n="home">Home</a>
-          <a href="About.html" class="nav-mobile-item" data-i18n="about">About me</a>
-          <a href="#" class="nav-mobile-item nav-mobile-work" data-i18n="ev">EV Multiplatform</a>
-          <a href="contact.html" class="nav-mobile-item" data-i18n="contact">Contact me</a>
-        </div>
+      <div class="nav-dropdown" id="navWorkDropdown" aria-label="Case Studies Menu">
+        <a href="EV multiplatform.html" class="nav-dropdown-item" data-i18n="ev" aria-label="Go to EV Multiplatform">EV Multiplatform</a>
       </div>
-    </nav>
-    <div class="navbar-country">
-        <select id="langSwitcher" aria-label="Select language" onchange="setLanguage(this.value)">
-          <option value="en">Eng</option>
-          <option value="de">Deu</option>
-          <option value="fr">Fra</option>
-          <option value="nl">Neds</option>
-          <option value="ar">الع</option>
-          <option value="zh">中文</option>
-          <option value="es">Esp</option>
-        </select>
-      </div>
+    </div>
+    <a href="contact.html" class="nav-btn" style="text-decoration: none;" data-i18n="contact" aria-label="Go to Contact">Contact</a>
+  </div>
+  <!-- Hamburger for mobile -->
+  <button class="navbar-hamburger" id="navbarHamburger" aria-label="Open menu" aria-controls="navbarMobileMenu" aria-expanded="false">
+    <!-- Hamburger SVG icon -->
+    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <rect y="6" width="28" height="2.5" rx="1.25" fill="#191919"/>
+      <rect y="13" width="28" height="2.5" rx="1.25" fill="#191919"/>
+      <rect y="20" width="28" height="2.5" rx="1.25" fill="#191919"/>
+    </svg>
+  </button>
+  <!-- Mobile menu -->
+  <div class="navbar-mobile-menu" id="navbarMobileMenu" aria-label="Mobile Navigation Menu">
+    <div class="navbar-mobile-menu-content">
+      <a href="index.html" class="nav-mobile-item" data-i18n="home" aria-label="Go to Home">Home</a>
+      <a href="About.html" class="nav-mobile-item" data-i18n="about" aria-label="Go to About me">About me</a>
+      <a href="#" class="nav-mobile-item nav-mobile-work" data-i18n="ev" aria-label="Go to EV Multiplatform">EV Multiplatform</a>
+      <a href="contact.html" class="nav-mobile-item" data-i18n="contact" aria-label="Go to Contact me">Contact me</a>
+    </div>
+  </div>
+</nav>
+  
 
     <section class="case-study-section">
       <div class="case-study-inner">
         <h1 class="case-study-title" data-i18n="caseTitle">Scaling EV Charging<br>Globally</h1>
-        <div class="case-study-banner">
+        <div class="case-study-banner" style="display: flex; flex-direction: column;">
           <img src="Image/EV-banner.png" alt="EV Charging App" class="case-study-img" data-i18n="caseBannerAlt">
+        <p>This is a real enterprise project in the EV charging domain. The visuals here are demo variants to illustrate my process. The authentic product is available via a password-protected walkthrough <a href="contact.html" style="color:black; text-align: center;"><b>Email me for access</b></a></p>
         </div>
       </div>
       <div class="case-meta-row">
         <span class="case-meta-label" data-i18n="roleLabel">My Role:</span>
-        <span class="case-meta-pill" data-i18n="role">Lead UI UX Designer</span>
+        <span class="case-meta-pill" data-i18n="role">Product Designer</span>
       </div>
      
    
       <div class="case-failed-grid">
         <div class="case-failed-left">
-          <h2 class="case-failed-title" data-i18n="failedTitle">What<br>Failed?</h2>
+          <h2 class="case-failed-title" data-i18n="failedTitle">The Barrier</h2>
         </div>
         <div class="case-failed-right">
-          <h3 class="case-barrier-title" data-i18n="barrierTitle">The Barrier</h3>
+          
           <p class="case-barrier-desc" data-i18n="barrierDesc">
             Sintio started small, like a neighborhood charging buddy. Cute, useful... but stuck.<br>
-            <span class="case-barrier-highlight" data-i18n="barrierHighlight">The platform couldn’t scale, the design felt clunky,</span> and users sighed more than they smiled. Users fumbled through charging sessions. Operators cursed messy charger management. Scaling to Europe or the USA? Forget it.
+            <span class="case-barrier-highlight" data-i18n="barrierHighlight">The platform couldn’t scale, the design felt clunky.</span> My challenge was to transform Sintio into a user-friendly platform that real estate managers and everyday drivers could trust — while also attracting funding and investors. Thus, to evolve from a local tool into a global EV charging ecosystem, ready to serve multiple companies at scale.
           </p>
         </div>
       </div>
       <div class="case-ibm-block">
-  <h2 class="case-ibm-title" data-i18n="ibmTitle">IBM Enterprise Thinking</h2>
+  <h2 class="case-ibm-title" data-i18n="ibmTitle">My Approach</h2>
   <p class="case-ibm-desc" data-i18n="ibmDesc">To break the deadlock, I leaned on IBM Enterprise Design Thinking. Why? Because it let me balance business constraints with real user needs—without letting either side dominate.</p>
-  <img src="Image/ibm-enterprise.png" alt="IBM Enterprise Design" class="case-ibm-img" data-i18n="ibmImgAlt">
+  <img src="Image/1-EV-1.avif" alt="IBM Enterprise Design" class="case-ibm-img" data-i18n="ibmImgAlt">
       </div>
-       <div class="case-block">
+       <div class="case-block" style="grid-template-columns: 1fr;">
         <div class="case-block-content">
           <div style="display: flex; flex-direction: row;">
             <div class="case-block-icon">
@@ -111,26 +102,50 @@
             <h2 class="case-block-title" data-i18n="visionTitle">Setting the Vision</h2>
           </div>
           <div class="case-block-desc">
-            <p data-i18n="visionDesc">I defined two core “Hills”:</p>
+            <p data-i18n="visionDesc">I defined four core “Hills”:</p>
             <ul>
-              <li data-i18n="hillScalability"><b>Scalability:</b> Enable Sintio to become a white-label EV solution for businesses and organizations.</li>
-              <li data-i18n="hillInvestor"><b>Investor Confidence:</b> Redesign the experience to be clear, modern, and fundable.</li>
+              <li ><b>Reduce Time of Task Completion:</b> A real estate manager or individual can seamlessly complete key flows—charging, data observation, management, billing, and session sharing—quickly, confidently, with clarity and compliance.</li>
+              <li ><b>Improve Findability, Navigation & Search:</b> An user can discover, start, and complete a charge without dead ends; a manager can reach critical reports without external guidance. </li>
+              <li ><b>Improve Accessibility:</b> The new platform should be able to handle large amount of complex data, at the same time improve flow accessibility.</li>
+              <li ><b>White Labeling for Multiple Brand Identities:</b> Any partner can apply brand identity through tokens/themes without breaking usability or a11y.</li>
+            
             </ul>
             <p data-i18n="hillSummary">These Hills set the north star for all design decisions.</p>
           </div>
         </div>
+      </div>
+       <div class="case-block" style="grid-template-columns: 1fr 1.1fr;">
+        <div class="case-block-content">
+          <div style="display: flex; flex-direction: row;">
+            <div class="case-block-icon">
+              <!-- Vision icon SVG -->
+              <img src="Image/binoculars.svg" alt="Binoculars Icon" style="width:32px; height:32px;">
+            </div>
+            <h2 class="case-block-title" data-i18n="visionTitle">Research & Sponsor Users</h2>
+          </div>
+          <div class="case-block-desc">
+          
+             <p data-i18n="hillSummary">To ground Sintio’s redesign in real needs, I worked with Sponsor Users — participants who partnered throughout the project and provided ongoing feedback.</p>
+            <ul>
+              <li data-i18n="hillScalability"><b>2</b> Stakeholders</li>
+              <li data-i18n="hillInvestor"><b>3</b> Real Estate Managers</li>
+              <li data-i18n="hillInvestor"><b>2</b> Individual Users</li>
+            </ul>
+            <p data-i18n="hillSummary">I conducted one-on-one interviews, contextual where possible, from managers, drivers, and stakeholders. Each session used open-ended questions to uncover setup frustrations, charging journeys, and business expectations. To synthesize, I created an affinity map that clustered insights into themes, making it easier to spot patterns shared across roles. This process surfaced the most pressing pain points and guided us toward the features and flows that would deliver consistent value for all user groups.</p>
+          </div>
+        </div>
         <div class="case-block-img">
-          <img src="images/vision-block.png" alt="Setting the Vision" />
+          <img src="Image/EV-2.avif" alt="Setting the Vision" />
         </div>
       </div>
-    <div class="case-block">
+    <div class="case-block" style="display: flex;">
       <div class="case-block-content">
         <div style="display: flex; align-items: center;">
-        <img src="Image/user-feedback-icon.png" alt="User Feedback Icon" style="width:40px; height:40px; margin-right:16px;">
-  <h2 class="case-block-title" data-i18n="userFeedbackTitle">Initial User Feedback (Old Portal)</h2>
+        <img src="Image/file-search-2.svg" alt="User Feedback Icon" style="width:40px; height:40px; margin-right:16px;">
+  <h2 class="case-block-title" data-i18n="userFeedbackTitle">Platform Audit</h2>
         </div>
         <div class="case-block-desc">
-        <p data-i18n="userFeedbackDesc">At the very start, I observed real users using the existing portal.</p>
+        <p data-i18n="userFeedbackDesc">Parallel to interviews, I conducted a heuristic audit of the existing platform, walking through core flows while empathizing with the pain points surfaced in research.</p>
         <ul>
           <li data-i18n="userFeedbackPain">Identified pain points: confusing navigation, lack of flexibility, and poor usability.</li>
           <li data-i18n="userFeedbackBudget">This gave me the baseline problems to address before budget constraints kicked in.</li>

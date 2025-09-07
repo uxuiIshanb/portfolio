@@ -1651,8 +1651,8 @@ body {
   gap: 0.75rem;
 }
 .case-block-desc {
-  font-size: 1.25rem;
-  line-height: 2.125rem;
+  font-size: 24px;
+  line-height: 38px;
   color: #222;
 }
 .case-block-desc ul {
@@ -1662,8 +1662,8 @@ body {
 }
 .case-block-desc li {
   margin-bottom: 0.5rem;
-  font-size: 1.15rem;
-  line-height: 1.7rem;
+  font-size: 24px;
+  line-height: 38px;
 }
 .case-block-img {
   display: flex;
@@ -1673,7 +1673,7 @@ body {
 .case-block-img img {
   width: 100%;
   max-width: 100%;
-  height: 13rem;
+  height: auto;
   object-fit: cover;
   border-radius: 0.75rem;
   background: #eaeaea;
@@ -1685,9 +1685,7 @@ body {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
   }
-  .case-block-img img {
-    height: 10rem;
-  }
+
 }
 .case-study-inner {
   margin: 0px;
@@ -1794,8 +1792,8 @@ body {
   margin-top: 0px;
 }
 .case-barrier-desc {
-  font-size: 20px;
-  line-height: 34px;
+  font-size: 24px;
+  line-height: 38px;
   color: #191919;
   margin: 0;
 }
@@ -1832,15 +1830,16 @@ body {
   margin-bottom: 12px;
 }
 .case-ibm-desc {
-  font-size: 1.15rem;
+  font-size: 24px;
   color: #191919;
   margin-bottom: 32px;
-  font-weight: 500;
+  font-weight: 400;
+  line-height: 38px;
 }
 .case-ibm-img {
   width: 100%;
   max-width: 100%;
-  height: 200px;
+  height: auto;
   object-fit: cover;
   border-radius: 18px;
   background: #ececec;
@@ -1849,9 +1848,6 @@ body {
 @media (max-width: 700px) {
   .case-ibm-title {
     font-size: 1.5rem;
-  }
-  .case-ibm-img {
-    height: 120px;
   }
 }
 .hero-promo-banner {
@@ -2980,34 +2976,18 @@ body {
   align-items: center;
   gap: 0.75rem;
 }
-.case-block-desc {
-  font-size: 1.25rem;
-  line-height: 2.125rem;
-  color: #222;
-}
 .case-block-desc ul {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   padding-left: 1.5rem;
 }
-.case-block-desc li {
-  margin-bottom: 0.5rem;
-  font-size: 1.15rem;
-  line-height: 1.7rem;
-}
+
 .case-block-img {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.case-block-img img {
-  width: 100%;
-  max-width: 100%;
-  height: 13rem;
-  object-fit: cover;
-  border-radius: 0.75rem;
-  background: #eaeaea;
-}
+
 @media (max-width: 900px) {
   .case-block {
     grid-template-columns: 1fr;
@@ -3015,9 +2995,7 @@ body {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
   }
-  .case-block-img img {
-    height: 10rem;
-  }
+
 }
 .case-study-inner {
   margin: 0px;
@@ -3124,8 +3102,8 @@ body {
   margin-top: 0px;
 }
 .case-barrier-desc {
-  font-size: 20px;
-  line-height: 34px;
+  font-size: 24px;
+  line-height: 38px;
   color: #191919;
   margin: 0;
 }
@@ -3161,29 +3139,7 @@ body {
   color: #191919;
   margin-bottom: 12px;
 }
-.case-ibm-desc {
-  font-size: 1.15rem;
-  color: #191919;
-  margin-bottom: 32px;
-  font-weight: 500;
-}
-.case-ibm-img {
-  width: 100%;
-  max-width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 18px;
-  background: #ececec;
-  display: block;
-}
-@media (max-width: 700px) {
-  .case-ibm-title {
-    font-size: 1.5rem;
-  }
-  .case-ibm-img {
-    height: 120px;
-  }
-}
+
 .hero-promo-banner {
   display: flex;
   align-items: center;
@@ -3814,5 +3770,7 @@ body {
     gap: 1.5rem;
   }
 }
+
+
 
 
