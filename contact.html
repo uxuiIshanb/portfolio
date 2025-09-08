@@ -7,54 +7,54 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <nav class="navbar" role="navigation" aria-label="Main Navigation">
-  <div class="navbar-section navbar-left" aria-label="Primary Navigation">
-    <a href="index.html" class="nav-btn nav-home" style="text-decoration: none;" data-i18n="home" aria-label="Go to Testimonials"><span></span>Testimonials</a>
-    <a href="About.html" class="nav-btn" style="text-decoration: none;" data-i18n="about" aria-label="Go to About">About</a>
-  </div>
-  <!-- Language Switcher -->
-  <div class="navbar-section navbar-center" aria-label="Logo Navigation">
-    <a href="index.html" class="nav-btn nav-copyright" style="text-decoration: none;" data-i18n="copyright" aria-label="Go to Home">
-      <img src="Image/Lumos.svg" alt="LUMOS Logo" style="height:14px; padding:4px; vertical-align:middle;">
-    </a>
-  </div>
-  <!-- Mobile copyright, visible only below 1280px -->
-  <div class="navbar-mobile-copyright" aria-label="Mobile Logo Navigation">
-    <a href="index.html" class="nav-btn nav-copyright-mobile" style="text-decoration: none;" data-i18n="copyright" aria-label="Go to Home"> <img src="Image/Lumos.svg" alt="LUMOS Logo" style="height:14px; padding:4px; vertical-align:middle;"></a>
-  </div>
-  <div class="navbar-section navbar-right" aria-label="Secondary Navigation">
-    <div class="nav-dropdown-wrapper" aria-label="Case Studies Dropdown">
-      <button class="nav-btn nav-work" id="navWorkBtn" data-i18n="work" aria-haspopup="true" aria-expanded="false" aria-controls="navWorkDropdown" aria-label="Open Case Studies Dropdown">
-        <span data-i18n="work">Case Studies</span>
-      </button>
-      <div class="nav-dropdown" id="navWorkDropdown" aria-label="Case Studies Menu">
-        <a href="EV multiplatform.html" class="nav-dropdown-item" data-i18n="ev" aria-label="Go to EV Multiplatform">EV Multiplatform</a>
+  <nav class="navbar">
+    <div class="navbar-section navbar-left">
+      <a href="index.html" class="nav-btn nav-home" style="text-decoration: none;" data-i18n="home"><span></span> Home</a>
+      <a href="About.html" class="nav-btn" style="text-decoration: none;" data-i18n="about">About me</a>
+    </div>
+
+    <div class="navbar-section navbar-center">
+      <a href="index.html" class="nav-btn nav-copyright" style="text-decoration: none;" data-i18n="copyright">© Code by Ishan</a>
+    </div>
+
+    <div class="navbar-mobile-copyright">
+      <a href="index.html" class="nav-btn nav-copyright-mobile" style="text-decoration: none;" data-i18n="copyright">© Code by Ishan</a>
+    </div>
+
+    <div class="navbar-section navbar-right">
+      <div class="nav-dropdown-wrapper">
+        <button class="nav-btn nav-work" id="navWorkBtn" data-i18n="work">
+          <span data-i18n="work">Work</span>
+        </button>
+        <div class="nav-dropdown" id="navWorkDropdown">
+          <a href="EV multiplatform.html" class="nav-dropdown-item" data-i18n="ev">EV Multiplatform</a>
+        </div>
+      </div>
+      <a href="contact.html" class="nav-btn" style="text-decoration: none;" data-i18n="contact">Contact me</a>
+    </div>
+
+    <!-- Hamburger for mobile -->
+    <button class="navbar-hamburger" id="navbarHamburger" aria-label="Open menu">
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect y="6" width="28" height="2.5" rx="1.25" fill="#191919"/>
+        <rect y="13" width="28" height="2.5" rx="1.25" fill="#191919"/>
+        <rect y="20" width="28" height="2.5" rx="1.25" fill="#191919"/>
+      </svg>
+    </button>
+
+    <!-- Mobile menu -->
+    <div class="navbar-mobile-menu" id="navbarMobileMenu">
+      <div class="navbar-mobile-menu-content">
+        <a href="index.html" class="nav-mobile-item" data-i18n="home">Home</a>
+        <a href="About.html" class="nav-mobile-item" data-i18n="about">About me</a>
+        <a href="#" class="nav-mobile-item nav-mobile-work" data-i18n="ev">EV Multiplatform</a>
+        <a href="contact.html" class="nav-mobile-item" data-i18n="contact">Contact me</a>
       </div>
     </div>
-    <a href="contact.html" class="nav-btn" style="text-decoration: none;" data-i18n="contact" aria-label="Go to Contact">Contact</a>
-  </div>
-  <!-- Hamburger for mobile -->
-  <button class="navbar-hamburger" id="navbarHamburger" aria-label="Open menu" aria-controls="navbarMobileMenu" aria-expanded="false">
-    <!-- Hamburger SVG icon -->
-    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <rect y="6" width="28" height="2.5" rx="1.25" fill="#191919"/>
-      <rect y="13" width="28" height="2.5" rx="1.25" fill="#191919"/>
-      <rect y="20" width="28" height="2.5" rx="1.25" fill="#191919"/>
-    </svg>
-  </button>
-  <!-- Mobile menu -->
-  <div class="navbar-mobile-menu" id="navbarMobileMenu" aria-label="Mobile Navigation Menu">
-    <div class="navbar-mobile-menu-content">
-      <a href="index.html" class="nav-mobile-item" data-i18n="home" aria-label="Go to Home">Home</a>
-      <a href="About.html" class="nav-mobile-item" data-i18n="about" aria-label="Go to About me">About me</a>
-      <a href="#" class="nav-mobile-item nav-mobile-work" data-i18n="ev" aria-label="Go to EV Multiplatform">EV Multiplatform</a>
-      <a href="contact.html" class="nav-mobile-item" data-i18n="contact" aria-label="Go to Contact me">Contact me</a>
-    </div>
-  </div>
-</nav>
+  </nav>
 
   <div class="contact-container">
-    <!-- UPDATED: method/action + field names -->
+    <!-- UPDATED FORM -->
     <form id="contactForm" class="contact-form" method="POST" action="/api/contact">
       <div class="contact-form-header">
         <h2>Got ideas? We’ve got the skills. Let’s team up.</h2>
@@ -70,26 +70,25 @@
       <div class="contact-form-group">
         <div class="contact-form-label">How can we help?</div>
         <div class="contact-checkbox-row">
-          <!-- Keep the label text; value is what you’ll see in the email -->
           <label><input type="checkbox" name="help" value="Sign NDA"> I want to sign NDA</label>
         </div>
       </div>
 
-      <!-- Honeypot field (hidden) to block bots -->
+      <!-- Honeypot (spam trap) -->
       <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off" />
 
-      <!-- Cloudflare Turnstile (anti-spam) -->
-      <div class="cf-turnstile" data-sitekey="0x4AAAAAABz_zHTAN2QnkjXF"></div>
+      <!-- Cloudflare Turnstile -->
+      <div class="cf-turnstile" data-sitekey="YOUR_TURNSTILE_SITE_KEY"></div>
 
       <button type="submit" class="contact-form-btn">Let's get started!</button>
 
-      <!-- Simple success/error messages -->
+      <!-- Success/Error Messages -->
       <div id="formSuccess" style="display:none;margin-top:10px;color:#0a8f3c;">Thanks! Your message has been sent.</div>
       <div id="formError" style="display:none;margin-top:10px;color:#b00020;">Sorry—something went wrong. Please try again.</div>
     </form>
   </div>
 
-  <!-- GSAP & site scripts -->
+  <!-- GSAP & scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Draggable.min.js"></script>
@@ -105,31 +104,31 @@
   <script src="script.js"></script>
   <script src="localization.js"></script>
 
-  <!-- Turnstile script (required for CAPTCHA) -->
+  <!-- Turnstile API -->
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 
-  <!-- Optional: AJAX submit so the page doesn’t reload -->
+  <!-- AJAX handling -->
   <script>
     (function () {
-      const form = document.getElementById('contactForm');
-      const ok = document.getElementById('formSuccess');
-      const err = document.getElementById('formError');
+      const form = document.getElementById("contactForm");
+      const ok = document.getElementById("formSuccess");
+      const err = document.getElementById("formError");
 
-      form.addEventListener('submit', async function (e) {
+      form.addEventListener("submit", async function (e) {
         e.preventDefault();
-        ok.style.display = 'none';
-        err.style.display = 'none';
+        ok.style.display = "none";
+        err.style.display = "none";
 
         try {
-          const res = await fetch(form.action, { method: 'POST', body: new FormData(form) });
+          const res = await fetch(form.action, { method: "POST", body: new FormData(form) });
           if (res.ok) {
-            ok.style.display = 'block';
+            ok.style.display = "block";
             form.reset();
           } else {
-            err.style.display = 'block';
+            err.style.display = "block";
           }
         } catch {
-          err.style.display = 'block';
+          err.style.display = "block";
         }
       });
     })();
