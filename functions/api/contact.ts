@@ -90,7 +90,7 @@ export async function onRequestPost(context: {
 
     const payload = {
       from: "Lumas Website <no-reply@lumas.studio>", // must be your Resend-verified domain
-      to: ["connect@lumas.com"],
+      to: ["connect@lumas.studio"],
       reply_to: [`${name} <${email}>`],
       subject: "New contact form message",
       html,
