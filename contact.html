@@ -57,18 +57,18 @@
     <!-- Contact form -->
     <form id="contactForm" class="contact-form" method="POST" action="/api/contact">
       <div class="contact-form-header">
-        <h2>Got ideas? We’ve got the skills. Let’s team up.</h2>
-        <div class="contact-form-sub">Tell us more about yourself and what you’ve got in mind.</div>
+        <h2>Fix the leak in your funnel.</h2>
+        <div class="contact-form-sub">Give me the brief in a few lines; I’ll handle the structure. Expect a quick response and a fit call link—NDA on request.</div>
       </div>
 
       <div class="contact-form-group">
         <input type="text" class="contact-input" name="name" placeholder="Your name" required />
-        <input type="email" class="contact-input" name="email" placeholder="you@company.com" required />
-        <textarea class="contact-input" name="message" rows="3" placeholder="Tell us a little about the project..." required></textarea>
+        <input type="email" class="contact-input" name="email" placeholder="email@company.com" required />
+        <textarea class="contact-input" name="message" rows="3" placeholder="Tell me a little about the project..." required></textarea>
       </div>
 
       <div class="contact-form-group">
-        <div class="contact-form-label">How can we help?</div>
+        <div class="contact-form-label">Privacy First</div>
         <div class="contact-checkbox-row">
           <label><input type="checkbox" name="help" value="Sign NDA"> I want to sign NDA</label>
         </div>
@@ -210,5 +210,54 @@
       });
     })();
   </script>
+  <!-- Add this code just before the closing </body> tag in each HTML file: index.html, About.html, contact.html, EV multiplatform.html -->
+
+<!-- CookieConsent by Osano (EU GDPR compliant) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+  window.cookieconsent.initialise({
+    palette: {
+      popup: { background: "#191919", text: "#fff" },
+      button: { background: "#defe94", text: "#191919" }
+    },
+    theme: "classic",
+    position: "bottom",
+    type: "opt-in",
+    content: {
+      message: "We use cookies to enhance your experience. You can manage your preferences. Only essential cookies are set until you consent.",
+      dismiss: "Accept all",
+      allow: "Accept all",
+      deny: "Decline",
+      link: "Learn more",
+      href: "privacy-policy.html"  // Change to your privacy policy URL
+    },
+    onInitialise: function (status) {
+      if (status === 'allow') {
+        enableAnalytics();
+      }
+    },
+    onStatusChange: function(status) {
+      if (status === 'allow') {
+        enableAnalytics();
+      }
+    }
+  });
+
+  // Example: Only load analytics if consent is given
+  function enableAnalytics() {
+    // Insert your analytics script here, e.g. Google Analytics
+    // Example:
+    // var ga = document.createElement('script');
+    // ga.src = 'https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXX-X';
+    // document.head.appendChild(ga);
+    // window.dataLayer = window.dataLayer || [];
+    // function gtag(){dataLayer.push(arguments);}
+    // gtag('js', new Date());
+    // gtag('config', 'UA-XXXXXXX-X');
+  }
+});
+</script>
 </body>
 </html>
