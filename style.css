@@ -1,7 +1,4 @@
-html, body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
+
 @media (max-width: 767px) {
   .footer-logo-nav-row{
     flex-direction: column !important;
@@ -182,6 +179,10 @@ html, body {
   .navbar-mobile-copyright {
     display: none !important;
   }
+  .how-it-works-section {
+
+  padding: 6.25rem 3.75rem;
+}
 }
 @media (min-width: 1280px) {
   #navbarMobileMenu,
@@ -376,8 +377,8 @@ html, body {
   transform: rotate(-6deg);
 }
 .testimonial-card-pink {
-  background: #FFD6F6;
-  color: #191919;
+  background: #000000;
+  color: #ffffff;
   z-index: 2;
   transform: rotate(6deg);
 }
@@ -3665,6 +3666,7 @@ body {
   .carousel-slide-title{ font-size:2.15rem; }
   .carousel-slide-desc{ font-size:1.18rem; }
   .pricing-section{ padding:3rem 2rem; }
+  .how-it-works-section { padding:4.25rem 2rem; }
   .pricing-title{ font-size:2.75rem !important; }
   .faq-main-title{ font-size:2.5rem; }
   .case-failed-title{ font-size:2.6rem !important; }
@@ -3695,6 +3697,7 @@ body {
   .pricing-title{ font-size:2.4rem !important; }
   .pricing-card{ padding:2rem 1.6rem 1.75rem; }
   .faq-section{ padding:3.75rem 1.5rem; }
+  .how-it-works-section { padding:3.75rem 1.5rem; }
   .faq-main-title{ font-size:2.2rem; }
   .case-study-title{ font-size:2.55rem !important; }
   .case-failed-title{ font-size:2.25rem !important; }
@@ -3723,6 +3726,7 @@ body {
   .pricing-section{ padding:2.5rem 1.125rem; }
   .pricing-title{ font-size:2.15rem !important; }
   .faq-section{ padding:3.5rem 1.125rem; }
+  .how-it-works-section { padding:3.5rem 1.125rem; }
   .faq-main-title{ font-size:2rem; }
   .case-study-title{ font-size:2.3rem !important; }
   .case-failed-title{ font-size:2rem !important; }
@@ -3777,7 +3781,6 @@ body {
   position: relative;
   background: #fff;
   border-radius: 12px;
-  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.03);
   margin-top: 40px;
 }
 .logo-marquee-track {
@@ -3807,12 +3810,7 @@ body {
 
 /* Add to style.css */
 
-.how-it-works-section {
-  width: 100%;
-  max-width: 1200px;
-  margin: 64px auto 48px auto;
-  padding: 0 16px;
-}
+
 
 .how-it-works-title {
   text-align: left;
@@ -3832,7 +3830,6 @@ body {
 
 .how-it-works-card {
   flex: 1 1 300px;
-  max-width: 360px;
   min-width: 260px;
   background: #fff;
   border-radius: 20px;
@@ -3921,7 +3918,7 @@ body {
     flex-direction: column;
     gap: 24px;
     align-items: start;
-    width: 80%;
+    width: 100%;
   }
   .how-it-works-card {
     max-width: 100vw;
