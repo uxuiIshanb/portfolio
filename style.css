@@ -3753,5 +3753,51 @@ body {
 }
 
 
-
+.logo-marquee-section {
+  width: 100%;
+  background: #fff;
+  padding: 0 0 32px 0;
+  margin: 64px 0 0 0;
+}
+.logo-marquee-title {
+  color: #191919;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.02em;
+}
+.logo-marquee-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.03);
+  margin-top: 40px;
+}
+.logo-marquee-track {
+  display: flex;
+  align-items: center;
+  gap: 120px;
+  animation: marquee-scroll 18s linear infinite;
+  will-change: transform;
+}
+.logo-marquee-img {
+  height: 32px;
+  width: auto;
+  transition: filter 0.2s, opacity 0.2s;
+}
+.logo-marquee-img:hover {
+  filter: grayscale(0) brightness(1);
+  opacity: 1;
+}
+@keyframes marquee-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+@media (max-width: 767px) {
+  .logo-marquee-track { gap: 28px; }
+  .logo-marquee-img { height: 28px; }
+}
 
