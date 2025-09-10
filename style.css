@@ -1,3 +1,7 @@
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
 @media (max-width: 767px) {
   .footer-logo-nav-row{
     flex-direction: column !important;
@@ -3801,3 +3805,125 @@ body {
   .logo-marquee-img { height: 28px; }
 }
 
+/* Add to style.css */
+
+.how-it-works-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 64px auto 48px auto;
+  padding: 0 16px;
+}
+
+.how-it-works-title {
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+  color: #191919;
+  letter-spacing: -0.01em;
+}
+
+.how-it-works-cards {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.how-it-works-card {
+  flex: 1 1 300px;
+  max-width: 360px;
+  min-width: 260px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 28px 24px 0 24px;
+  position: relative;
+  overflow: hidden;
+  min-height: 340px;
+}
+
+.how-it-works-card-dark {
+  background: #191919;
+  color: #fff;
+}
+
+.how-it-works-card-light {
+  background: #f7f7f7;
+  color: #191919;
+}
+
+.how-it-works-card-green {
+  background: #defe94;
+  color: #191919;
+}
+
+.how-it-works-badge {
+  display: inline-block;
+  background: #fff;
+  color: #191919;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 12px;
+  padding: 6px 16px;
+  margin-bottom: 18px;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.04);
+  position: relative;
+  z-index: 2;
+}
+
+.how-it-works-card-dark .how-it-works-badge {
+  background: #232323;
+  color: #fff;
+}
+
+.how-it-works-card-green .how-it-works-badge {
+  background: #cfff5c;
+  color: #191919;
+}
+
+.how-it-works-card-content h3 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  line-height: 1.2;
+}
+
+.how-it-works-card-content p {
+  font-size: 1.05rem;
+  font-weight: 400;
+  margin: 0 0 18px 0;
+  color: inherit;
+}
+
+.how-it-works-card-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: auto;
+  padding-bottom: 18px;
+}
+
+.how-it-works-card-image img {
+  max-width: 90%;
+  max-height: 110px;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 1px 8px 0 rgba(0,0,0,0.06);
+}
+
+@media (max-width: 900px) {
+  .how-it-works-cards {
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+  }
+  .how-it-works-card {
+    max-width: 95vw;
+    min-width: 0;
+  }
+}
