@@ -966,10 +966,6 @@ html, body {
     gap: 2rem;
     align-items: center;
   }
-  .pricing-card {
-    max-width: 100%;
-    min-width: 0;
-  }
 }
 
 @font-face {
@@ -1994,6 +1990,9 @@ body {
   .navbar-section {
     display: none !important;
   }
+  .sub-title{
+    font-size: 2.2rem !important;
+  }
   #navbarHamburger,
   .navbar-hamburger {
     display: block;
@@ -2290,10 +2289,6 @@ body {
     flex-direction: column;
     gap: 2rem;
     align-items: center;
-  }
-  .pricing-card {
-    max-width: 100%;
-    min-width: 0;
   }
 }
 
