@@ -764,7 +764,7 @@ body {
 
 @media (max-width: 1280px) {
   .footer-menu {
-    flex-direction: row !important;
+    flex-direction: column !important;
     gap: 2rem !important;
     align-items: flex-start !important;
   }
