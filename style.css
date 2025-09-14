@@ -1009,7 +1009,7 @@ body {
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.04);
   flex: 1 1 320px;
   max-width: 400px;
-  min-width: 280px;
+  min-width: 100px;
   display: flex;
   flex-direction: column;
   padding: 2.5rem 2rem 2rem 2rem;
@@ -2559,19 +2559,6 @@ body {
   flex-wrap: wrap;
 }
 
-.pricing-card {
-  background: #fff;
-  border: 2px solid #cfd8dc;
-  border-radius: 20px;
-  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.04);
-  flex: 1 1 320px;
-  max-width: 400px;
-  min-width: 280px;
-  display: flex;
-  flex-direction: column;
-  padding: 2.5rem 2rem 2rem 2rem;
-  margin-bottom: 0;
-}
 
 .pricing-card-pro {
   border-color: #000000;
