@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About me</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
- <nav class="navbar" role="navigation" aria-label="Main Navigation">
+    <main>
+   <nav class="navbar" role="navigation" aria-label="Main Navigation">
       <div class="navbar-section navbar-left" aria-label="Primary Navigation">
         <a href="index.html" class="nav-btn nav-home" style="text-decoration: none;" data-i18n="home"
           aria-label="Go to Testimonials"><span></span>Testimonials</a>
@@ -64,47 +65,63 @@
         </div>
       </div>
     </nav>
-    
-<section class="about-hero-section">
-  
- <div class="about-hero-grid" aria-label="About hero">
-    <h1 class="about-hero-heading">
-      Hi, I am <span class="about-hero-highlight">Ishan</span>
-    </h1>
 
-    <div class="about-hero-stat about-hero-stat-tl">
-      <div class="stat-title">Proven Impact</div>
-      <a href="index.html#case-studies" class="stat-link">See Case Studies</a>
-    </div>
 
-    <div class="about-hero-stat about-hero-stat-tr">
-      <div class="stat-title">12+ Brands</div>
-      <div class="stat-sub">Success stories</div>
-    </div>
+<section class="case-projects-section" aria-label="Recent work">
+  <h1 class="case-projects-heading">
+    <span class="case-projects-heading-line">Beyond Pretty.</span>
+    <span class="case-projects-heading-line accent"> Built for Results.</span>
+  </h1>
 
-    <div class="about-hero-avatar" aria-label="Ishan portrait placeholder"></div>
+  <div class="case-projects-grid">
+    <article class="project-card" aria-label="Sportly Mobile App Design">
+      <div class="project-media">
+        <img src="Image/sportly.png" alt="Sportly app screens" loading="lazy">
+      </div>
+      <div class="project-meta-row">
+        <div class="project-meta-text">
+          <h3 class="project-title">Sportly</h3>
+          <p class="project-cat">Mobile App Design</p>
+        </div>
+        <a href="#" class="project-action" aria-label="View Sportly case study"><span class="project-action-icon">→</span></a>
+      </div>
+    </article>
 
-    <div class="about-hero-stat about-hero-stat-bl">
-      <div class="stat-title">3M+</div>
-      <div class="stat-sub">Funds raised by clients</div>
-    </div>
+    <article class="project-card" aria-label="Payrole Mobile App Design">
+      <div class="project-media">
+        <img src="Image/payrole.png" alt="Payrole dashboard" loading="lazy">
+      </div>
+      <div class="project-meta-row">
+        <div class="project-meta-text">
+          <h3 class="project-title">Payrole</h3>
+          <p class="project-cat">Mobile App Design</p>
+        </div>
+        <a href="#" class="project-action" aria-label="View Payrole case study"><span class="project-action-icon">→</span></a>
+      </div>
+    </article>
 
-    <div class="about-hero-stat about-hero-stat-br">
-      <div class="stat-title">Ex-Army</div>
-      <div class="stat-sub">2.5 yrs discipline &amp; leadership</div>
-    </div>
+    <article class="project-card project-card-wide" aria-label="Wepay Mobile App Design">
+      <div class="project-media">
+        <img src="Image/wepay.png" alt="Wepay analytics views" loading="lazy">
+      </div>
+      <div class="project-meta-row">
+        <div class="project-meta-text">
+          <h3 class="project-title">Wepay</h3>
+          <p class="project-cat">Mobile App Design</p>
+        </div>
+        <a href="#" class="project-action" aria-label="View Wepay case study"><span class="project-action-icon">→</span></a>
+      </div>
+    </article>
   </div>
+</section>
 
-  <div class="about-hero-bio" aria-label="Bio">
-    <p>I design products people trust—and that move the numbers. I’m 24, based in India, and I like turning messy flows into simple paths.</p>
-    <p>I started as an Army officer cadet. Two and a half years taught me discipline, calm under pressure, and ownership.</p>
-    <p>After the Army I taught myself UX. I pair research with data, design for speed and access, and stay until the metric moves.</p>
-    <p>How I work: clear goals, weekly demos, honest trade‑offs. Accessibility, localization, and performance are built in from day one.</p>
-    <p>Outside work I read novels, watch anime, and train my body. It keeps my head clear and decisions steady.</p>
-  </div>
-  
-  </section>
-   <footer class="site-footer" role="contentinfo" aria-label="Footer">
+
+
+
+
+
+
+  <footer class="site-footer" role="contentinfo" aria-label="Footer">
   <div class="footer-main">
     <div class="footer-logo-nav-row" aria-label="Footer Logo and Navigation">
       <div class="footer-logo" style="display: flex; flex-direction: column; max-width:300px;" aria-label="Footer Logo">
@@ -175,21 +192,9 @@
     </div>
   </div>
 </footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Draggable.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/MotionPathPlugin.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/SplitText.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Flip.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/EaselPlugin.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/PixiPlugin.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/CSSRulePlugin.min.js"></script>
-  <script src="navbar-responsive.js"></script>
-  <script src="navbar.js"></script>
-  <script src="script.js"></script>
-  <script src="localization.js"></script>
-  
-</body>
+    </main>
 
+    <script src="navbar.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>

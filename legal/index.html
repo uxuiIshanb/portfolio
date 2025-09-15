@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About me</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+ <nav class="navbar" role="navigation" aria-label="Main Navigation">
+      <div class="navbar-section navbar-left" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-btn nav-home" style="text-decoration: none;" data-i18n="home"
+          aria-label="Go to Testimonials"><span></span>Testimonials</a>
+        <a href="/about-ishan/" class="nav-btn" style="text-decoration: none;" data-i18n="about"
+          aria-label="Go to About">About</a>
+      </div>
+      <!-- Language Switcher -->
+      <div class="navbar-section navbar-center" aria-label="Logo Navigation">
+        <a href="index.html" class="nav-btn nav-copyright" style="text-decoration: none;" data-i18n="copyright"
+          aria-label="Go to Home">
+          <img src="/Image/Lumas.svg" alt="LUMAS Logo" style="height:14px; padding:4px; vertical-align:middle;">
+        </a>
+      </div>
+      <!-- Mobile copyright, visible only below 1280px -->
+      <div class="navbar-mobile-copyright" aria-label="Mobile Logo Navigation">
+        <a href="index.html" class="nav-btn nav-copyright-mobile" style="text-decoration: none;" data-i18n="copyright"
+          aria-label="Go to Home"> <img src="/Image/Lumas.svg" alt="LUMAS Logo"
+            style="height:14px; padding:4px; vertical-align:middle;"></a>
+      </div>
+      <div class="navbar-section navbar-right" aria-label="Secondary Navigation">
+        <div class="nav-dropdown-wrapper" aria-label="Case Studies Dropdown">
+          <button class="nav-btn nav-work" id="navWorkBtn" data-i18n="work" aria-haspopup="true" aria-expanded="false"
+            aria-controls="navWorkDropdown" aria-label="Open Case Studies Dropdown">
+            <span data-i18n="work">Case Studies</span>
+          </button>
+          <div class="nav-dropdown" id="navWorkDropdown" aria-label="Case Studies Menu">
+            <a href="/ev-platform-ui-ux/" class="nav-dropdown-item" data-i18n="ev"
+              aria-label="Go to EV Multiplatform">EV Multiplatform</a>
+          </div>
+        </div>
+        <a href="/contact/" class="nav-btn" style="text-decoration: none;" data-i18n="contact"
+          aria-label="Go to Contact">Contact</a>
+      </div>
+      <!-- Hamburger for mobile -->
+      <button class="navbar-hamburger" id="navbarHamburger" aria-label="Open menu" aria-controls="navbarMobileMenu"
+        aria-expanded="false">
+        <!-- Hamburger SVG icon -->
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true">
+          <rect y="6" width="28" height="2.5" rx="1.25" fill="#191919" />
+          <rect y="13" width="28" height="2.5" rx="1.25" fill="#191919" />
+          <rect y="20" width="28" height="2.5" rx="1.25" fill="#191919" />
+        </svg>
+      </button>
+      <!-- Mobile menu -->
+      <div class="navbar-mobile-menu" id="navbarMobileMenu" aria-label="Mobile Navigation Menu">
+        <div class="navbar-mobile-menu-content">
+          <a href="index.html" class="nav-mobile-item" data-i18n="home" aria-label="Go to Home">Home</a>
+          <a href="/about-ishan/" class="nav-mobile-item" data-i18n="about" aria-label="Go to About me">About me</a>
+          <a href="/ev-platform-ui-ux/" class="nav-mobile-item nav-mobile-work" data-i18n="ev" aria-label="Go to EV Multiplatform">EV
+            Case Study</a>
+          <a href="/contact/" class="nav-mobile-item" data-i18n="contact" aria-label="Go to Contact me">Contact
+            me</a>
+        </div>
+      </div>
+    </nav>
+    
+<section class="about-hero-section">
+
+   <!-- LEGAL CONTENT (all structured with div only) -->
+  <div class="legal-page" role="main" aria-labelledby="legal-title">
+    <div class="legal-header">
+      <h1 id="legal-title" class="legal-h1">Legal / Imprint (Impressum)</h1>
+      <div class="legal-tagline">Publisher & Ownership Information</div>
+    </div>
+
+    <div class="legal-block">
+      <div class="legal-block-title">Publisher / Owner</div>
+      <div class="legal-block-body">
+        <p>Lumas — Portfolio of <strong>Ishan Bansal</strong><br>
+           <strong>Responsible for content:</strong> Ishan Bansal</p>
+      </div>
+    </div>
+
+    <div class="legal-block">
+      <div class="legal-block-title">Address</div>
+      <div class="legal-block-body">
+        <address class="legal-address">
+          C-282, Radha Garden<br>
+          Meerut, 250001<br>
+          India
+        </address>
+        <p><strong>Email:</strong> <a href="mailto:connect@lumas.studio">connect@lumas.studio</a><br>
+           <strong>Phone:</strong> +91-9329644654</p>
+      </div>
+    </div>
+
+    <div class="legal-block">
+      <div class="legal-block-title">Business Details</div>
+      <div class="legal-block-body">
+        <p>Activity: Independent Product Design & UX consultancy<br>
+           Place of establishment: India<br>
+           EU VAT ID: Not applicable (no EU establishment)<br>
+           US tax form (on request): W-8BEN</p>
+      </div>
+    </div>
+
+    <div class="legal-block">
+      <div class="legal-block-title">EU Representative (GDPR Art. 27)</div>
+      <div class="legal-block-body">
+        <p>Not required (no EU establishment). Privacy queries: <a href="mailto:connect@lumas.studio">connect@lumas.studio</a></p>
+      </div>
+    </div>
+
+    <div class="legal-block">
+      <div class="legal-block-title">Professional Liability Insurance</div>
+      <div class="legal-block-body">
+        <p>Not applicable.</p>
+      </div>
+    </div>
+
+    <div class="legal-block">
+      <div class="legal-block-title">Copyright & Trademarks</div>
+      <div class="legal-block-body">
+        <p>© <span id="legal-year"></span> Ishan Bansal. All rights reserved. Third‑party trademarks belong to their owners.<br>
+           </p>
+      </div>
+    </div>
+
+    <div class="legal-block">
+      <div class="legal-block-title">Liability for Content</div>
+      <div class="legal-block-body">
+        <p>This site provides information about my work. While content is created with care, no liability is assumed for accuracy, completeness, or timeliness. Nothing here constitutes legal or professional advice.</p>
+      </div>
+    </div>
+
+    <div class="legal-block">
+      <div class="legal-block-title">Liability for Links</div>
+      <div class="legal-block-body">
+        <p>External links are provided for convenience; I have no control over their content and assume no responsibility. Report unlawful links and they will be removed promptly.</p>
+      </div>
+    </div>
+
+    <div class="legal-block">
+      <div class="legal-block-title">Dispute Resolution (EU)</div>
+      <div class="legal-block-body">
+        <p>Not obliged and generally not willing to participate in consumer dispute resolution before an arbitration board.<br>
+           EU ODR platform: <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener">https://ec.europa.eu/consumers/odr/</a></p>
+      </div>
+    </div>
+
+    <div class="legal-block">
+      <div class="legal-block-title">DMCA / Copyright Contact (US)</div>
+      <div class="legal-block-body">
+        <p>Takedown requests: <a href="mailto:connect@lumas.studio">connect@lumas.studio</a> • Postal: C-282, Radha Garden, Meerut, 250001, India</p>
+      </div>
+    </div>
+
+    <div class="legal-block">
+      <div class="legal-block-title">Accessibility</div>
+      <div class="legal-block-body">
+        <p>Targeting WCAG 2.1 AA. Report issues to <a href="mailto:connect@lumas.studio">connect@lumas.studio</a></p>
+      </div>
+    </div>
+
+    <div class="legal-block">
+      <div class="legal-block-title">Governing Law / Venue</div>
+      <div class="legal-block-body">
+        <p>Governed by the laws of India. Mandatory consumer rights in your country remain unaffected.</p>
+      </div>
+    </div>
+
+    <div class="legal-updated">Last updated: <span id="legal-updated-date">[DD MMM YYYY]</span></div>
+  </div>
+  </section>
+    <footer class="site-footer" role="contentinfo" aria-label="Footer">
+  <div class="footer-main">
+    <div class="footer-logo-nav-row" aria-label="Footer Logo and Navigation">
+      <div class="footer-logo" style="display: flex; flex-direction: column; max-width:300px;" aria-label="Footer Logo">
+        <img src="/Image/Lumas.svg" alt="LUMAS Logo" style="height:32px; filter:invert(1);">
+        <p style="line-height:30px;">A Portfolio by Ishan Bansal — <span style="font-weight:400;">Product Designer</span></p>
+      </div>
+      <div class="footer-menu" aria-label="Footer Menu">
+        <div class="footer-nav-col" aria-label="Learn Links">
+          <div class="footer-nav-title">Learn</div>
+          <ul class="footer-nav-list" style="list-style:none; padding:0;">
+            <li><a href="#testimonials" class="footer-link" aria-label="Testimonials">Testimonials</a></li>
+            <li><a href="/ev-platform-ui-ux/" class="footer-link" aria-label="EV Case Study">EV Case Study</a></li>
+            <li><a href="#the-problem" class="footer-link" aria-label="The Problem">The Problem</a></li>
+            <li><a href="#process-pricing" class="footer-link" aria-label="Process & Pricing">Process & Pricing</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav-col" aria-label="About Links">
+          <div class="footer-nav-title">About</div>
+          <ul class="footer-nav-list" style="list-style:none; padding:0;">
+            <li><a href="/about-ishan/" class="footer-link" aria-label="About Ishan">About Ishan</a></li>
+            <li><a href="#why-ishan" class="footer-link" aria-label="Why Ishan?">Why Ishan?</a></li>
+            <li><a href="#FAQ" class="footer-link" aria-label="FAQ">FAQ</a></li>
+            <li><a href="/contact/" class="footer-link" aria-label="Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-social-row" aria-label="Footer Social Links">
+      <div class="footer-links-col" aria-label="LinkedIn Link">
+        <div class="footer-link-icon-group">
+          <span class="footer-icon footer-icon-discord" style="display: flex; align-items: center; justify-content: center; height: 32px; width: 32px;">
+            <img src="/Image/linkedin-logo_49068.svg" alt="LinkedIn Icon" style="height: 20px;">
+          </span>
+          <i class="fa-brands fa-linkedin" aria-hidden="true" style="font-size:20px;vertical-align:middle;"></i>
+          <span class="footer-link-label">LinkedIn</span>
+          <span class="footer-link-ext">&#8599;</span>
+        </div>
+      </div>
+      <div class="footer-links-col" aria-label="Email Link">
+        <div class="footer-link-icon-group">
+          <span class="footer-icon footer-icon-discord" style="display: flex; align-items: center; justify-content: center; height: 32px; width: 32px;">
+            <img src="/Image/gmail_732026.svg" alt="Email Icon" style="height: 20px;">
+          </span>
+          <i class="fa fa-envelope" aria-hidden="true" style="font-size:20px;vertical-align:middle;"></i>
+          <span class="footer-link-label">Email</span>
+          <span class="footer-link-ext">&#8599;</span>
+        </div>
+      </div>
+      <div class="footer-links-col" aria-label="Twitter Link">
+        <div class="footer-link-icon-group">
+          <span class="footer-icon footer-icon-discord" style="display: flex; align-items: center; justify-content: center; height: 32px; width: 32px;">
+            <img src="/Image/social_49043.svg" alt="Twitter Icon" style="height: 20px;">
+          </span>
+          <span class="footer-link-label">Twitter</span>
+          <span class="footer-link-ext">&#8599;</span>
+        </div>
+      </div>
+    </div>
+    <hr class="footer-divider">
+    <div class="footer-bottom-row" aria-label="Footer Bottom Row">
+      <div class="personal-touch" aria-label="Copyright">
+        <p>© Ishan Bansal, trading as "Lumas". IST-based, working EU hours (CET/CEST).</p>
+      </div>
+      <div class="footer-bottom-links" aria-label="Footer Legal Links">
+        <a href="/legal/" class="footer-bottom-link" style="color:#e0e0e0;" aria-label="Legal / Imprint">Legal / Imprint</a>
+        <a href="/privacy/" class="footer-bottom-link" style="color:#e0e0e0;" aria-label="Privacy Policy">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Draggable.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/MotionPathPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/SplitText.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Flip.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/EaselPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/PixiPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/CSSRulePlugin.min.js"></script>
+  <script src="/navbar-responsive.js"></script>
+  <script src="/navbar.js"></script>
+  <script src="/script.js"></script>
+
+
+</body>
+
+</html>
