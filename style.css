@@ -5482,7 +5482,7 @@ body {
   gap: 1.25rem;
   font-size: 1.5rem;
   line-height: 1.8rem;
-  font-weight: 700;
+  font-weight: 700 !important;
   font-family: 'Coming Soon', cursive;
 }
 
