@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About me</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="navbar" role="navigation" aria-label="Main Navigation">
+ <nav class="navbar" role="navigation" aria-label="Main Navigation">
       <div class="navbar-section navbar-left" aria-label="Primary Navigation">
         <a href="index.html" class="nav-btn nav-home" style="text-decoration: none;" data-i18n="home"
           aria-label="Go to Testimonials"><span></span>Testimonials</a>
@@ -18,13 +18,13 @@
       <div class="navbar-section navbar-center" aria-label="Logo Navigation">
         <a href="index.html" class="nav-btn nav-copyright" style="text-decoration: none;" data-i18n="copyright"
           aria-label="Go to Home">
-          <img src="Image/Lumas.svg" alt="LUMAS Logo" style="height:14px; padding:4px; vertical-align:middle;">
+          <img src="Image/Lumos.svg" alt="LUMOS Logo" style="height:14px; padding:4px; vertical-align:middle;">
         </a>
       </div>
       <!-- Mobile copyright, visible only below 1280px -->
       <div class="navbar-mobile-copyright" aria-label="Mobile Logo Navigation">
         <a href="index.html" class="nav-btn nav-copyright-mobile" style="text-decoration: none;" data-i18n="copyright"
-          aria-label="Go to Home"> <img src="Image/Lumas.svg" alt="LUMAS Logo"
+          aria-label="Go to Home"> <img src="Image/Lumos.svg" alt="LUMOS Logo"
             style="height:14px; padding:4px; vertical-align:middle;"></a>
       </div>
       <div class="navbar-section navbar-right" aria-label="Secondary Navigation">
@@ -64,46 +64,120 @@
         </div>
       </div>
     </nav>
+    
+<section class="about-hero-section">
 
-  <div class="contact-container">
-    <!-- Contact form -->
-    <form id="contactForm" class="contact-form" method="POST" action="/api/contact">
-      <div class="contact-form-header">
-        <h2>Fix the leak in your funnel.</h2>
-        <div class="contact-form-sub">Give me the brief in a few lines; I’ll handle the structure. Expect a quick response and a fit call link—NDA on request.</div>
+   <!-- LEGAL CONTENT (all structured with div only) -->
+  <div class="legal-page" role="main" aria-labelledby="legal-title">
+    <div class="legal-header">
+      <h1 id="legal-title" class="legal-h1">Legal / Imprint (Impressum)</h1>
+      <div class="legal-tagline">Publisher & Ownership Information</div>
+    </div>
+
+    <div class="legal-block">
+      <div class="legal-block-title">Publisher / Owner</div>
+      <div class="legal-block-body">
+        <p>Lumas — Portfolio of <strong>Ishan Bansal</strong><br>
+           <strong>Responsible for content:</strong> Ishan Bansal</p>
       </div>
+    </div>
 
-      <div class="contact-form-group">
-        <input type="text" class="contact-input" name="name" placeholder="Your name" required />
-        <input type="email" class="contact-input" name="email" placeholder="email@company.com" required />
-        <textarea class="contact-input" name="message" rows="3" placeholder="Tell me a little about the project..." required></textarea>
+    <div class="legal-block">
+      <div class="legal-block-title">Address</div>
+      <div class="legal-block-body">
+        <address class="legal-address">
+          C-282, Radha Garden<br>
+          Meerut, 250001<br>
+          India
+        </address>
+        <p><strong>Email:</strong> <a href="mailto:connect@lumas.studio">connect@lumas.studio</a><br>
+           <strong>Phone:</strong> +91-9329644654</p>
       </div>
+    </div>
 
-      <div class="contact-form-group">
-        <div class="contact-form-label">Privacy First</div>
-        <div class="contact-checkbox-row">
-          <label><input type="checkbox" name="help" value="Sign NDA"> I want to sign NDA</label>
-        </div>
+    <div class="legal-block">
+      <div class="legal-block-title">Business Details</div>
+      <div class="legal-block-body">
+        <p>Activity: Independent Product Design & UX consultancy<br>
+           Place of establishment: India<br>
+           EU VAT ID: Not applicable (no EU establishment)<br>
+           US tax form (on request): W-8BEN</p>
       </div>
+    </div>
 
-      <!-- Honeypot field (spam trap) -->
-      <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off" />
+    <div class="legal-block">
+      <div class="legal-block-title">EU Representative (GDPR Art. 27)</div>
+      <div class="legal-block-body">
+        <p>Not required (no EU establishment). Privacy queries: <a href="mailto:connect@lumas.studio">connect@lumas.studio</a></p>
+      </div>
+    </div>
 
-      <!-- Cloudflare Turnstile (AUTO-render: exactly one badge) -->
-      <div class="cf-turnstile" data-sitekey="0x4AAAAAABz_zHTAN2QnkjXF"></div>
+    <div class="legal-block">
+      <div class="legal-block-title">Professional Liability Insurance</div>
+      <div class="legal-block-body">
+        <p>Not applicable.</p>
+      </div>
+    </div>
 
-      <button type="submit" class="contact-form-btn">Let's get started!</button>
+    <div class="legal-block">
+      <div class="legal-block-title">Copyright & Trademarks</div>
+      <div class="legal-block-body">
+        <p>© <span id="legal-year"></span> Ishan Bansal. All rights reserved. Third‑party trademarks belong to their owners.<br>
+           Open‑source / image credits (where used): <em>[link or short list]</em>.</p>
+      </div>
+    </div>
 
-      <!-- Feedback messages -->
-      <div id="formSuccess" style="font-size: 20px; font-weight: 600; display:none;margin-top:10px;color:#0a8f3c;">Received your request! I will contact you within 24 hours!</div>
-      <div id="formError" style="display:none;margin-top:10px;color:#b00020;">Sorry—something went wrong. Please try again.</div>
-    </form>
+    <div class="legal-block">
+      <div class="legal-block-title">Liability for Content</div>
+      <div class="legal-block-body">
+        <p>This site provides information about my work. While content is created with care, no liability is assumed for accuracy, completeness, or timeliness. Nothing here constitutes legal or professional advice.</p>
+      </div>
+    </div>
+
+    <div class="legal-block">
+      <div class="legal-block-title">Liability for Links</div>
+      <div class="legal-block-body">
+        <p>External links are provided for convenience; I have no control over their content and assume no responsibility. Report unlawful links and they will be removed promptly.</p>
+      </div>
+    </div>
+
+    <div class="legal-block">
+      <div class="legal-block-title">Dispute Resolution (EU)</div>
+      <div class="legal-block-body">
+        <p>Not obliged and generally not willing to participate in consumer dispute resolution before an arbitration board.<br>
+           EU ODR platform: <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener">https://ec.europa.eu/consumers/odr/</a></p>
+      </div>
+    </div>
+
+    <div class="legal-block">
+      <div class="legal-block-title">DMCA / Copyright Contact (US)</div>
+      <div class="legal-block-body">
+        <p>Takedown requests: <a href="mailto:connect@lumas.studio">connect@lumas.studio</a> • Postal: C-282, Radha Garden, Meerut, 250001, India</p>
+      </div>
+    </div>
+
+    <div class="legal-block">
+      <div class="legal-block-title">Accessibility</div>
+      <div class="legal-block-body">
+        <p>Targeting WCAG 2.1 AA. Report issues to <a href="mailto:connect@lumas.studio">connect@lumas.studio</a></p>
+      </div>
+    </div>
+
+    <div class="legal-block">
+      <div class="legal-block-title">Governing Law / Venue</div>
+      <div class="legal-block-body">
+        <p>Governed by the laws of India. Mandatory consumer rights in your country remain unaffected.</p>
+      </div>
+    </div>
+
+    <div class="legal-updated">Last updated: <span id="legal-updated-date">[DD MMM YYYY]</span></div>
   </div>
-      <footer class="site-footer" role="contentinfo" aria-label="Footer">
+  </section>
+    <footer class="site-footer" role="contentinfo" aria-label="Footer">
   <div class="footer-main">
     <div class="footer-logo-nav-row" aria-label="Footer Logo and Navigation">
       <div class="footer-logo" style="display: flex; flex-direction: column; max-width:300px;" aria-label="Footer Logo">
-        <img src="Image/Lumas.svg" alt="LUMAS Logo" style="height:32px; filter:invert(1);">
+        <img src="Image/Lumos.svg" alt="LUMOS Logo" style="height:32px; filter:invert(1);">
         <p style="line-height:30px;">A Portfolio by Ishan Bansal — <span style="font-weight:400;">Product Designer</span></p>
       </div>
       <div class="footer-menu" aria-label="Footer Menu">
@@ -170,105 +244,21 @@
     </div>
   </div>
 </footer>
-
-  <!-- Your other scripts (optional) -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Draggable.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/MotionPathPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/SplitText.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Flip.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/EaselPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/PixiPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/CSSRulePlugin.min.js"></script>
   <script src="navbar-responsive.js"></script>
   <script src="navbar.js"></script>
   <script src="script.js"></script>
-  <script src="localization.js"></script>
-
-  <!-- Turnstile API (loads and auto-renders the widget above) -->
-  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-
-  <!-- Minimal, robust submit handler -->
-  <script>
-    (function () {
-      const form = document.getElementById("contactForm");
-      const ok = document.getElementById("formSuccess");
-      const err = document.getElementById("formError");
-
-      form.addEventListener("submit", async function (e) {
-        e.preventDefault();
-        ok.style.display = "none";
-        err.style.display = "none";
-        err.textContent = "Sorry—something went wrong. Please try again.";
-
-        // Ensure Turnstile has produced a token (auto-render inserts a hidden input)
-        const token = form.querySelector('input[name="cf-turnstile-response"]')?.value || "";
-        if (!token) {
-          err.textContent = "Security check is still loading. Please wait a moment and try again.";
-          err.style.display = "block";
-          return;
-        }
-
-        try {
-          const res = await fetch(form.action, { method: "POST", body: new FormData(form) });
-          if (res.ok) {
-            ok.style.display = "block";
-            form.reset();
-            // Turnstile will auto-refresh the token after a while; no manual reset needed.
-          } else {
-            const text = await res.text();
-            err.textContent = text || "Sorry—something went wrong. Please try again.";
-            err.style.display = "block";
-          }
-        } catch {
-          err.textContent = "Network error. Please try again.";
-          err.style.display = "block";
-        }
-      });
-    })();
-  </script>
-  <!-- Add this code just before the closing </body> tag in each HTML file: index.html, About.html, contact.html, EV multiplatform.html -->
-
-<!-- CookieConsent by Osano (EU GDPR compliant) -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
-<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
-<script>
-window.addEventListener("load", function(){
-  window.cookieconsent.initialise({
-    palette: {
-      popup: { background: "#191919", text: "#fff" },
-      button: { background: "#defe94", text: "#191919" }
-    },
-    theme: "classic",
-    position: "bottom",
-    type: "opt-in",
-    content: {
-      message: "We use cookies to enhance your experience. You can manage your preferences. Only essential cookies are set until you consent.",
-      dismiss: "Accept all",
-      allow: "Accept all",
-      deny: "Decline",
-      link: "Learn more",
-      href: "privacy-policy.html"  // Change to your privacy policy URL
-    },
-    onInitialise: function (status) {
-      if (status === 'allow') {
-        enableAnalytics();
-      }
-    },
-    onStatusChange: function(status) {
-      if (status === 'allow') {
-        enableAnalytics();
-      }
-    }
-  });
-
-  // Example: Only load analytics if consent is given
-  function enableAnalytics() {
-    // Insert your analytics script here, e.g. Google Analytics
-    // Example:
-    // var ga = document.createElement('script');
-    // ga.src = 'https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXX-X';
-    // document.head.appendChild(ga);
-    // window.dataLayer = window.dataLayer || [];
-    // function gtag(){dataLayer.push(arguments);}
-    // gtag('js', new Date());
-    // gtag('config', 'UA-XXXXXXX-X');
-  }
-});
-</script>
+  
+  
 </body>
+
 </html>

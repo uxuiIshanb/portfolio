@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About me</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="navbar" role="navigation" aria-label="Main Navigation">
+ <nav class="navbar" role="navigation" aria-label="Main Navigation">
       <div class="navbar-section navbar-left" aria-label="Primary Navigation">
         <a href="index.html" class="nav-btn nav-home" style="text-decoration: none;" data-i18n="home"
           aria-label="Go to Testimonials"><span></span>Testimonials</a>
@@ -64,42 +64,12 @@
         </div>
       </div>
     </nav>
+    
+<section class="about-hero-section">
 
-  <div class="contact-container">
-    <!-- Contact form -->
-    <form id="contactForm" class="contact-form" method="POST" action="/api/contact">
-      <div class="contact-form-header">
-        <h2>Fix the leak in your funnel.</h2>
-        <div class="contact-form-sub">Give me the brief in a few lines; I’ll handle the structure. Expect a quick response and a fit call link—NDA on request.</div>
-      </div>
 
-      <div class="contact-form-group">
-        <input type="text" class="contact-input" name="name" placeholder="Your name" required />
-        <input type="email" class="contact-input" name="email" placeholder="email@company.com" required />
-        <textarea class="contact-input" name="message" rows="3" placeholder="Tell me a little about the project..." required></textarea>
-      </div>
-
-      <div class="contact-form-group">
-        <div class="contact-form-label">Privacy First</div>
-        <div class="contact-checkbox-row">
-          <label><input type="checkbox" name="help" value="Sign NDA"> I want to sign NDA</label>
-        </div>
-      </div>
-
-      <!-- Honeypot field (spam trap) -->
-      <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off" />
-
-      <!-- Cloudflare Turnstile (AUTO-render: exactly one badge) -->
-      <div class="cf-turnstile" data-sitekey="0x4AAAAAABz_zHTAN2QnkjXF"></div>
-
-      <button type="submit" class="contact-form-btn">Let's get started!</button>
-
-      <!-- Feedback messages -->
-      <div id="formSuccess" style="font-size: 20px; font-weight: 600; display:none;margin-top:10px;color:#0a8f3c;">Received your request! I will contact you within 24 hours!</div>
-      <div id="formError" style="display:none;margin-top:10px;color:#b00020;">Sorry—something went wrong. Please try again.</div>
-    </form>
-  </div>
-      <footer class="site-footer" role="contentinfo" aria-label="Footer">
+  </section>
+    <footer class="site-footer" role="contentinfo" aria-label="Footer">
   <div class="footer-main">
     <div class="footer-logo-nav-row" aria-label="Footer Logo and Navigation">
       <div class="footer-logo" style="display: flex; flex-direction: column; max-width:300px;" aria-label="Footer Logo">
@@ -170,105 +140,21 @@
     </div>
   </div>
 </footer>
-
-  <!-- Your other scripts (optional) -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Draggable.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/MotionPathPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/SplitText.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Flip.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/EaselPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/PixiPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/CSSRulePlugin.min.js"></script>
   <script src="navbar-responsive.js"></script>
   <script src="navbar.js"></script>
   <script src="script.js"></script>
-  <script src="localization.js"></script>
-
-  <!-- Turnstile API (loads and auto-renders the widget above) -->
-  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-
-  <!-- Minimal, robust submit handler -->
-  <script>
-    (function () {
-      const form = document.getElementById("contactForm");
-      const ok = document.getElementById("formSuccess");
-      const err = document.getElementById("formError");
-
-      form.addEventListener("submit", async function (e) {
-        e.preventDefault();
-        ok.style.display = "none";
-        err.style.display = "none";
-        err.textContent = "Sorry—something went wrong. Please try again.";
-
-        // Ensure Turnstile has produced a token (auto-render inserts a hidden input)
-        const token = form.querySelector('input[name="cf-turnstile-response"]')?.value || "";
-        if (!token) {
-          err.textContent = "Security check is still loading. Please wait a moment and try again.";
-          err.style.display = "block";
-          return;
-        }
-
-        try {
-          const res = await fetch(form.action, { method: "POST", body: new FormData(form) });
-          if (res.ok) {
-            ok.style.display = "block";
-            form.reset();
-            // Turnstile will auto-refresh the token after a while; no manual reset needed.
-          } else {
-            const text = await res.text();
-            err.textContent = text || "Sorry—something went wrong. Please try again.";
-            err.style.display = "block";
-          }
-        } catch {
-          err.textContent = "Network error. Please try again.";
-          err.style.display = "block";
-        }
-      });
-    })();
-  </script>
-  <!-- Add this code just before the closing </body> tag in each HTML file: index.html, About.html, contact.html, EV multiplatform.html -->
-
-<!-- CookieConsent by Osano (EU GDPR compliant) -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
-<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
-<script>
-window.addEventListener("load", function(){
-  window.cookieconsent.initialise({
-    palette: {
-      popup: { background: "#191919", text: "#fff" },
-      button: { background: "#defe94", text: "#191919" }
-    },
-    theme: "classic",
-    position: "bottom",
-    type: "opt-in",
-    content: {
-      message: "We use cookies to enhance your experience. You can manage your preferences. Only essential cookies are set until you consent.",
-      dismiss: "Accept all",
-      allow: "Accept all",
-      deny: "Decline",
-      link: "Learn more",
-      href: "privacy-policy.html"  // Change to your privacy policy URL
-    },
-    onInitialise: function (status) {
-      if (status === 'allow') {
-        enableAnalytics();
-      }
-    },
-    onStatusChange: function(status) {
-      if (status === 'allow') {
-        enableAnalytics();
-      }
-    }
-  });
-
-  // Example: Only load analytics if consent is given
-  function enableAnalytics() {
-    // Insert your analytics script here, e.g. Google Analytics
-    // Example:
-    // var ga = document.createElement('script');
-    // ga.src = 'https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXX-X';
-    // document.head.appendChild(ga);
-    // window.dataLayer = window.dataLayer || [];
-    // function gtag(){dataLayer.push(arguments);}
-    // gtag('js', new Date());
-    // gtag('config', 'UA-XXXXXXX-X');
-  }
-});
-</script>
+  
+  
 </body>
+
 </html>
