@@ -5363,13 +5363,94 @@ body {
   }
 }
 
+/* === About Hero 3-Column Layout Override (Added) === */
 .about-hero-grid {
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.25rem 2.5rem;
+  align-items: center;
+  justify-items: center;
   max-width: 1080px;
   margin: 0 auto;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 1.5rem 1rem;
   position: relative;
+}
+
+.about-hero-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.25rem;
+  width: 100%;
+}
+
+.col-avatar {
+  gap: 0;
+}
+
+.about-hero-avatar {
+  width: 100%;
+  max-width: 340px;
+  min-height: 360px;
+  border-radius: 32%;
+}
+
+/* Reset old explicit grid placements */
+.about-hero-stat-tl,
+.about-hero-stat-tr,
+.about-hero-stat-bl,
+.about-hero-stat-br {
+  grid-column: auto !important;
+  grid-row: auto !important;
+  text-align: center;
+  align-items: center !important;
+}
+
+.about-hero-stat .stat-title {
+  font-size: 1.6rem;
+}
+
+.about-hero-stat .stat-sub,
+.about-hero-stat .stat-link {
+  font-size: 0.7rem;
+  letter-spacing: .05em;
+}
+
+/* Responsive: stack columns below 980px */
+@media (max-width: 980px) {
+  .about-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2.75rem;
+  }
+
+  .about-hero-col {
+    gap: 2.25rem;
+  }
+
+  .col-stats-left,
+  .col-stats-right {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem 3rem;
+  }
+
+  .about-hero-avatar {
+    min-height: 320px;
+  }
+}
+
+/* Small screens: stack stats vertically again */
+@media (max-width: 640px) {
+
+  .col-stats-left,
+  .col-stats-right {
+    flex-direction: column;
+    gap: 1.75rem;
+  }
+
+  .about-hero-avatar {
+    min-height: 300px;
+  }
 }
 
 .about-hero-heading {
@@ -5477,9 +5558,7 @@ body {
 }
 
 @media (max-width:980px) {
-  .about-hero-grid {
-    grid-template-columns: repeat(8, 1fr);
-  }
+
 
   .about-hero-avatar {
     grid-column: 3 / span 4;
@@ -5504,10 +5583,7 @@ body {
 }
 
 @media (max-width:640px) {
-  .about-hero-grid {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.25rem .75rem;
-  }
+
 
   .about-hero-avatar {
     grid-column: 1 / -1;
@@ -5521,12 +5597,6 @@ body {
     grid-column: span 2;
     text-align: center;
     align-items: flex-start;
-  }
-
-  .about-hero-bio {
-    margin-top: 3rem;
-    font-size: .85rem;
-    text-align: left;
   }
 }
 
