@@ -2130,11 +2130,6 @@ body {
   .case-barrier-title {
     font-size: 1.15rem;
   }
-
-  .case-barrier-desc {
-    font-size: 1rem;
-    line-height: 1.6;
-  }
 }
 
 .case-ibm-block {
@@ -3629,11 +3624,6 @@ body {
 
   .case-barrier-title {
     font-size: 1.15rem;
-  }
-
-  .case-barrier-desc {
-    font-size: 1rem;
-    line-height: 1.6;
   }
 }
 
