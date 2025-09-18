@@ -171,6 +171,29 @@
 }
 </script>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const btn = document.getElementById("book-call-2");
+    if (!btn) {
+      console.error("Button with id 'book-call-2' not found on page.");
+      return;
+    }
+    btn.addEventListener("click", function(e) {
+      // Prevent default if needed
+      window.location.href = "https://cal.com/lumas-studio/audit-design";
+    });
+  });
+  document.addEventListener("DOMContentLoaded", function () {
+    const btn = document.getElementById("book-call-1");
+    if (btn) {
+      btn.addEventListener("click", function () {
+        window.location.href = "https://cal.com/lumas-studio/fullstack";
+      });
+    } else {
+      console.error("Button not found!");
+    }
+  });
+</script>
 
 
 
@@ -627,8 +650,8 @@ I oversee outcomes. Human-led + AI-assisted, I cut weeks to days and establish a
                 class="pricing-card-popular">Popular</span></div>
             <div class="pricing-card-note" data-i18n="pricing_standard_note">One Time. 50% advance, 50% on delivery
             </div>
-            <button class="pricing-card-btn" data-i18n="pricing_standard_btn">Book a Call</button>
-            <a href="https://cal.com/lumas-studio/audit-design" class="pricing-card-link" data-i18n="pricing_standard_link">Confused? Email me</a>
+            <button id="book-call-2" class="pricing-card-btn" data-i18n="pricing_standard_btn">Book a Call</button>
+            <a href="/contact/" class="pricing-card-link" data-i18n="pricing_standard_link">Confused? Email me</a>
           </div>
           <ul class="pricing-card-features">
             <li data-i18n="pricing_standard_f1">UX Audit + Conversion Lift</li>
@@ -650,8 +673,8 @@ I oversee outcomes. Human-led + AI-assisted, I cut weeks to days and establish a
                 style="font-weight: 400; font-size: 16px;"> 🔻73% less than cost of design agencies</span></div>
             <div class="pricing-card-price" data-i18n="pricing_pro_price">from $5,799</div>
             <div class="pricing-card-note" data-i18n="pricing_pro_note">One Time. 50% advance, 50% on delivery</div>
-            <button class="pricing-card-btn" data-i18n="pricing_pro_btn">Book a Call</button>
-            <a href="https://cal.com/lumas-studio/fullstack" class="pricing-card-link" data-i18n="pricing_pro_link">Confused? Email me</a>
+            <button id="book-call-1" class="pricing-card-btn" data-i18n="pricing_pro_btn">Book a Call</button>
+            <a href="/contact/" class="pricing-card-link" data-i18n="pricing_pro_link">Confused? Email me</a>
           </div>
           <ul class="pricing-card-features">
             <li data-i18n="pricing_pro_f1">Brand + Product Identity that Converts</li>
@@ -843,7 +866,6 @@ I oversee outcomes. Human-led + AI-assisted, I cut weeks to days and establish a
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/PixiPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/CSSRulePlugin.min.js"></script>
     <script src="navbar-responsive.js"></script>
-    <script src="script.js"></script>
     <script src="navbar.js"></script>
     <script src="carousel.js"></script>
     <script src="localization.js"></script>
