@@ -47,7 +47,7 @@
   <nav class="navbar" role="navigation" aria-label="Main Navigation">
       <div class="navbar-section navbar-left" aria-label="Primary Navigation">
         <a href="#testimonials" class="nav-btn nav-home" style="text-decoration: none;" data-i18n="home"
-          aria-label="Go to Testimonials"><span></span>Testimonials</a>
+          >Skills</a>
         <a href="/about-ishan/" class="nav-btn" style="text-decoration: none;" data-i18n="about"
           aria-label="Go to About">About</a>
       </div>
@@ -65,18 +65,19 @@
             style="height:14px; padding:4px; vertical-align:middle;"></a>
       </div>
       <div class="navbar-section navbar-right" aria-label="Secondary Navigation">
-        <div class="nav-dropdown-wrapper" aria-label="Case Studies Dropdown">
-          <button class="nav-btn nav-work" id="navWorkBtn" data-i18n="work" aria-haspopup="true" aria-expanded="false"
+         <a href="/contact/" class="nav-btn" style="text-decoration: none;" data-i18n="contact"
+          aria-label="Go to Contact">Contact</a>
+        <div class="nav-dropdown-wrapper" aria-label="Case Studies Dropdown" >
+          <button class="nav-btn nav-work" style="background-color: #191919; color: white;" id="navWorkBtn" data-i18n="work" aria-haspopup="true" aria-expanded="false"
             aria-controls="navWorkDropdown" aria-label="Open Case Studies Dropdown">
-            <span data-i18n="work">Case Studies</span>
+            <span data-i18n="work">Work</span>
           </button>
           <div class="nav-dropdown" id="navWorkDropdown" aria-label="Case Studies Menu">
             <a href="/ev-platform-ui-ux/" class="nav-dropdown-item" data-i18n="ev"
               aria-label="Go to EV Multiplatform">EV Multiplatform</a>
           </div>
         </div>
-        <a href="/contact/" class="nav-btn" style="text-decoration: none;" data-i18n="contact"
-          aria-label="Go to Contact">Contact</a>
+       
       </div>
       <!-- Hamburger for mobile -->
       <button class="navbar-hamburger" id="navbarHamburger" aria-label="Open menu" aria-controls="navbarMobileMenu"
@@ -104,10 +105,11 @@
     <section class="hero-desk" style="margin-top:32px;" aria-label="Hero Section">
       <div class="hero-desk-grid">
         <div class="hero-desk-col hero-desk-col-1" aria-label="Hero Text">
-          <h1 class="Title" data-i18n="hero_title" aria-label="Main Headline">
+          <p style="font-family: 'Coming Soon', cursive, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1.25rem; font-weight: 600; margin-bottom: 0px;">Hi, I am Ishan,</p>
+          <h1 class="Title" style="font-size: 3rem;">
             Senior Product Designer (UI UX)<br />
           </h1>
-          <p class="Title-para" data-i18n="hero_para" aria-label="Hero Description">Hi! I am Ishan. I design end-to-end product journeys that make complex platforms feel obvious—and measurable.</p>
+          <p class="Title-para" data-i18n="hero_para" aria-label="Hero Description">I design end-to-end product journeys that make complex platforms feel obvious—and measurable.</p>
           <a class="hero-btn" href="#why-ishan" style="margin-bottom:20px;" aria-label="See Results">
             <span class="hero-btn-icon">
               <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -132,7 +134,7 @@
                 </defs>
               </svg>
             </span>
-            <span class="hero-btn-content" data-i18n="explore_btn">See How I Fix Growth</span>
+            <span class="hero-btn-content" data-i18n="explore_btn">Download Resume</span>
           </a>
           
         </div>
@@ -317,53 +319,6 @@ I oversee outcomes. Human-led + AI-assisted, I cut weeks to days and establish a
         <span style="font-size:0.9em;">&#8594;</span></a>
     </section>
 
-    <section class="testimonial-section" id="testimonials" aria-label="Testimonials Section">
-      <div class="testimonial-header" aria-label="Testimonials Header">
-        <div class="testimonial-label" data-i18n="testimonial_label">Client Testimonial</div>
-        <h2 class="testimonial-title" data-i18n="testimonial_title">What They Say?</h2>
-      </div>
-      <div class="testimonial-cards-row" aria-label="Testimonial Cards">
-        <div class="testimonial-card testimonial-card-green" aria-label="Testimonial Card 1">
-          <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
-          <div class="testimonial-quote" data-i18n="testimonial_1">With agencies, every change meant weeks of back-and-forth and skyrocketing costs. Too many people, too much delay. With Ishan, it was simple—just one person to coordinate with. He handled brand, UI UX, and the Webflow build himself. We launched in under a month, and results came faster than expected.
-          </div>
-          <div class="testimonial-user-row" aria-label="Testimonial User">
-            <div class="testimonial-avatar" style="background-image:url('Image/Anjum.jpeg');"></div>
-            <div>
-              <div class="testimonial-user-name" data-i18n="testimonial_1_name">Puneet Arora</div>
-              <div class="testimonial-user-role" data-i18n="testimonial_1_role">Business Development, Anjum Extractions
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-card testimonial-card-pink" aria-label="Testimonial Card 2">
-          <div class="testimonial-stars" style="color: white;" aria-label="5 stars">★★★★★</div>
-          <div class="testimonial-quote" data-i18n="testimonial_2">We didn’t need a big agency—we needed results. Ishan combined human insight with AI speed, rebuilt our flows in Figma, and shipped a build that investors loved. The redesign helped us close our round and launch globally without wasted cycles.
-          </div>
-          <div class="testimonial-user-row" style="color: white;" aria-label="Testimonial User">
-            <div class="testimonial-avatar" style="background-image:url('Image/Erick.avif');"></div>
-            <div>
-              <div class="testimonial-user-name" style="color: white;" data-i18n="testimonial_2_name">Erik Lindström
-              </div>
-              <div class="testimonial-user-role" style="color: white;" data-i18n="testimonial_2_role">CTO, EV Platform
-                Series A</div>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-card testimonial-card-white" aria-label="Testimonial Card 3">
-          <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
-          <div class="testimonial-quote" data-i18n="testimonial_3">Working with Ishan felt different. He covered everything—branding, UI UX, and a live Framer build—while using AI to cut weeks of work into days. We launched faster, with higher quality, and the growth impact showed up immediately.
-            Truly transformative work.</div>
-          <div class="testimonial-user-row" aria-label="Testimonial User">
-
-            <div>
-              <div class="testimonial-user-name" data-i18n="testimonial_3_name">Healthcare SaaS Client</div>
-              <div class="testimonial-user-role" data-i18n="testimonial_3_role"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <section class="faq-section" id="FAQ" aria-label="Frequently Asked Questions">
       <div class="faq-container">
@@ -373,32 +328,16 @@ I oversee outcomes. Human-led + AI-assisted, I cut weeks to days and establish a
         <div class="faq-grid" aria-label="FAQ Grid">
           <div class="faq-answers" aria-label="FAQ Answers">
             <div class="faq-item" aria-label="FAQ 1">
-              <h3 class="faq-question" data-i18n="faq_q1">How is your UI UX design agency different from AI tools or big design companies?</h3>
-              <p class="faq-answer" data-i18n="faq_a1">Most “best UX design firms” give you glossy decks or surface-level audits. AI-only tools flag dozens of issues with no prioritization. I combine human judgment with AI speed to cut through noise and pinpoint the 2–3 friction points actually costing you revenue. Whether it’s a SaaS website design, mobile app design, or small business website, you get fixes shipped—not endless slides.</p>
+              <h3 class="faq-question" data-i18n="faq_q1">Where are you based, and can we actually work together across time zones?</h3>
+              <p class="faq-answer" data-i18n="faq_a1">I work remotely from IST (Asia/Kolkata) with 6–8 hours overlap to EU/US time zones.</p>
             </div>
             <div class="faq-item" aria-label="FAQ 2">
-              <h3 class="faq-question" data-i18n="faq_q2">Do you only do audits, or can you also redesign and build?</h3>
-              <p class="faq-answer" data-i18n="faq_a2">No hand-offs. I handle the full stack—brand identity, UI UX redesigns in Figma, and no-code builds in Webflow, WordPress, Shopify, Wix, or Framer. Think of it as hiring both a UI UX design agency and a website design company near me in one. From restaurant websites to construction industry website design, I handle strategy through execution.</p>
+              <h3 class="faq-question" data-i18n="faq_q2">How do you handle collaboration with PM/Eng/Data?</h3>
+              <p class="faq-answer" data-i18n="faq_a2">My years in the army taught me discipline, clear communication, and team-first thinking—so I naturally build trust and alignment across functions, even under pressure.</p>
             </div>
             <div class="faq-item" aria-label="FAQ 3">
-              <h3 class="faq-question" data-i18n="faq_q3">How do you ensure your fixes actually drive growth?</h3>
-              <p class="faq-answer" data-i18n="faq_a3">Every change is tied to business goals—conversion, engagement, retention. For SaaS platforms, that means more free-to-paid upgrades. For small business web design, it means more inquiries and sign-ups. For healthcare website design, it means higher trust and smoother patient journeys. I measure and iterate until the numbers move.</p>
-            </div>
-            <div class="faq-item" aria-label="FAQ 4">
-              <h3 class="faq-question" data-i18n="faq_q4">Can you help with funnels and drop-offs?</h3>
-              <p class="faq-answer" data-i18n="faq_a4">Absolutely. I analyze where people abandon the journey, redesign
-                to remove friction, and prove impact through fewer drop-offs, higher adoption, and customers who stick
-                around longer.</p>
-            </div>
-            <div class="faq-item" aria-label="FAQ 5">
-              <h3 class="faq-question" data-i18n="faq_q5">How fast can I see results from your UX consultancy + product
-                design process?</h3>
-              <p class="faq-answer" data-i18n="faq_a5">Audits and prototypes in days. Redesigns and live builds in weeks
-                — not quarters. That means measurable growth while competitors are still waiting on decks.</p>
-            </div>
-            <div class="faq-item" aria-label="FAQ 6">
-              <h3 class="faq-question" data-i18n="faq_q6">What happens if results don’t improve?</h3>
-              <p class="faq-answer" data-i18n="faq_a6">I don’t vanish. Unlike some Los Angeles web design companies or traditional product design agencies, I stay accountable until growth is clear—whether that’s higher sign-ups, stronger engagement, or reduced support load. If metrics aren’t moving, I iterate until they do.</p>
+              <h3 class="faq-question" data-i18n="faq_q3">How do you balance speed with quality?</h3>
+              <p class="faq-answer" data-i18n="faq_a3">I rely on design systems, tokens, and CI checks so consistency and accessibility (WCAG AA) never slip. I also use the latest AI-powered tools (for research clustering, copy variants, a11y checks) which helps me deliver faster without sacrificing craft or accuracy.</p>
             </div>
           </div>
         </div>
@@ -436,13 +375,13 @@ I oversee outcomes. Human-led + AI-assisted, I cut weeks to days and establish a
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/EaselPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/PixiPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/CSSRulePlugin.min.js"></script>
-    <script src="script.js"></script>
+    <script src="/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/EaselPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/PixiPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/CSSRulePlugin.min.js"></script>
-    <script src="navbar-responsive.js"></script>
-    <script src="navbar.js"></script>
+    <script src="/navbar-responsive.js"></script>
+    <script src="/navbar.js"></script>
 
 
    <footer class="site-footer" role="contentinfo" aria-label="Footer">
@@ -450,7 +389,8 @@ I oversee outcomes. Human-led + AI-assisted, I cut weeks to days and establish a
     <div class="footer-logo-nav-row" aria-label="Footer Logo and Navigation">
       <div class="footer-logo" style="display: flex; flex-direction: column; max-width:300px;" aria-label="Footer Logo">
         <img src="Image/Lumas.svg"  style="height:32px; filter:invert(1);">
-        <p style="line-height:30px;">A Portfolio by Ishan Bansal — <span style="font-weight:400;">Product Designer</span></p>
+       
+        <p style="line-height:30px;">By Ishan Bansal — <span style="font-weight:400;">Product Designer</span></p>
       </div>
       <div class="footer-menu" aria-label="Footer Menu">
         <div class="footer-nav-col" aria-label="Learn Links">
