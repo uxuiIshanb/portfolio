@@ -1,22 +1,3 @@
 User-agent: *
-Disallow: /functions/
-Disallow: /fonts/
-Disallow: /Image/
-Disallow: /style.css
-Disallow: /style copy.css
-Disallow: /script.js
-Disallow: /navbar.js
-Disallow: /carousel.js
-Disallow: /navbar-responsive.js
-Disallow: /README.md
-Disallow: /launch.json
-
-# Allow important public pages
-Allow: /$
-Allow: /about-ishan/
-Allow: /contact/
-Allow: /ev-platform-ui-ux/
-Allow: /privacy-policy/
-Allow: /legal/
 
 Sitemap: https://lumas.studio/sitemap.xml
