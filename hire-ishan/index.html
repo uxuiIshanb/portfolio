@@ -3,50 +3,33 @@
 
 <head>
  <meta charset="UTF-8" />
-  <title>Ishan B — Senior Product Designer (UI/UX) | UX Designer</title>
-  <meta name="description" content="Lumas Studio is a human-led + AI-assisted product design agency for leaders. From branding and UI UX design to no-code builds in Webflow, Framer, WordPress, Shopify & Wix—we deliver fast audits, conversion-focused redesigns, and live launches with accountability to growth."
->
-  <link rel="icon" href="Image/Favicon-1.png" type="image/png">
+  <title>Ishan B — Senior Product Designer  | UX Designer</title>
+  
+
+  <link rel="icon" href="/Image/Ishan-favicon.png" type="image/png">
   <link rel="stylesheet" href="/style.css">
   <link rel="preload" href="fonts/ComingSoon-Regular.ttf" as="font" type="font/ttf" crossorigin>
    <meta name="robots" content="noindex,nofollow">
   <meta name="googlebot" content="noindex,nofollow">
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const btn = document.getElementById("book-call-2");
-    if (!btn) {
-      console.error("Button with id 'book-call-2' not found on page.");
-      return;
-    }
-    btn.addEventListener("click", function(e) {
-      // Prevent default if needed
-      window.location.href = "https://cal.com/lumas-studio/audit-design";
-    });
-  });
-  document.addEventListener("DOMContentLoaded", function () {
-    const btn = document.getElementById("book-call-1");
-    if (btn) {
-      btn.addEventListener("click", function () {
-        window.location.href = "https://cal.com/lumas-studio/fullstack";
-      });
-    } else {
-      console.error("Button not found!");
-    }
-  });
-</script>
 
 
+<style>
+  html,
+body {
+  overflow-x: visible !important;
+}
+</style>
 
 
 </head>
 
 
 
-<body>
-  <main>
-  <nav class="navbar" role="navigation" aria-label="Main Navigation">
+<body style="position: relative;">
+
+  <nav class="navbar" style="position: sticky; top: 0px;" role="navigation" aria-label="Main Navigation">
       <div class="navbar-section navbar-left" aria-label="Primary Navigation">
-        <a href="#testimonials" class="nav-btn nav-home" style="text-decoration: none;" data-i18n="home"
+        <a href="#skills" class="nav-btn nav-home" style="text-decoration: none;" data-i18n="home"
           >Skills</a>
         <a href="/about-ishan/" class="nav-btn" style="text-decoration: none;" data-i18n="about"
           aria-label="Go to About">About</a>
@@ -61,7 +44,7 @@
       <!-- Mobile copyright, visible only below 1280px -->
       <div class="navbar-mobile-copyright" aria-label="Mobile Logo Navigation">
         <a href="index.html" class="nav-btn nav-copyright-mobile" style="text-decoration: none;" data-i18n="copyright"
-          aria-label="Go to Home"> <img src="Image/Lumas.svg" 
+          aria-label="Go to Home"> <img src="/Image/Ishan.svg" 
             style="height:14px; padding:4px; vertical-align:middle;"></a>
       </div>
       <div class="navbar-section navbar-right" aria-label="Secondary Navigation">
@@ -72,9 +55,9 @@
             aria-controls="navWorkDropdown" aria-label="Open Case Studies Dropdown">
             <span data-i18n="work">Work</span>
           </button>
-          <div class="nav-dropdown" id="navWorkDropdown" aria-label="Case Studies Menu">
-            <a href="/ev-platform-ui-ux/" class="nav-dropdown-item" data-i18n="ev"
-              aria-label="Go to EV Multiplatform">EV Multiplatform</a>
+          <div class="nav-dropdown" style="min-width: 250px;" id="navWorkDropdown" aria-label="Case Studies Menu">
+            <a href="/hire-ishan/ev-platform.html" class="nav-dropdown-item" data-i18n="ev"
+              aria-label="Go to EV Platform that scales">EV Platform That Scales</a>
           </div>
         </div>
        
@@ -95,7 +78,7 @@
         <div class="navbar-mobile-menu-content">
           <a href="index.html" class="nav-mobile-item" data-i18n="home" aria-label="Go to Home">Home</a>
           <a href="/about-ishan/" class="nav-mobile-item" data-i18n="about" aria-label="Go to About me">About me</a>
-          <a href="/ev-platform-ui-ux/" class="nav-mobile-item nav-mobile-work" data-i18n="ev" aria-label="Go to EV Multiplatform">EV
+          <a href="/hire-ishan/ev-platform.html" class="nav-mobile-item nav-mobile-work" data-i18n="ev" aria-label="Go to EV Multiplatform">EV
             Case Study</a>
           <a href="/contact/" class="nav-mobile-item" data-i18n="contact" aria-label="Go to Contact me">Contact
             me</a>
@@ -104,10 +87,10 @@
     </nav>
     <section class="hero-desk" style="margin-top:32px;" aria-label="Hero Section">
       <div class="hero-desk-grid">
-        <div class="hero-desk-col hero-desk-col-1" aria-label="Hero Text">
+        <div class="hero-desk-col hero-desk-col-1" style="height: 60vh !important;" aria-label="Hero Text">
           <p style="font-family: 'Coming Soon', cursive, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1.25rem; font-weight: 600; margin-bottom: 0px;">Hi, I am Ishan,</p>
           <h1 class="Title" style="font-size: 3rem;">
-            Senior Product Designer (UI UX)<br />
+            Senior Product Designer<br />
           </h1>
           <p class="Title-para" data-i18n="hero_para" aria-label="Hero Description">I design end-to-end product journeys that make complex platforms feel obvious—and measurable.</p>
           <a class="hero-btn" href="#why-ishan" style="margin-bottom:20px;" aria-label="See Results">
@@ -138,86 +121,59 @@
           </a>
           
         </div>
-        <div class="hero-desk-col hero-desk-col-2" aria-label="Hero Image and Badges">
-          <div class="badge-product-design" aria-label="Product Design Badge">
-            <span class="badge-dot"></span>
-            <span class="badge-text" data-i18n="badge_product">Product Design</span>
-          </div>
-          <div class="badge-ux-strategy" aria-label="UI Engineering Badge">
-            <span class="badge-dot"></span>
-            <span class="badge-text" data-i18n="badge_ux">UI Engineering</span>
-          </div>
-          <div class="badge-ui-engineering" aria-label="UX Strategy Badge">
-            <span class="badge-dot"></span>
-            <span class="badge-text" data-i18n="badge_ui">UX Strategy</span>
-          </div>
-          <div class="badge-design-systems" aria-label="Design Systems Badge">
-            <span class="badge-dot"></span>
-            <span class="badge-text" data-i18n="badge_design">Design Systems</span>
-          </div>
+        <div class="hero-desk-col hero-desk-col-2" style="background-image: url('/Image/ishan-1.avif');" >
+         
         </div>
       </div>
     </section>
     <section class="logo-marquee-section" aria-label="Trusted by section">
-      <h2 class="logo-marquee-title">Trusted by</h2>
+      <h2 class="logo-marquee-title">Worked with</h2>
       <div class="logo-marquee-wrapper">
         <div class="logo-marquee-track">
           <img src="/Image/Anjum.svg" style="height: 40px" alt="Client 1" class="logo-marquee-img" />
           <img src="/Image/Jora.svg" alt="Client 2" class="logo-marquee-img" />
           <img src="/Image/Dialcare.svg" alt="Client 3" class="logo-marquee-img" />
-          <img src="/Image/usesaaskit.svg" alt="Client 4" class="logo-marquee-img" />
+          <img src="/Image/usesaaskit.svg"  style="height: 30px" alt="Client 4" class="logo-marquee-img" />
           <img src="/Image/Sintio.svg" alt="Client 5" class="logo-marquee-img" />
+          <img src="/Image/Mtechzilla.svg" alt="Client 6" class="logo-marquee-img" />
+          <img src="/Image/elecq.svg" style="height: 24px" alt="Client 7" class="logo-marquee-img" />
           <!-- Repeat for seamless loop -->
           <img src="/Image/Anjum.svg" style="height: 40px" alt="Client 1" class="logo-marquee-img" />
           <img src="/Image/Jora.svg" alt="Client 2" class="logo-marquee-img" />
           <img src="/Image/Dialcare.svg" alt="Client 3" class="logo-marquee-img" />
-          <img src="/Image/usesaaskit.svg" alt="Client 4" class="logo-marquee-img" />
+          <img src="/Image/usesaaskit.svg" style="height: 30px" alt="Client 4" class="logo-marquee-img" />
           <img src="/Image/Sintio.svg" alt="Client 5" class="logo-marquee-img" />
+           <img src="/Image/Mtechzilla.svg" alt="Client 6" class="logo-marquee-img" />
+          <img src="/Image/elecq.svg" style="height: 24px" alt="Client 7" class="logo-marquee-img" />
           <!-- Repeat for seamless loop -->
           <img src="/Image/Anjum.svg" style="height: 40px" alt="Client 1" class="logo-marquee-img" />
           <img src="/Image/Jora.svg" alt="Client 2" class="logo-marquee-img" />
           <img src="/Image/Dialcare.svg" alt="Client 3" class="logo-marquee-img" />
-          <img src="/Image/usesaaskit.svg" alt="Client 4" class="logo-marquee-img" />
+          <img src="/Image/usesaaskit.svg" style="height: 30px" alt="Client 4" class="logo-marquee-img" />
           <img src="/Image/Sintio.svg" alt="Client 5" class="logo-marquee-img" />
+           <img src="/Image/Mtechzilla.svg" alt="Client 6" class="logo-marquee-img" />
+           <img src="/Image/elecq.svg" style="height: 24px" alt="Client 7" class="logo-marquee-img" />
           <!-- Repeat for seamless loop -->
           <img src="/Image/Anjum.svg" style="height: 40px" alt="Client 1" class="logo-marquee-img" />
           <img src="/Image/Jora.svg" alt="Client 2" class="logo-marquee-img" />
           <img src="/Image/Dialcare.svg" alt="Client 3" class="logo-marquee-img" />
-          <img src="/Image/usesaaskit.svg" alt="Client 4" class="logo-marquee-img" />
+          <img src="/Image/usesaaskit.svg"  style="height: 30px" alt="Client 4" class="logo-marquee-img" />
           <img src="/Image/Sintio.svg" alt="Client 5" class="logo-marquee-img" />
+           <img src="/Image/Mtechzilla.svg" alt="Client 6" class="logo-marquee-img" />
+          <img src="/Image/elecq.svg" style="height: 24px" alt="Client 7" class="logo-marquee-img" />
           <!-- Repeat for seamless loop -->
           <img src="/Image/Anjum.svg" style="height: 40px" alt="Client 1" class="logo-marquee-img" />
           <img src="/Image/Jora.svg" alt="Client 2" class="logo-marquee-img" />
           <img src="/Image/Dialcare.svg" alt="Client 3" class="logo-marquee-img" />
-          <img src="/Image/usesaaskit.svg" alt="Client 4" class="logo-marquee-img" />
+          <img src="/Image/usesaaskit.svg"  style="height: 30px"alt="Client 4" class="logo-marquee-img" />
           <img src="/Image/Sintio.svg" alt="Client 5" class="logo-marquee-img" />
+           <img src="/Image/Mtechzilla.svg" alt="Client 6" class="logo-marquee-img" />
+           <img src="/Image/elecq.svg" style="height: 24px" alt="Client 7" class="logo-marquee-img" />
         </div>
       </div>
     </section>
 
-    <section class="problem-section" id="the-problem" aria-label="Problem Section">
-      <div class="problem-grid">
-        <!-- Column 1 -->
-        <div class="problem-col" aria-label="Problem Headline">
-          <h2 class="problem-title">You didn’t skip UI UX. <br /> Just got the wrong kind.</h2>
-        </div>
-        <!-- Column 2 -->
-        <div class="problem-col" aria-label="Problem Details">
-          <p class="problem-stat" data-i18n="problem_stat" aria-label="Problem Description">Clutch best UX design agencies sell headcount.
-I oversee outcomes. Human-led + AI-assisted, I cut weeks to days and establish a branding that converts.</p>
-          <div class="problem-badge" aria-label="Problem Badges">
-            <span
-              style="background: #e0e0e0; color: #191919; padding: 8px 20px; border-radius: 18px; font-weight: 600; font-size: 1rem;">Rising
-              Costs</span>
-            <span
-              style="background: #e0e0e0; color: #191919; padding: 8px 20px; border-radius: 18px; font-weight: 600; font-size: 1rem;">Missed
-              User Clarity</span>
-            <span
-              style="background: #e0e0e0; color: #191919; padding: 8px 20px; border-radius: 18px; font-weight: 600; font-size: 1rem;">Brand Strategy</span>
-          </div>
-        </div>
-      </div>
-    </section>
+  
 
     <section class="solution-section" id="why-ishan" aria-label="Solution Section">
       <div class="solution-header-row" style="display:flex; align-items:end; justify-content:space-between;"
@@ -232,8 +188,8 @@ I oversee outcomes. Human-led + AI-assisted, I cut weeks to days and establish a
             <div class="carousel-slide-grid" style="display: grid;  align-items: center; gap: 32px;"
               aria-label="Carousel Slide Grid">
               <div>
-                <h3 class="carousel-slide-title" data-i18n="story_title">Find what blocks growth</h3>
-                <p class="carousel-slide-desc" data-i18n="story_desc">Most audits drown you in surface issues. I use AI to fast-track the research, then apply human judgment to uncover the few friction points truly costing you revenue and trust.
+                <h3 class="carousel-slide-title" data-i18n="story_title">I bring simplicity</h3>
+                <p class="carousel-slide-desc" data-i18n="story_desc">Army taught me to adapt fast. I bring that discipline into design. I run user interviews, align PM and engineering, and map systems. AI speeds research and mockups, but human judgment drives decisions.
                 </p>
                 <div class="solution-badge" aria-label="Solution Badges">
                   <span
@@ -243,80 +199,128 @@ I oversee outcomes. Human-led + AI-assisted, I cut weeks to days and establish a
                     style="background: #FFFFF0; color: #191919; padding: 8px 20px; border-radius: 18px; font-weight: 600; font-size: 1rem;">Clear
                     priorities</span>
                   <span
-                    style="background: #FFFFF0; color: #191919; padding: 8px 20px; border-radius: 18px; font-weight: 600; font-size: 1rem;">Testable
-                    prototype</span>
+                    style="background: #FFFFF0; color: #191919; padding: 8px 20px; border-radius: 18px; font-weight: 600; font-size: 1rem;">Team Player
+                    </span>
                 </div>
-                <a href="/ev-platform-ui-ux/"
+                <a href="/hire-ishan/ev-platform.html"
                   style="color: #fff; font-weight: 400; margin-top: 40px; display: inline-block; text-decoration: underline;"
                   aria-label="See Case Studies">See Case Studies</a>
               </div>
               <div class="card-image" style="text-align:center;">
-                <img src="Image/Card-1 (1).avif" alt="Storytelling Illustration" style="max-width:100%; height:auto;">
+                <img src="/Image/P-1-1.avif" alt="Storytelling Illustration" style="max-width:100%; height:auto;">
               </div>
             </div>
           </div>
           <div class="carousel-slide" style="background:#DEFE94; color:#191919;" aria-label="Carousel Slide 2">
-            <div class="carousel-slide-grid" style="display: grid; align-items: center; gap: 32px;"
+            <div class="carousel-slide-grid" style="display: flex; align-items: center;"
               aria-label="Carousel Slide Grid">
               <div>
-                <h3 class="carousel-slide-title" data-i18n="conversion_title">Design for measured impact</h3>
-                <p class="carousel-slide-desc" data-i18n="conversion_desc">I build AI-driven flows with clear UI and natural
-                  motion.
-                  Every change is aimed at lifting sign-ups, engagement, and confidence.
+                <h3 class="carousel-slide-title" data-i18n="conversion_title">Grounded in basics, built for change</h3>
+                <p class="carousel-slide-desc" data-i18n="conversion_desc">I stay flexible because I know fundamentals never change. Whether it’s new tools, shifting markets, or fresh team dynamics—I adapt fast. My grounding in design basics lets me learn quickly, apply judgment, and grow into a better product designer with every project.
                 </p>
                 <div class="solution-badge" aria-label="Solution Badges">
                   <span
-                    style="background: #ffffff; color: #191919; padding: 8px 20px; border-radius: 18px; font-weight: 600; font-size: 1rem;">Funnel-aligned
-                    metrics</span>
+                    style="background: #ffffff; color: #191919; padding: 8px 20px; border-radius: 18px; font-weight: 600; font-size: 1rem;">Adaptive
+                    </span>
                   <span
-                    style="background: #ffffff; color: #191919; padding: 8px 20px; border-radius: 18px; font-weight: 600; font-size: 1rem;">Complex
-                    workflows</span>
+                    style="background: #ffffff; color: #191919; padding: 8px 20px; border-radius: 18px; font-weight: 600; font-size: 1rem;">Learner
+                   </span>
                   <span
-                    style="background: #ffffff; color: #191919; padding: 8px 20px; border-radius: 18px; font-weight: 600; font-size: 1rem;">Measured
-                    outcomes</span>
+                    style="background: #ffffff; color: #191919; padding: 8px 20px; border-radius: 18px; font-weight: 600; font-size: 1rem;">Ethics
+                    </span>
                 </div>
-                <a href="/ev-platform-ui-ux/"
+                <a href="/hire-ishan/ev-platform.html"
                   style="color: #191919; font-weight: 400; margin-top: 40px; display: inline-block; text-decoration: underline;"
-                  aria-label="See Conversion Case Studies">See Conversion Case Studies</a>
+                  aria-label="See Conversion Case Studies">See Case Studies</a>
 
               </div>
-              <div class="card-image" style="text-align:center;">
-                <img src="Image/Group 1000004522.avif" alt="Conversion Focused Illustration"
-                  style="max-width:100%; height:auto;">
-              </div>
+             
             </div>
           </div>
           <div class="carousel-slide" style="background:#191919; color:white;" aria-label="Carousel Slide 3">
-            <div class="carousel-slide-grid" style="display:grid;  align-items: center; gap: 32px;"
+            <div class="carousel-slide-grid" style="display:flex;  align-items: center;"
               aria-label="Carousel Slide Grid">
               <div>
-                <h3 class="carousel-slide-title" data-i18n="endtoend_title">Ship and stay accountable</h3>
-                <p class="carousel-slide-desc" data-i18n="endtoend_desc">Unlike most web design agencies, I don’t stop at handoff. I build live in Webflow, Framer, WordPress, Shopify, or Wix — and I stay accountable until the metrics move.</p>
+                <h3 class="carousel-slide-title" data-i18n="endtoend_title">Collaboration is my edge</h3>
+                <p class="carousel-slide-desc" data-i18n="endtoend_desc">I translate complexity between PM, engineering, and data. Clear specs, shared language, and tight feedback loops keep projects moving. My army background taught me: no one wins alone.</p>
                 <div class="solution-badge" aria-label="Solution Badges">
+                  
                   <span
-                    style="background: #FFFFF0; color: #191919; padding: 8px 20px; border-radius: 18px; font-weight: 600; font-size: 1rem;">Figma
-                    to code</span>
-                  <span
-                    style="background: #FFFFF0; color: #191919; padding: 8px 20px; border-radius: 18px; font-weight: 600; font-size: 1rem;">Webflow/Framer</span>
-                  <span
-                    style="background: #FFFFF0; color: #191919; padding: 8px 20px; border-radius: 18px; font-weight: 600; font-size: 1rem;">Performance
-                    Focused</span>
+                    style="background: #FFFFF0; color: #191919; padding: 8px 20px; border-radius: 18px; font-weight: 600; font-size: 1rem;">Cross-functional</span>
                 </div>
-                <a href="/ev-platform-ui-ux/"
+                <a href="/hire-ishan/ev-platform.html"
                   style="color: #fff; font-weight: 400; margin-top: 40px; display: inline-block; text-decoration: underline;"
                   aria-label="See Case Studies">See Case Studies</a>
 
               </div>
-              <div class="card-image" style="text-align:center;">
-                <img src="Image/End to end.svg" alt="End to End Execution Illustration"
-                  style="max-width:100%; height:auto;">
-              </div>
+            
             </div>
           </div>
         </div>
       </div>
-      <a href="/about-ishan/" class="solution-link" data-i18n="know_about" aria-label="Know about me"><u>Know about me</u>
-        <span style="font-size:0.9em;">&#8594;</span></a>
+    </section>
+       <section class="solution-section" id="skills" aria-label="Solution Section">
+      <div class="solution-header-row" style="display:flex; align-items:end; justify-content:space-between;"
+        aria-label="Solution Header">
+        <h2 class="solution-title" style="margin-bottom:0;" data-i18n="solution_title">Skills & Tools that power my thinking
+        </h2>
+        
+      </div>
+        <!-- ...existing code... -->
+
+<!-- Skills & Traits (row until 1280px, then column) -->
+<div class="sat-block">
+  <div class="sat-flex">
+    <!-- LEFT: Skills -->
+    <div class="skills-stack">
+      <div class="skill-group">
+        <div class="section-label">Research &amp; Evidence</div>
+        <div class="skill-group-body">
+          <span class="tool-chip"><img style="height: 20px;" src="/Image/dovetail.png"/>Dovetail</span>
+          <span class="tool-chip"><img style="height: 20px;" src="/Image/posthog.webp"/>PostHog</span>
+          <span class="tool-chip"><img style="height: 20px;" src="/Image/mixpanel.png"/>Mixpanel</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="section-label">Design &amp; Prototype</div>
+        <div class="skill-group-body">
+          <span class="tool-chip"><img style="height: 20px;" src="/image/figma.svg"/>Figma</span>
+          <span class="tool-chip"><img style="height: 20px;" src="/image/protopie.svg"/>ProtoPie</span>
+          <span class="tool-chip"><img style="height: 20px;" src="/image/Rive.webp"/>Rive</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="section-label">Code &amp; Delivery</div>
+        <div class="skill-group-body">
+          <span class="tool-chip"><img style="height: 20px;" src="/Image/wordpress.png"/>WordPress</span>
+          <span class="tool-chip"><img style="height: 20px;" src="/Image/webflow.webp"/>Webflow</span>
+          <span class="tool-chip"><img style="height: 20px;" src="/Image/Framer.svg"/>Framer</span>
+          <span class="tool-chip"><img style="height: 20px;" src="/Image/html.svg"/>HTML/CSS</span>
+          <span class="tool-chip"><img style="height: 20px;" src="/Image/java.png"/>JavaScript</span>
+        </div>
+      </div>
+
+      <div class="skill-note">+ Adobe Creative Suite</div>
+    </div>
+
+    <!-- RIGHT: Traits -->
+    <div class="traits-panel">
+      <h3 class="traits-title">What I bring to the team?</h3>
+      <div class="traits-badges">
+        <span class="trait-pill">Stakeholder management</span>
+        <span class="trait-pill trait-accent">Critical Thinking</span>
+        <span class="trait-pill trait-accent wide">Flexibility &amp; Adaptability</span>
+        <span class="trait-pill">Empathy</span>
+        <span class="trait-pill">Clear Communication</span>
+        <span class="trait-pill">Ownership / accountability</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ...existing code... -->
     </section>
 
 
@@ -388,18 +392,17 @@ I oversee outcomes. Human-led + AI-assisted, I cut weeks to days and establish a
   <div class="footer-main">
     <div class="footer-logo-nav-row" aria-label="Footer Logo and Navigation">
       <div class="footer-logo" style="display: flex; flex-direction: column; max-width:300px;" aria-label="Footer Logo">
-        <img src="Image/Lumas.svg"  style="height:32px; filter:invert(1);">
+        <img src="/Image/Ishan.svg"  style="height:32px; filter:invert(1);">
        
-        <p style="line-height:30px;">By Ishan Bansal — <span style="font-weight:400;">Product Designer</span></p>
+        <p style="line-height:30px;"><span style="font-weight:400;">Product Designer</span></p>
       </div>
       <div class="footer-menu" aria-label="Footer Menu">
         <div class="footer-nav-col" aria-label="Learn Links">
           <div class="footer-nav-title">Learn</div>
           <ul class="footer-nav-list" style="list-style:none; padding:0;">
             <li><a href="#testimonials" class="footer-link" aria-label="Testimonials">Testimonials</a></li>
-            <li><a href="/ev-platform-ui-ux/" class="footer-link" aria-label="EV Case Study">EV Case Study</a></li>
-            <li><a href="#the-problem" class="footer-link" aria-label="The Problem">The Problem</a></li>
-            <li><a href="#process-pricing" class="footer-link" aria-label="Process & Pricing">Process & Pricing</a></li>
+            <li><a href="/hire-ishan/ev-platform.html" class="footer-link" aria-label="EV Case Study">EV Case Study</a></li>
+        
           </ul>
         </div>
         <div class="footer-nav-col" aria-label="About Links">
@@ -407,56 +410,23 @@ I oversee outcomes. Human-led + AI-assisted, I cut weeks to days and establish a
           <ul class="footer-nav-list" style="list-style:none; padding:0;">
             <li><a href="/about-ishan/" class="footer-link" aria-label="About Ishan">About Ishan</a></li>
             <li><a href="#why-ishan" class="footer-link" aria-label="Why Ishan?">Why Ishan?</a></li>
-            <li><a href="#FAQ" class="footer-link" aria-label="FAQ">FAQ</a></li>
-            <li><a href="/contact/" class="footer-link" aria-label="Contact">Contact</a></li>
           </ul>
         </div>
       </div>
     </div>
-    <div class="footer-social-row" aria-label="Footer Social Links">
-      <div class="footer-links-col" aria-label="LinkedIn Link">
-        <div class="footer-link-icon-group">
-          <span class="footer-icon footer-icon-discord" style="display: flex; align-items: center; justify-content: center; height: 32px; width: 32px;">
-            <img src="Image/linkedin-logo_49068.svg" alt="LinkedIn Icon" style="height: 20px;">
-          </span>
-          <i class="fa-brands fa-linkedin" aria-hidden="true" style="font-size:20px;vertical-align:middle;"></i>
-          <span class="footer-link-label">LinkedIn</span>
-          <span class="footer-link-ext">&#8599;</span>
-        </div>
-      </div>
-      <div class="footer-links-col" aria-label="Email Link">
-        <div class="footer-link-icon-group">
-          <span class="footer-icon footer-icon-discord" style="display: flex; align-items: center; justify-content: center; height: 32px; width: 32px;">
-            <img src="Image/gmail_732026.svg" alt="Email Icon" style="height: 20px;">
-          </span>
-          <i class="fa fa-envelope" aria-hidden="true" style="font-size:20px;vertical-align:middle;"></i>
-          <span class="footer-link-label">Email</span>
-          <span class="footer-link-ext">&#8599;</span>
-        </div>
-      </div>
-      <div class="footer-links-col" aria-label="Twitter Link">
-        <div class="footer-link-icon-group">
-          <span class="footer-icon footer-icon-discord" style="display: flex; align-items: center; justify-content: center; height: 32px; width: 32px;">
-            <img src="Image/social_49043.svg" alt="Twitter Icon" style="height: 20px;">
-          </span>
-          <span class="footer-link-label">Twitter</span>
-          <span class="footer-link-ext">&#8599;</span>
-        </div>
-      </div>
-    </div>
+   
     <hr class="footer-divider">
     <div class="footer-bottom-row" aria-label="Footer Bottom Row">
       <div class="personal-touch" aria-label="Copyright">
-        <p>© Ishan Bansal, trading as "Lumas". IST-based, working EU hours (CET/CEST).</p>
+        <p>© Ishan Bansal. IST-based, also working EU hours (CET/CEST).</p>
       </div>
       <div class="footer-bottom-links" aria-label="Footer Legal Links">
-        <a href="/legal/" class="footer-bottom-link" style="color:#e0e0e0;" aria-label="Legal / Imprint">Legal / Imprint</a>
-        <a href="/privacy/" class="footer-bottom-link" style="color:#e0e0e0;" aria-label="Privacy Policy">Privacy Policy</a>
+        
       </div>
     </div>
   </div>
 </footer>
-  </main>
+
 </body>
 
 </html>

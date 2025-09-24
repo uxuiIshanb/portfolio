@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta name="robots" content="noindex,nofollow">
+  <meta name="googlebot" content="noindex,nofollow">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electric Future</title>
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="/style.css">
+ 
+  <!-- Navbar JS -->
+   <link rel="canonical" href="https://lumas.studio/ev-platform-ui-ux/" />
+
+  <script src="/navbar.js"></script>
+   <link rel="icon" href="/Image/Favicon-1.png" type="image/png">
+</head>
+
+<body>
+  <nav class="navbar" style="position: sticky; top: 0px;" role="navigation" aria-label="Main Navigation">
+      <div class="navbar-section navbar-left" aria-label="Primary Navigation">
+        <a href="#skills" class="nav-btn nav-home" style="text-decoration: none;" data-i18n="home"
+          >Skills</a>
+        <a href="/about-ishan/" class="nav-btn" style="text-decoration: none;" data-i18n="about"
+          aria-label="Go to About">About</a>
+      </div>
+      <!-- Language Switcher -->
+      <div class="navbar-section navbar-center" aria-label="Logo Navigation">
+        <a href="index.html" class="nav-btn nav-copyright" style="text-decoration: none;" data-i18n="copyright"
+          aria-label="Go to Home">
+          <img src="/Image/Ishan.svg"  style="height:14px; padding:4px; vertical-align:middle;">
+        </a>
+      </div>
+      <!-- Mobile copyright, visible only below 1280px -->
+      <div class="navbar-mobile-copyright" aria-label="Mobile Logo Navigation">
+        <a href="index.html" class="nav-btn nav-copyright-mobile" style="text-decoration: none;" data-i18n="copyright"
+          aria-label="Go to Home"> <img src="/Image/Ishan.svg" 
+            style="height:14px; padding:4px; vertical-align:middle;"></a>
+      </div>
+      <div class="navbar-section navbar-right" aria-label="Secondary Navigation">
+         <a href="/contact/" class="nav-btn" style="text-decoration: none;" data-i18n="contact"
+          aria-label="Go to Contact">Contact</a>
+        <div class="nav-dropdown-wrapper" aria-label="Case Studies Dropdown" >
+          <button class="nav-btn nav-work" style="background-color: #191919; color: white;" id="navWorkBtn" data-i18n="work" aria-haspopup="true" aria-expanded="false"
+            aria-controls="navWorkDropdown" aria-label="Open Case Studies Dropdown">
+            <span data-i18n="work">Work</span>
+          </button>
+          <div class="nav-dropdown" style="min-width: 250px;" id="navWorkDropdown" aria-label="Case Studies Menu">
+            <a href="/hire-ishan/ev-platform.html" class="nav-dropdown-item" data-i18n="ev"
+              aria-label="Go to EV Platform that scales">EV Platform That Scales</a>
+          </div>
+        </div>
+       
+      </div>
+      <!-- Hamburger for mobile -->
+      <button class="navbar-hamburger" id="navbarHamburger" aria-label="Open menu" aria-controls="navbarMobileMenu"
+        aria-expanded="false">
+        <!-- Hamburger SVG icon -->
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true">
+          <rect y="6" width="28" height="2.5" rx="1.25" fill="#191919" />
+          <rect y="13" width="28" height="2.5" rx="1.25" fill="#191919" />
+          <rect y="20" width="28" height="2.5" rx="1.25" fill="#191919" />
+        </svg>
+      </button>
+      <!-- Mobile menu -->
+      <div class="navbar-mobile-menu" id="navbarMobileMenu" aria-label="Mobile Navigation Menu">
+        <div class="navbar-mobile-menu-content">
+          <a href="index.html" class="nav-mobile-item" data-i18n="home" aria-label="Go to Home">Home</a>
+          <a href="/about-ishan/" class="nav-mobile-item" data-i18n="about" aria-label="Go to About me">About me</a>
+          <a href="/hire-ishan/ev-platform.html" class="nav-mobile-item nav-mobile-work" data-i18n="ev" aria-label="Go to EV Multiplatform">EV
+            Case Study</a>
+          <a href="/contact/" class="nav-mobile-item" data-i18n="contact" aria-label="Go to Contact me">Contact
+            me</a>
+        </div>
+      </div>
+    </nav>
+
+
+  <section class="case-study-section">
+    <div class="case-study-inner">
+      <h1 class="case-study-title" data-i18n="caseTitle">EV Platform that scales:<br>Receiving over 1M investor funding.</h1>
+
+
+      <div class="case-study-banner" style="display: flex; flex-direction: column;">
+        <img src="/Image/EV-banner.png" alt="EV Charging App" class="case-study-img" data-i18n="caseBannerAlt">
+        
+      </div>
+
+      <div class="exec-summary" aria-label="Executive Summary">
+        <h2 class="exec-summary-title">Executive Summary</h2>
+        <div class="exec-summary-grid">
+          <div class="exec-card">
+            <span class="exec-card-label">Challenge</span>
+            <p class="exec-card-text">66% of users needed support to charge; no partners adopted, limiting trust and
+              platform scalability.</p>
+          </div>
+          <div class="exec-card">
+            <span class="exec-card-label">My Role</span>
+            <p class="exec-card-text">Led 7-week UX sprint, owning Mixpanel schema, data filtering, UI kit, prototypes,
+              and engineering handoff.</p>
+          </div>
+          <div class="exec-card">
+            <span class="exec-card-label">Impact</span>
+            <p class="exec-card-text">Support requests dropped 66%→16%, chargers scaled 400→7000+, partner adoption grew
+              0→6 in one month.</p>
+          </div>
+          <div class="exec-card">
+            <span class="exec-card-label">Business Results</span>
+            <p class="exec-card-text">Reduced support costs, accelerated user activation, and delivered white-label
+              flexibility that drove partner adoption.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="case-failed-grid">
+      <div class="case-failed-left">
+        <h2 class="case-failed-title">Challenge</h2>
+      </div>
+      <div class="case-failed-right">
+
+        <p class="case-barrier-desc" data-i18n="barrierDesc">
+          The platform had strong technical ambition but couldn’t scale in practice. Core flows were unintuitive,
+          <span class="case-barrier-highlight">66% of new users required support to complete a charge, and no partners
+            
+            were adopting the product. </span> My task was to redesign the experience into one that users trusted,
+          investors backed, and partners could deploy at scale.
+        </p>
+      </div>
+    </div>
+    <div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-bottom: 24px;">
+      <span
+        style="background: #191919; color: #fff; padding: 8px 24px; border-radius: 16px; font-weight: 600; font-size: 1rem; letter-spacing: 0.05em; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">before</span>
+    </div>
+    <div class="ev-metrics-row" aria-label="Baseline platform metrics">
+
+      <div class="ev-metric-card">
+        <div class="ev-metric-value"><span class="num">363</span> <span class="unit">out of 550
+          </span></div>
+        <p class="ev-metric-desc">Customers needed support<br>to charge</p>
+      </div>
+      <div class="ev-metric-card">
+        <div class="ev-metric-value"><span class="num">400</span> <span class="unit">chargers</span></div>
+        <p class="ev-metric-desc">Technical capacity, little<br> real usage</p>
+      </div>
+      <div class="ev-metric-card">
+        <div class="ev-metric-value"><span class="num">0</span> <span class="unit">partner adoption</span></div>
+        <p class="ev-metric-desc">No partner adoption,<br>no market trust</p>
+      </div>
+    </div>
+    <!-- Black stats block: insert where needed (e.g. inside case-study-section) -->
+    <div class="design-token-block" id="design-token" role="region" aria-labelledby="design-token-title">
+      <h2 class="design-token-title" id="design-token-title">Mixpanel Events</h2>
+      <div class="design-token-code-wrapper">
+        <button class="design-token-copy-btn" type="button" aria-label="Copy design token JSON">Copy</button>
+        <pre class="design-token-pre"><code class="design-token-code" data-json>{
+  "experiment": {
+    "n": 550,
+    "cohort": "new users (signup cohort)",
+    "timeline": {
+      "baseline": {
+        "label": "Pre‑redesign",
+        "weeks": 4
+      },
+      "post": {
+        "label": "After launch",
+        "weeks": 6,
+      }
+    },
+    "source": {
+      "tool": "Mixpanel",
+      "events": ["charging_started", "charging_closed"],
+      "cross_referenced_with": ["support_ticket_opened"]
+    }
+  }
+}</code></pre>
+      </div>
+    </div>
+    <div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-bottom: 24px;">
+      <span
+        style="background: #191919; color: #fff; padding: 8px 24px; border-radius: 16px; font-weight: 600; font-size: 1rem; letter-spacing: 0.05em; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">after</span>
+    </div>
+    <div class="ev-metrics-row" aria-label="Baseline platform metrics">
+
+      <div class="ev-metric-card" style="position: relative;">
+        <span
+          style="position: absolute; top: 18px; right: 10px; background: #ffebee; color: #c62828; font-size: 0.85rem; font-weight: 600; border-radius: 12px; padding: 4px 12px; display: flex; align-items: center; gap: 6px; box-shadow: 0 1px 4px rgba(0,0,0,0.07);">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="vertical-align:middle;"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 3v7M8 10l-3-3m3 3l3-3" stroke="#c62828" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+          reduced by 75.76%
+        </span>
+        <div class="ev-metric-value"><span class="num">88</span> <span class="unit">out of 550</span></div>
+        <p class="ev-metric-desc">Customers needed support<br>to charge</p>
+      </div>
+      <div class="ev-metric-card" style="position: relative;">
+        <span
+          style="position: absolute; top: 18px; right: 10px; background: #ebffed; color: #28c640; font-size: 0.85rem; font-weight: 600; border-radius: 12px; padding: 4px 12px; display: flex; align-items: center; gap: 6px; box-shadow: 0 1px 4px rgba(0,0,0,0.07);">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="vertical-align:middle;"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 10L7 6L10 9L13 5" stroke="#28c640" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <circle cx="3" cy="10" r="1" fill="#28c640" />
+            <circle cx="7" cy="6" r="1" fill="#28c640" />
+            <circle cx="10" cy="9" r="1" fill="#28c640" />
+            <circle cx="13" cy="5" r="1" fill="#28c640" />
+          </svg>
+          increased by 1650%
+        </span>
+        <div class="ev-metric-value"><span class="num">7000+</span> <span class="unit">chargers</span></div>
+        <p class="ev-metric-desc">Technical capacity<br></p>
+      </div>
+      <div class="ev-metric-card" style="position: relative;">
+        <span
+          style="position: absolute; top: 18px; right: 10px; background: #ebffed; color: #28c640; font-size: 0.85rem; font-weight: 600; border-radius: 12px; padding: 4px 12px; display: flex; align-items: center; gap: 6px; box-shadow: 0 1px 4px rgba(0,0,0,0.07);">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="vertical-align:middle;"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 10L7 6L10 9L13 5" stroke="#28c640" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <circle cx="3" cy="10" r="1" fill="#28c640" />
+            <circle cx="7" cy="6" r="1" fill="#28c640" />
+            <circle cx="10" cy="9" r="1" fill="#28c640" />
+            <circle cx="13" cy="5" r="1" fill="#28c640" />
+          </svg>
+          increased by 600%
+        </span>
+        <div class="ev-metric-value"><span class="num">6</span> <span class="unit">partner adoption</span></div>
+        <p class="ev-metric-desc">partner adoption<br>in 1 month</p>
+      </div>
+    </div>
+    <div class="case-ibm-block">
+      <h2 class="case-ibm-title" data-i18n="ibmTitle">Product Design Approach</h2>
+      <p class="case-ibm-desc" data-i18n="ibmDesc">To break the deadlock, I leaned on IBM Enterprise Design Thinking.
+        Why? Because it let me balance business constraints with real user needs—without letting either side dominate.
+      </p>
+      <img src="/Image/1-EV-1.avif" alt="IBM Enterprise Design" class="case-ibm-img" data-i18n="ibmImgAlt">
+    </div>
+    <div class="case-ibm-block">
+      <h2 class="case-ibm-title" data-i18n="ibmTitle">Execution Timeline — Product Design Sprint</h2>
+      <p class="case-ibm-desc" data-i18n="ibmDesc">The seven-week plan balanced speed with depth — giving stakeholders
+        time while testing decisions with real users. This ensured every design choice aligned business goals with user
+        needs, avoiding costly rework and wasted development cycles.</p>
+      <img src="/Image/EV-process.avif" alt="IBM Enterprise Design" class="case-ibm-img" data-i18n="ibmImgAlt">
+    </div>
+    <div class="case-block" style="grid-template-columns: 1fr;">
+      <div class="case-block-content">
+        <div style="display: flex; flex-direction: row; gap: 12px;">
+          <div class="case-block-icon">
+            <!-- Vision icon SVG -->
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16 4C9.37258 4 3.832 8.94365 2 16C3.832 23.0563 9.37258 28 16 28C22.6274 28 28.168 23.0563 30 16C28.168 8.94365 22.6274 4 16 4Z"
+                stroke="#222" stroke-width="2" />
+              <circle cx="16" cy="16" r="5" stroke="#222" stroke-width="2" />
+            </svg>
+          </div>
+          <h2 class="case-block-title" data-i18n="visionTitle">Setting the Vision</h2>
+        </div>
+        <div class="case-block-desc">
+          <p data-i18n="visionDesc">I defined four core “Hills”:</p>
+          <ul>
+            <li><b>Reduce Time of Task Completion:</b> A real estate manager or individual can seamlessly complete key
+              flows—charging, data observation, management, billing, and session sharing—quickly, confidently, with
+              clarity and compliance.</li>
+            <li><b>Improve Findability, Navigation & Search:</b> A user can discover, start, and complete a charge
+              without dead ends; a manager can reach critical reports without external guidance. </li>
+            <li><b>Improve Accessibility:</b> The new platform should be able to handle large amount of complex data, at
+              the same time improve flow accessibility.</li>
+            <li><b>White Labeling for Multiple Brand Identities:</b> Any partner can apply brand identity through
+              tokens/themes without breaking usability or a11y.</li>
+
+          </ul>
+          <p data-i18n="hillSummary">These Hills set the north star for all design decisions.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-block" style="grid-template-columns: 1fr 1.1fr;">
+      <div class="case-block-content">
+        <div style="display: flex; flex-direction: row; gap: 12px;">
+          <div class="case-block-icon">
+            <!-- Vision icon SVG -->
+            <img src="/Image/binoculars.svg" alt="Binoculars Icon" style="width:32px; height:32px;">
+          </div>
+          <h2 class="case-block-title">Research & Sponsor Users</h2>
+        </div>
+        <div class="case-block-desc">
+
+          <p data-i18n="hillSummary">To ground Sintio’s redesign in real needs, I worked with Sponsor Users —
+            participants who partnered throughout the project and provided ongoing feedback.</p>
+          <ul>
+            <li data-i18n="hillScalability"><b>2</b> Stakeholders</li>
+            <li data-i18n="hillInvestor"><b>3</b> Real Estate Managers</li>
+            <li data-i18n="hillInvestor"><b>2</b> Individual Users</li>
+          </ul>
+          <p data-i18n="hillSummary">I conducted one-on-one interviews, contextual where possible, from managers,
+            drivers, and stakeholders. Each session used open-ended questions to uncover setup frustrations, charging
+            journeys, and business expectations. To synthesize, I created an affinity map that clustered insights into
+            themes, making it easier to spot patterns shared across roles. This process surfaced the most pressing pain
+            points and guided us toward the features and flows that would deliver consistent value for all user groups.
+          </p>
+        </div>
+      </div>
+      <div class="case-block-img">
+        <img src="/Image/EV-2.avif" alt="Setting the Vision" />
+
+      </div>
+    </div>
+    <div class="case-block" style="display: flex; gap: 12px;">
+      <div class="case-block-content">
+        <div style="display: flex; align-items: center;">
+          <img src="/Image/file-search-2.svg" alt="User Feedback Icon"
+            style="width:40px; height:40px; margin-right:16px;">
+          <h2 class="case-block-title">Platform Audit</h2>
+        </div>
+        <div class="case-block-desc">
+          <p data-i18n="userFeedbackDesc">Parallel to interviews, I conducted a heuristic audit of the existing
+            platform, walking through core flows while empathizing with the pain points surfaced in research.</p>
+          <ul>
+            <li data-i18n="hillScalability"><b>Usability gaps:</b> The platform reused similar visual styles for
+              elements with completely different functions — for example, the primary charging button and the
+              subscription badge looked identical.</li>
+            <li data-i18n="hillInvestor"><b>Utility Gaps:</b> Key features were buried across multiple pages, creating a
+              utility gap — users often assumed the functionality didn’t exist at all. This not only reduced task
+              success but also drove up customer support requests as users sought help for features that were
+              technically available but effectively invisible.</li>
+            <li data-i18n="hillInvestor"><b>Lack of Signifiers:</b> The interface lacked clear signifiers to guide
+              non-technical users when switching between different spaces. Without visual cues, users struggled to
+              understand context changes, which made managing chargers unnecessarily confusing and error-prone.</li>
+          </ul>
+          <img src="/Image/Utility.png" alt="IBM Enterprise Design" class="case-ibm-img" data-i18n="ibmImgAlt">
+         
+        </div>
+      </div>
+    </div>
+    <div class="protected-asset" role="group" aria-label="Protected image placeholder">
+      <div class="protected-asset-inner">
+        <div class="protected-asset-icon" aria-hidden="true">
+          <!-- Eye Icon -->
+          <svg width="54" height="54" viewBox="0 0 24 24" fill="none" stroke="#191919" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12Z" />
+            <circle cx="12" cy="12" r="3" />
+          </svg>
+        </div>
+        <p class="protected-asset-msg">This section showcases the Old UI of the platform & utility issues. Protected
+          under NDA.</p>
+        <a href="mailto:connect@lumas.studio?subject=Request%20access%20to%20Case%20Study%20with%20Sensitive%20Data"
+          class="protected-asset-btn" aria-label="Email me for full details">Request Access →</a>
+      </div>
+    </div>
+
+    <div class="case-block" style="grid-template-columns: 1fr 1.1fr;">
+      <div class="case-block-content">
+        <div style="display: flex; flex-direction: row; gap: 12px;">
+          <div class="case-block-icon">
+            <!-- Vision icon SVG -->
+            <img src="/Image/funnel.svg" alt="Binoculars Icon" style="width:32px; height:32px;">
+          </div>
+          <h2 class="case-block-title">Filtering Data</h2>
+        </div>
+        <div class="case-block-desc">
+
+          <p data-i18n="hillSummary">I stripped the screen to what people need first and made cues impossible to miss.
+            Goal: speed and clarity—result: faster first charges and fewer “how do I…?” tickets.</p>
+
+          <p data-i18n="hillSummary">First, I pulled everything on the screens into one list and asked a simple
+            question: who needs this, when, and why. Using sponsor-user input (drivers, real-estate managers,
+            stakeholders), I cut duplicate or low-value data, merged rarely used views, and tiered the rest by task
+            urgency. Drivers saw favourites, session timing, and RFID up front; managers got billing, subscriptions, and
+            tariff controls one tap away. Clear labels and states replaced guesswork. The cleaned information model let
+            us introduce differentiators—charger categorization, status hubs, and quick-actions—without adding noise.
+            Net effect: less to think about, faster first charge, and a product that feels useful.
+          </p>
+        </div>
+      </div>
+      <div class="case-block-img">
+        <img src="/Image/Mapping.avif" />
+      </div>
+    </div>
+    <div class="case-ibm-block">
+      <h2 class="case-ibm-title" data-i18n="ibmTitle">Interactive Prototypes</h2>
+      <p class="case-ibm-desc" data-i18n="ibmDesc">I kicked off wireframing with the tech in mind: spun up a real
+        component scaffold using shadcn/ui, then refined tokens, states, and patterns for the platform’s needs. That let
+        me assemble flows fast into interactive wireframes, and within days evolve them into a click-through prototype
+        that felt close to production. We synced frequently with sponsor users—short sessions, decisive tweaks—so
+        direction stayed honest, utility stayed high, and momentum stayed fast for engineering.</p>
+      <div class="protected-asset" role="group" aria-label="Protected image placeholder">
+        <div class="protected-asset-inner">
+          <div class="protected-asset-icon" aria-hidden="true">
+            <!-- Eye Icon -->
+            <svg width="54" height="54" viewBox="0 0 24 24" fill="none" stroke="#191919" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12Z" />
+              <circle cx="12" cy="12" r="3" />
+            </svg>
+          </div>
+          <p class="protected-asset-msg">This section showcases the wireframe & prototypes of the redesign. Protected
+            under NDA.</p>
+          <a href="mailto:connect@lumas.studio?subject=Request%20access%20to%20Case%20Study%20with%20Sensitive%20Data"
+            class="protected-asset-btn" aria-label="Email me for full details">Request Access →</a>
+        </div>
+      </div>
+    </div>
+    <div class="case-block" style="grid-template-columns: 1fr 1.1fr;">
+      <div class="case-block-content">
+        <div style="display: flex; flex-direction: row; gap: 12px;">
+          <div class="case-block-icon">
+            <!-- Vision icon SVG -->
+            <img src="/Image/octagon-pause.svg" alt="Binoculars Icon" style="width:32px; height:32px;">
+          </div>
+          <h2 class="case-block-title">Constraints & Trade-offs</h2>
+        </div>
+        <div class="case-block-desc">
+          <ul>
+            <li data-i18n="hillScalability"><b>Data vs speed:</b> Prioritized fast loads over flashy motion;
+              server-rendered key info, lazy-loaded extras, skeletons instead of spinners, and only lightweight, helpful
+              micro-cues.</li>
+            <li data-i18n="hillInvestor"><b>4 languages:</b> Built length-tolerant layouts for DE/NL/FR/EN;
+              auto-wrap/truncate with tooltips, min/max widths, and pseudo-localized testing so long French/German text
+              never breaks.</li>
+            <li data-i18n="hillInvestor"><b>White-labeling:</b> One consistent structure themed per brand via semantic
+              tokens; swap logos/colors within contrast guardrails while keeping spacing, IA, and component behavior
+              stable.</li>
+            <li data-i18n="hillInvestor"><b>Admin density:</b> Default “Essentials” view with progressive disclosure;
+              configurable columns, saved views, compact mode, and virtualized tables to show more data without
+              overwhelm or lag.</li>
+          </ul>
+
+        </div>
+      </div>
+      <div class="case-block-img">
+        <img src="/Image/Constraints.avif" alt="Setting the Vision" />
+
+      </div>
+    </div>
+    <div class="case-block" style="display: flex; gap: 12px;">
+      <div class="case-block-content">
+        <div style="display: flex; align-items: center;">
+          <img src="/Image/file-search-2.svg" alt="User Feedback Icon"
+            style="width:40px; height:40px; margin-right:16px;">
+          <h2 class="case-block-title">Accessibility & Edge Cases</h2>
+        </div>
+        <div class="case-block-desc">
+          <ul>
+            <li data-i18n="hillScalability"> Users couldn’t copy values because each row acted like one big link. I
+              split interaction to cell-level, kept text selectable, added clear focus states and full keyboard support.
+              Now people copy, tab, and click confidently without misfires.</li>
+            <li data-i18n="hillInvestor"> Admins managed 5,000+ chargers and wasted time scrolling to reach pagination.
+              I made pagination sticky (bottom and optional top), with labeled buttons, jump-to-page, and aria-current.
+              Page changes are immediate—no marathon scrolling, better productivity for admins and support.</li>
+            <li data-i18n="hillInvestor"> Recurring charger edge cases hid in old logs, slowing triage. I codified them
+              as compact text+icon badges with tooltips and filters. Minimal space, maximum clarity—admins spot faults,
+              maintenance, tariff pending, or stuck sessions instantly without opening detail pages.</li>
+          </ul>
+
+          
+        </div>
+      </div>
+    </div>
+      <div class="protected-asset" role="group" aria-label="Protected image placeholder">
+        <div class="protected-asset-inner">
+          <div class="protected-asset-icon" aria-hidden="true">
+            <!-- Eye Icon -->
+            <svg width="54" height="54" viewBox="0 0 24 24" fill="none" stroke="#191919" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12Z" />
+              <circle cx="12" cy="12" r="3" />
+            </svg>
+          </div>
+          <p class="protected-asset-msg">This section showcases the accesibility & edge cases improvement of the platform. Protected
+            under NDA.</p>
+          <a href="mailto:connect@lumas.studio?subject=Request%20access%20to%20Case%20Study%20with%20Sensitive%20Data"
+            class="protected-asset-btn" aria-label="Email me for full details">Request Access →</a>
+        </div>
+      </div>
+    <div class="design-token-block" id="design-token" role="region" aria-labelledby="design-token-title">
+      <h2 class="design-token-title" id="design-token-title">Design token</h2>
+      <div class="design-token-code-wrapper">
+        <button class="design-token-copy-btn" type="button" aria-label="Copy design token JSON">Copy</button>
+        <pre class="design-token-pre"><code class="design-token-code" data-json>{
+  "color": {
+    "bg.surface": "#FFFFFF",
+    "text.primary": "#111111",
+    "text.muted": "rgba(17,17,17,0.7)",
+    "accent.brand": "#0B8A42",
+    "status.error": "#D62F2F"
+  },
+  "font": { "size.base": "16px", "lineheight.base": 1.5 },
+  "space": { "100": "8px", "200": "12px", "300": "16px" },
+  "radius": { "m": "8px", "l": "12px" }
+}</code></pre>
+      </div>
+    </div>
+    <div class="case-block" style="grid-template-columns: 1fr 1.1fr;">
+      <div class="case-block-content">
+        <div style="display: flex; flex-direction: row; gap: 12px;">
+          <div class="case-block-icon">
+            <!-- Vision icon SVG -->
+            <img src="/Image/handshake.svg" alt="Binoculars Icon" style="width:32px; height:32px;">
+          </div>
+          <h2 class="case-block-title">Engineering Handoff & Compliance</h2>
+        </div>
+        <div class="case-block-desc">
+          <ul>
+            <li data-i18n="hillScalability"><b>Design handoff:</b> Delivered a full design system (tokens + components)
+              and a clean Figma file—each flow sectioned, variants/states documented, specs/redlines included.</li>
+            <li data-i18n="hillInvestor"><b>Build partnership:</b> Worked with Engineering + QA on acceptance criteria
+              and testing; shipped lightweight micro-interactions (skeleton loaders, smooth search results) without
+              hurting performance.</li>
+            <li data-i18n="hillInvestor"><b>Quality gate:</b> Dogfooded on staging across devices/browsers; fixed issues
+              fast; signed off only after reliable end-to-end journeys.</li>
+            <li data-i18n="hillInvestor"><b>Compliance:</b> GDPR data-minimization + RBAC; localization for DE/NL/FR/EN
+              (expansion-tested); WCAG 2.1 AA—focus order, 44×44 targets, ≥4.5:1 contrast, ARIA landmarks.</li>
+          </ul>
+
+        </div>
+      </div>
+      <div class="case-block-img">
+        <img src="/Image/Product Design.avif" alt="Setting the Vision" />
+
+      </div>
+    </div>
+  </section>
+   <footer class="site-footer" role="contentinfo" aria-label="Footer">
+  <div class="footer-main">
+    <div class="footer-logo-nav-row" aria-label="Footer Logo and Navigation">
+      <div class="footer-logo" style="display: flex; flex-direction: column; max-width:300px;" aria-label="Footer Logo">
+        <img src="/Image/Ishan.svg"  style="height:32px; filter:invert(1);">
+       
+        <p style="line-height:30px;"><span style="font-weight:400;">Product Designer</span></p>
+      </div>
+      <div class="footer-menu" aria-label="Footer Menu">
+        <div class="footer-nav-col" aria-label="Learn Links">
+          <div class="footer-nav-title">Learn</div>
+          <ul class="footer-nav-list" style="list-style:none; padding:0;">
+            <li><a href="#testimonials" class="footer-link" aria-label="Testimonials">Testimonials</a></li>
+            <li><a href="/hire-ishan/ev-platform.html" class="footer-link" aria-label="EV Case Study">EV Case Study</a></li>
+        
+          </ul>
+        </div>
+        <div class="footer-nav-col" aria-label="About Links">
+          <div class="footer-nav-title">About</div>
+          <ul class="footer-nav-list" style="list-style:none; padding:0;">
+            <li><a href="/about-ishan/" class="footer-link" aria-label="About Ishan">About Ishan</a></li>
+            <li><a href="#why-ishan" class="footer-link" aria-label="Why Ishan?">Why Ishan?</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+   
+    <hr class="footer-divider">
+    <div class="footer-bottom-row" aria-label="Footer Bottom Row">
+      <div class="personal-touch" aria-label="Copyright">
+        <p>© Ishan Bansal. IST-based, also working EU hours (CET/CEST).</p>
+      </div>
+      <div class="footer-bottom-links" aria-label="Footer Legal Links">
+        
+      </div>
+    </div>
+  </div>
+</footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const btn = document.querySelector('.design-token-copy-btn');
+      const code = document.querySelector('.design-token-code');
+      if (!btn || !code) return;
+      btn.addEventListener('click', () => {
+        const txt = code.textContent.trim();
+        navigator.clipboard.writeText(txt).then(() => {
+          const prev = btn.textContent;
+          btn.textContent = 'Copied';
+          setTimeout(() => btn.textContent = prev, 1800);
+        });
+      });
+    });
+  </script>
+  <script src="/script.js"></script>
+  <script src="/navbar-responsive.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Draggable.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/MotionPathPlugin.min.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Flip.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/EaselPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/PixiPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/CSSRulePlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/EaselPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/PixiPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/CSSRulePlugin.min.js"></script>
+
+</body>
+
+</html>
