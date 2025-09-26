@@ -5986,3 +5986,118 @@ body {
   flex-wrap:wrap;
   gap:.85rem 1rem;
 }
+
+.quote-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 1.25rem 2rem;
+  background: #fee9cc; /* soft peach */
+  border-radius: 0.9rem;
+  padding: 1.1rem 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.quote-col-left {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  min-width: 0;
+}
+
+.quote-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #eee;
+  flex: 0 0 auto;
+}
+
+.quote-person {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.quote-name {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #111;
+}
+.quote-role {
+  font-size: 0.85rem;
+  color: #6a6a6a;
+}
+
+
+
+/* Larger screens: more breathing room and rounded corners */
+@media (min-width: 960px) {
+  .quote-card {
+    padding: 1.25rem 2.15rem;
+    border-radius: 1rem;
+  }
+  .quote-avatar { width: 72px; height: 72px; }
+  .quote-text { font-size: 1.15rem; }
+}
+
+/* Stack on small screens */
+@media (max-width: 640px) {
+  .quote-card {
+    grid-template-columns: 1fr;
+    justify-items: start;
+    gap: 0.9rem;
+    padding: 1rem 1rem;
+  }
+  .quote-col-left { gap: 0.8rem; }
+  .quote-text { font-size: 1rem; }
+}
+
+/* Testimonial quote card (responsive) */
+.quote-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 1.25rem 2rem;
+  background: #fee9cc; /* soft peach */
+  border-radius: 0.9rem;
+  padding: 3rem 2rem;
+  margin: 1.5rem 0;
+}
+
+.quote-col-left {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  min-width: 0;
+}
+
+.quote-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #eee;
+  flex: 0 0 auto;
+}
+
+.quote-person {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.quote-role {
+  font-size: 0.85rem;
+  color: #6a6a6a;
+}
+
+.quote-col-right { min-width: 0; }
+.quote-text {
+  margin: 0;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 400;
+  color: #111;
+}
+
